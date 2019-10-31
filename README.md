@@ -92,3 +92,26 @@ And in ACPI/patched there are 3 support SSDTs:
 * SSDT-PNLF.aml
 * SSDT-XOSI.aml
 
+## Gestures
+
+In SysPrefs/Keyboard/Shortcuts/Mission\ Control/ replace "Move left a space" and "Move right a space" with your favourite ones.
+
+Personally I use three-fingers swipe right for "Move right a space" and viceversa for left swipe
+
+## Some useful links
+
+[Combojack](https://osxlatitude.com/forums/topic/11316-how-to-fix-static-noisedistortioncrackling-sound-and-combo-jack-on-laptops/)
+
+[How does AppleALC work](https://osxlatitude.com/forums/topic/1946-complete-applehda-patching-guide/)
+
+[gibMacOS](https://github.com/corpnewt/gibMacOS)
+
+## Credits
+
+* **Apple** for macOS
+* **Acidanthera** for some Lilu-based kexts
+* **RehabMan** for DSDT patching guide
+* **every other people that contributed to the hackintosh world :haha:**
+
+
+

@@ -43,12 +43,11 @@ FileVault2:
 
 * AppleGenericInput.efi
 * AppleUiSupport.efi
-* FwRuntimeServices.efi
 
 ### Kexts
 
 * [AirportBrcmFixup.kext](https://github.com/acidanthera/AirportBrcmFixup/releases/latest)* [Bluetooth](https://github.com/headkaze/OS-X-BrcmPatchRAM/releases)* [CodecCommander.kext](https://bitbucket.org/RehabMan/os-x-eapd-codec-commander/downloads/)* EFICheckDisabler.kext* [HibernationFixup.kext](https://github.com/acidanthera/HibernationFixup/releases/latest)* [Lilu.kext](https://github.com/acidanthera/Lilu/releases/latest)* [NoTouchID.kext](https://github.com/al3xtjames/NoTouchID/releases/latest)* [REHABMAN_VoodooPS2Controller.kext](https://bitbucket.org/RehabMan/os-x-voodoo-ps2-controller/downloads/)* [SystemProfilerMemoryFixup.kext](https://github.com/Goldfish64/SystemProfilerMemoryFixup)
- 	* Lilu Debug and XCode latest version* USBMap.kext
+ 	* Lilu Debug and XCode latest version* ~USBMap.kext~ Replaced with SSDT-xh_oemdb.aml
 	* Generated with [USBMap](https://github.com/corpnewt/USBMap) 	* [Vanilla_AppleALC.kext](https://github.com/acidanthera/AppleALC/releases/latest)* [VirtualSMC.kext](https://github.com/acidanthera/VirtualSMC/releases/latest)* [WhateverGreen.kext](https://github.com/acidanthera/WhateverGreen/releases)
 
 ## Headphones issue

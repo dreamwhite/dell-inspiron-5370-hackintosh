@@ -20,7 +20,7 @@ Enabling audio on my hackintosh
 
 What you mean?
 
-## This is how to enable audio on hackintosh
+## This is how to enable audio on hackintosh:
 
 ## Requirements
 
@@ -46,7 +46,9 @@ Don't add those renames in Clover
 * DPCIManager
 * Hackintool
 
-![DPCIManager Status](../.gitbook/assets/image-12%20%281%29.png)
+
+
+![DPCIManager: Status section](../.gitbook/assets/image.png)
 
 {% hint style="warning" %}
 Please note that Hackintool suggest you some Layout IDs. In any case check the official AppleALC page for all layout ids
@@ -56,7 +58,7 @@ Please note that Hackintool suggest you some Layout IDs. In any case check the o
 
 ### Step 2: identify layout ID
 
-![GitHub: AppleALC ALC295 Layout IDs](../.gitbook/assets/image-20.png)
+![GitHub: AppleALC ALC295 Layout IDs](../.gitbook/assets/image%20%282%29.png)
 
 Note the "layoutXX.xml" and proceed to the Installation step
 
@@ -65,20 +67,20 @@ Note the "layoutXX.xml" and proceed to the Installation step
 1. Verify that your Codec name is present in AppleALC layout id list
 2. Put the compiled kexts inside `ECKO` folder
 
-![](https://github.com/dreamwhite/mammamia-marcello-vanilla-guides/tree/3befce3cbb6e6c0685df078371a0992f6f849dad/.gitbook/assets/image%20%2834%29.png)
+![](../.gitbook/assets/image%20%281%29.png)
 
 ### Step 4: get DevicePath address using gfxutil
 
 Download gfxutil and drag the executable inside the terminal and type `-f HDEF` as depicted below
 
-![](../.gitbook/assets/image-19.png)
+![](../.gitbook/assets/image%20%284%29.png)
 
 Copy the DevicePath, `PciRoot(0x0)/Pci(0x1f,0x3)` and proceed to the next step
 
 ### Step 5: Clover Configurator
 
 {% hint style="info" %}
-According to AppleALC [Installation and Usage](https://github.com/acidanthera/AppleALC/wiki/Installation-and-usage) page layout-id can be injected in different manners. Personally i prefer the following below. Check their page for more infos :\)
+According to AppleALC [Installation and Usage](https://github.com/acidanthera/AppleALC/wiki/Installation-and-usage) page layout-id can be injected in different ways. Personally I prefer the following below. Check their page for more infos :\)
 {% endhint %}
 
 1. Mount your ESP 
@@ -86,9 +88,7 @@ According to AppleALC [Installation and Usage](https://github.com/acidanthera/Ap
 3. Go in Devices/Properties section
 4. Fill the fields as below
 
-![Clover Configurator: Devices/Properties add Device](../.gitbook/assets/image-27.png)
-
-![Click on +, add layout-id property \(number type\), and change the value with the previously found layout-id ](../.gitbook/assets/image-17%20%281%29.png)
+![Clover Configurator: Devices/Properties Audio Inject ID](../.gitbook/assets/image%20%283%29.png)
 
 #### Code editor
 

@@ -1,0 +1,6 @@
+---
+description: Embedded Controller
+---
+
+# EC
+

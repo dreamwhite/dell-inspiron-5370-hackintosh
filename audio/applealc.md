@@ -73,7 +73,7 @@ Note the "layoutXX.xml" and proceed to the Installation step
 
 Download gfxutil and drag the executable inside the terminal and type `-f HDEF` as depicted below
 
-![](../.gitbook/assets/image%20%284%29.png)
+![](../.gitbook/assets/image%20%285%29.png)
 
 Copy the DevicePath, `PciRoot(0x0)/Pci(0x1f,0x3)` and proceed to the next step
 
@@ -88,7 +88,7 @@ According to AppleALC [Installation and Usage](https://github.com/acidanthera/Ap
 3. Go in Devices/Properties section
 4. Fill the fields as below
 
-![Clover Configurator: Devices/Properties Audio Inject ID](../.gitbook/assets/image%20%283%29.png)
+![Clover Configurator: Devices/Properties Audio Inject ID](../.gitbook/assets/image%20%284%29.png)
 
 #### Code editor
 

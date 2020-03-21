@@ -58,7 +58,7 @@ Please note that Hackintool suggest you some Layout IDs. In any case check the o
 
 ### Step 2: identify layout ID
 
-![GitHub: AppleALC ALC295 Layout IDs](../.gitbook/assets/image%20%282%29.png)
+![GitHub: AppleALC ALC295 Layout IDs](../.gitbook/assets/image%20%284%29.png)
 
 Note the "layoutXX.xml" and proceed to the Installation step
 
@@ -73,7 +73,7 @@ Note the "layoutXX.xml" and proceed to the Installation step
 
 Download gfxutil and drag the executable inside the terminal and type `-f HDEF` as depicted below
 
-![](../.gitbook/assets/image%20%287%29.png)
+![](../.gitbook/assets/image%20%2813%29.png)
 
 Copy the DevicePath, `PciRoot(0x0)/Pci(0x1f,0x3)` and proceed to the next step
 
@@ -88,7 +88,7 @@ According to AppleALC [Installation and Usage](https://github.com/acidanthera/Ap
 3. Go in Devices/Properties section
 4. Fill the fields as below
 
-![Clover Configurator: Devices/Properties Audio Inject ID](../.gitbook/assets/image%20%286%29.png)
+![Clover Configurator: Devices/Properties Audio Inject ID](../.gitbook/assets/image%20%2811%29.png)
 
 #### Code editor
 

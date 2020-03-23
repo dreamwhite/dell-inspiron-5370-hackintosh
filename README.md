@@ -31,6 +31,7 @@ Must have for boot:
 
 * ApfsDriverLoader.efi
 * AptioMemoryFix.efi
+* FSInject.efi
 * HFSPlus.efi
 * VirtualSMC.efi
 

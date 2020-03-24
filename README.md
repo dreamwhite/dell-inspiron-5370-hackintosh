@@ -32,6 +32,10 @@ Must have for boot:
 * ApfsDriverLoader.efi
 * AptioMemoryFix.efi
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+* FSInject.efi
+>>>>>>> parent of 69f2e44... Merge branch 'master' of https://github.com/dreamwhite/dell-inspiron-5370-hackintosh
 =======
 * FSInject.efi
 >>>>>>> parent of 69f2e44... Merge branch 'master' of https://github.com/dreamwhite/dell-inspiron-5370-hackintosh

@@ -48,17 +48,17 @@ Don't add those renames in Clover
 
 
 
-![DPCIManager: Status section](../.gitbook/assets/image.png)
+![Figure 1: DPCIManager, Status section](../.gitbook/assets/image.png)
 
 {% hint style="warning" %}
 Please note that Hackintool suggest you some Layout IDs. In any case check the official AppleALC page for all layout ids
 {% endhint %}
 
-![Hackintool: Sound section](../.gitbook/assets/image-7.png)
+![Figure 2: Hackintool, Sound section](../.gitbook/assets/image-7.png)
 
 ### Step 2: identify layout ID
 
-![GitHub: AppleALC ALC295 Layout IDs](../.gitbook/assets/image%20%284%29.png)
+![Figure 3: GitHub, AppleALC ALC295 Layout IDs](../.gitbook/assets/image%20%285%29.png)
 
 Note the "layoutXX.xml" and proceed to the Installation step
 
@@ -67,13 +67,13 @@ Note the "layoutXX.xml" and proceed to the Installation step
 1. Verify that your Codec name is present in AppleALC layout id list
 2. Put the compiled kexts inside `ECKO` folder
 
-![](../.gitbook/assets/image%20%281%29.png)
+![Figure 4: AppleALC.kext installation](../.gitbook/assets/image%20%281%29.png)
 
 ### Step 4: get DevicePath address using gfxutil
 
 Download gfxutil and drag the executable inside the terminal and type `-f HDEF` as depicted below
 
-![](../.gitbook/assets/image%20%2813%29.png)
+![Figure 5: gfxutil HDEF path](../.gitbook/assets/image%20%2814%29.png)
 
 Copy the DevicePath, `PciRoot(0x0)/Pci(0x1f,0x3)` and proceed to the next step
 
@@ -88,7 +88,7 @@ According to AppleALC [Installation and Usage](https://github.com/acidanthera/Ap
 3. Go in Devices/Properties section
 4. Fill the fields as below
 
-![Clover Configurator: Devices/Properties Audio Inject ID](../.gitbook/assets/image%20%2811%29.png)
+![Figure 6: Clover Configurator, Devices/Properties Audio Inject ID](../.gitbook/assets/image%20%2812%29.png)
 
 #### Code editor
 
@@ -112,7 +112,7 @@ Make sure that _Internal Speakers_ is in Output devices
 Test only speakers. For the 3.5mm combojack follow the next section
 {% endhint %}
 
-![Make sure that Internal Speakers device is fully recognized](../.gitbook/assets/image-32.png)
+![](../.gitbook/assets/image%20%282%29.png)
 
 **N.B.** For combojack \(mic+headphone single jack\) follow the [combojack fix](3.5mm-combojack.md)
 

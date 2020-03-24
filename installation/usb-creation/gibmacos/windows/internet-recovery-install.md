@@ -1,2 +1,0 @@
-# Internet recovery install
-

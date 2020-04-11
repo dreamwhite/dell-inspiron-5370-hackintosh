@@ -77,7 +77,7 @@ Find Pin-ctls in the codec_dump and next type in terminal
 
 In my case:
 
-`hda-verb 0x19 0x707 0x20
+`hda-verb 0x19 0x707 0x24
 `
 
 But this is a permanent fix because every time you have to type this command (and it's frustrating af).
@@ -92,26 +92,11 @@ For more infos: [ALCPlugFix](https://osxlatitude.com/forums/topic/11316-how-to-f
 
 ## Brightness keys
 
-~In config.plist there are 4 ACPI renames that are necessary to use fn+F11 and fn+F12 brightness keys:
-
-~* Rename _DSM to XDSM
-~* Rename OSID to XSID (to avoid match against _OSI XOSI patch)
-~* Rename _OSI to XOSI
-~* Rename BRT6 to BRTX, use with SSDT-BRT6.aml, SSDT-PNLF.aml, AppleBacklightInjector.kext, and VoodooPS2Controller.kext to fix brightness keys
-
-And in ACPI/patched there are 3 support SSDTs:
-
-* SSDT-BRT6.aml
-* SSDT-PNLF.aml
-~* SSDT-XOSI.aml~
-
 I've realized (cuz I've removed Windows such as 10 seconds after buying the PC) that the brightness key are not smooth (fluid animation) even in Windows. So I've simply mapped them inside SysPrefs/Keyboard/Shortcuts 
 
 ## Gestures
 
-~In SysPrefs/Keyboard/Shortcuts/Mission\ Control/ replace "Move left a space" and "Move right a space" with your favourite ones.
-
-Personally I use three-fingers swipe right for "Move right a space" and viceversa for left swipe~
+Personally I use three-fingers swipe right for "Move right a space" and viceversa for left swipe
 
 Thanks to VoodooI2C team I've successfully activated native gestures on my hack. Everything is working except 4-fingers gestures, but who cares -_- 
 

@@ -46,9 +46,21 @@ FileVault2:
 
 ### Kexts
 
-* [AirportBrcmFixup.kext](https://github.com/acidanthera/AirportBrcmFixup/releases/latest)* [Bluetooth](https://github.com/headkaze/OS-X-BrcmPatchRAM/releases)* [CodecCommander.kext](https://bitbucket.org/RehabMan/os-x-eapd-codec-commander/downloads/)* EFICheckDisabler.kext* [HibernationFixup.kext](https://github.com/acidanthera/HibernationFixup/releases/latest)* [Lilu.kext](https://github.com/acidanthera/Lilu/releases/latest)* [NoTouchID.kext](https://github.com/al3xtjames/NoTouchID/releases/latest)* [VoodooPS2Controller.kext](https://github.com/acidanthera/VoodooPS2/releases/latest) with **VoodooPS2Mouse.kext** and **VoodooPS2Trackpad.kext** removed due to incompatibility with VoodooI2C kext* [SystemProfilerMemoryFixup.kext](https://github.com/Goldfish64/SystemProfilerMemoryFixup)
- 	* Lilu Debug and XCode latest version* ~USBMap.kext~ Replaced with SSDT-xh_oemdb.aml
-	* ~Generated with [USBMap](https://github.com/corpnewt/USBMap)~ 	* [AppleALC.kext](https://github.com/acidanthera/AppleALC/releases/latest)* [VirtualSMC.kext](https://github.com/acidanthera/VirtualSMC/releases/latest)* [WhateverGreen.kext](https://github.com/acidanthera/WhateverGreen/releases)
+* [AirportBrcmFixup.kext](https://github.com/acidanthera/AirportBrcmFixup/releases/latest)
+* [Bluetooth](https://github.com/headkaze/OS-X-BrcmPatchRAM/releases)
+* [CodecCommander.kext](https://bitbucket.org/RehabMan/os-x-eapd-codec-commander/downloads/)
+* EFICheckDisabler.kext
+* [HibernationFixup.kext](https://github.com/acidanthera/HibernationFixup/releases/latest)
+* [Lilu.kext](https://github.com/acidanthera/Lilu/releases/latest)
+* [NoTouchID.kext](https://github.com/al3xtjames/NoTouchID/releases/latest)
+* [VoodooPS2Controller.kext](https://github.com/acidanthera/VoodooPS2/releases/latest) with **VoodooPS2Mouse.kext** and **VoodooPS2Trackpad.kext** removed due to incompatibility with VoodooI2C kext
+* [SystemProfilerMemoryFixup.kext](https://github.com/Goldfish64/SystemProfilerMemoryFixup)
+ 	* Lilu Debug and XCode latest version
+* ~USBMap.kext~ Replaced with SSDT-xh_oemdb.aml
+	* ~Generated with [USBMap](https://github.com/corpnewt/USBMap)~ 	
+* [AppleALC.kext](https://github.com/acidanthera/AppleALC/releases/latest)
+* [VirtualSMC.kext](https://github.com/acidanthera/VirtualSMC/releases/latest)
+* [WhateverGreen.kext](https://github.com/acidanthera/WhateverGreen/releases)
 * [VoodooI2C + VoodooI2CHID](https://github.com/alexandred/VoodooI2C/releases/latest)
 * [VoodooInput](https://github.com/acidanthera/VoodooInput/releases/latest)
 
@@ -82,16 +94,16 @@ For more infos: [ALCPlugFix](https://osxlatitude.com/forums/topic/11316-how-to-f
 
 ~In config.plist there are 4 ACPI renames that are necessary to use fn+F11 and fn+F12 brightness keys:
 
-* Rename _DSM to XDSM
-* Rename OSID to XSID (to avoid match against _OSI XOSI patch)
-* Rename _OSI to XOSI
-* Rename BRT6 to BRTX, use with SSDT-BRT6.aml, SSDT-PNLF.aml, AppleBacklightInjector.kext, and VoodooPS2Controller.kext to fix brightness keys
+~* Rename _DSM to XDSM
+~* Rename OSID to XSID (to avoid match against _OSI XOSI patch)
+~* Rename _OSI to XOSI
+~* Rename BRT6 to BRTX, use with SSDT-BRT6.aml, SSDT-PNLF.aml, AppleBacklightInjector.kext, and VoodooPS2Controller.kext to fix brightness keys
 
 And in ACPI/patched there are 3 support SSDTs:
 
 * SSDT-BRT6.aml
 * SSDT-PNLF.aml
-* SSDT-XOSI.aml~
+~* SSDT-XOSI.aml~
 
 I've realized (cuz I've removed Windows such as 10 seconds after buying the PC) that the brightness key are not smooth (fluid animation) even in Windows. So I've simply mapped them inside SysPrefs/Keyboard/Shortcuts 
 

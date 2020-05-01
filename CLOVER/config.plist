@@ -116,12 +116,10 @@
 		<true/>
 		<key>SSDT</key>
 		<dict>
-			<key>DropOem</key>
-			<false/>
+			
 			<key>NoDynamicExtract</key>
 			<true/>
-			<key>NoOemTableId</key>
-			<false/>
+			
 		</dict>
 	</dict>
 	<key>Boot</key>
@@ -149,8 +147,7 @@
 	<dict>
 		<key>Audio</key>
 		<dict>
-			<key>AFGLowPowerState</key>
-			<false/>
+			
 			<key>Inject</key>
 			<string>No</string>
 		</dict>
@@ -235,14 +232,10 @@
 	</dict>
 	<key>KernelAndKextPatches</key>
 	<dict>
-		<key>AppleRTC</key>
-		<false/>
+		
 		<key>DellSMBIOSPatch</key>
 		<true/>
-		<key>ForceKextsToLoad</key>
-		<array>
-			<string>\System\Library\Extensions\IOGraphicsFamily.kext</string>
-		</array>
+		
 		<key>KextsToPatch</key>
 		<array>
 			<dict>
@@ -266,7 +259,7 @@
 		<key>BooterConfig</key>
 		<string>0x28</string>
 		<key>CsrActiveConfig</key>
-		<string>0x67</string>
+		<string>0x3E7</string>
 		<key>MLB</key>
 		<string>XX-CHANGE_IT-XX</string>
 		<key>ROM</key>

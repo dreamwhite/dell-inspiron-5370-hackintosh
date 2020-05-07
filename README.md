@@ -31,9 +31,7 @@ Must have for boot:
 
 * ApfsDriverLoader.efi
 * AptioMemoryFix.efi
-* FSInject.efi
 * HFSPlus.efi
-* VirtualSMC.efi
 
 Dump:
 
@@ -43,6 +41,7 @@ FileVault2:
 
 * AppleGenericInput.efi
 * AppleUiSupport.efi
+* VirtualSMC.efi
 
 ### Kexts
 

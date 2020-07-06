@@ -8,6 +8,14 @@
 * **WiFi Card:** QCA9377 replaced with a DW1830
 * **OS:** Arch Linux (now removed due to low disk space)
 
+## Benchmarks
+
+The following benchmarks were made using Geekbench V5:
+
+- [CPU Single-core and Multi-core](https://browser.geekbench.com/v5/cpu/2830516)
+- [GPU Metal](https://browser.geekbench.com/v5/compute/1173808)
+- [GPU OpenCL](https://browser.geekbench.com/v5/compute/1173815)
+
 
 ## USB Preparing
 

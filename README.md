@@ -21,7 +21,7 @@ The following benchmarks were made using Geekbench V5:
 
 Because I don't own a Mac I've created a VM of macOS Mojave 10.14.3 and downloaded the original installer from [gibMacOS](https://github.com/corpnewt/gibMacOS) and made the USB drive using [TINU](https://github.com/ITzTravelInTime/TINU/), a GUI for createinstallmedia. For more infos check @dortania [guide](https://dortania.github.io/OpenCore-Desktop-Guide/installer-guide/mac-install.html)
 
-For the bootloader configuration, I have to thanks a lot @1alessandro1 and @marianopela, which helped me through the conversion from Clover to Opencore
+For the bootloader configuration, I have to thanks a lot [@1alessandro1](https://github.com/1alessandro1) and [@marianopela](https://github.com/marianopela), which helped me through the conversion from Clover to Opencore.
 
 ### Drivers
 

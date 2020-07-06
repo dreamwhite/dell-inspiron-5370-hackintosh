@@ -11,33 +11,25 @@
 
 ## USB Preparing
 
-Because I don't own a Mac I've created a VM of macOS Mojave 10.14.3 and downloaded the original installer from [gibMacOS](https://github.com/corpnewt/gibMacOS) and made the USB drive using [TINU](https://github.com/ITzTravelInTime/TINU/), a GUI for createinstallmedia.
+Because I don't own a Mac I've created a VM of macOS Mojave 10.14.3 and downloaded the original installer from [gibMacOS](https://github.com/corpnewt/gibMacOS) and made the USB drive using [TINU](https://github.com/ITzTravelInTime/TINU/), a GUI for createinstallmedia. For more infos check @dortania [guide](https://dortania.github.io/OpenCore-Desktop-Guide/installer-guide/mac-install.html)
 
-After preparing the USB, I've downloaded [Clover Bootloader installer](https://github.com/Dids/clover-builder/releases/latest) on the USB and checked in Custom mode:
-
-* Clover for UEFI booting only
-* Install Clover in the ESP
+For the bootloader configuration, I have to thanks a lot @1alessandro1 and @marianopela, which helped me through the conversion from Clover to Opencore
 
 ## Bootloader
 
 ### config.plist
 
 It's the most important file, after drivers and kexts.
-Here I've patched [Intel Framebuffer](https://www.tonymacx86.com/threads/guide-intel-framebuffer-patching-using-whatevergreen.256490/) using [Hackintool](https://www.tonymacx86.com/threads/release-hackintool-v2-8-3.254559/)
+Here I've patched [Intel Framebuffer](https://dortania.github.io/vanilla-laptop-guide/OpenCore/config-laptop.plist/kaby-lake.html#pciroot0x0pci0x20x0) using [Hackintool](https://www.tonymacx86.com/threads/release-hackintool-v2-8-3.254559/)
 
 ### Drivers
 
 Must have for boot:
 
-* ApfsDriverLoader.efi
-* AptioMemoryFix.efi
+* OpenRuntime.efi
 * HFSPlus.efi
 
-Dump:
-
-* AudioDxe.efi (Audio codec dump)
-
-FileVault2:
+For those who are willing to enable FileVault2, please double check that the following drivers are enabled:
 
 * AppleGenericInput.efi
 * AppleUiSupport.efi
@@ -46,7 +38,7 @@ FileVault2:
 ### Kexts
 
 * [AirportBrcmFixup.kext](https://github.com/acidanthera/AirportBrcmFixup/releases/latest)
-* [Bluetooth](https://github.com/headkaze/OS-X-BrcmPatchRAM/releases)
+* [Bluetooth](https://github.com/acidanthera/BrcmPatchRAM/releases/latest)
 * [CodecCommander.kext](https://bitbucket.org/RehabMan/os-x-eapd-codec-commander/downloads/)
 * EFICheckDisabler.kext
 * [HibernationFixup.kext](https://github.com/acidanthera/HibernationFixup/releases/latest)
@@ -54,14 +46,10 @@ FileVault2:
 * [NoTouchID.kext](https://github.com/al3xtjames/NoTouchID/releases/latest)
 * [VoodooPS2Controller.kext](https://github.com/acidanthera/VoodooPS2/releases/latest) with **VoodooPS2Mouse.kext** and **VoodooPS2Trackpad.kext** removed due to incompatibility with VoodooI2C kext
 * [SystemProfilerMemoryFixup.kext](https://github.com/Goldfish64/SystemProfilerMemoryFixup)
- 	* Lilu Debug and XCode latest version
-* ~USBMap.kext~ Replaced with SSDT-xh_oemdb.aml
-	* ~Generated with [USBMap](https://github.com/corpnewt/USBMap)~ 	
 * [AppleALC.kext](https://github.com/acidanthera/AppleALC/releases/latest)
 * [VirtualSMC.kext](https://github.com/acidanthera/VirtualSMC/releases/latest)
 * [WhateverGreen.kext](https://github.com/acidanthera/WhateverGreen/releases)
 * [VoodooI2C + VoodooI2CHID](https://github.com/alexandred/VoodooI2C/releases/latest)
-* [VoodooInput](https://github.com/acidanthera/VoodooInput/releases/latest)
 
 ## Headphones issue
 
@@ -71,13 +59,11 @@ Download **CodecCommander.kext** place **hda-verb** in */usr/bin*. Next, using A
 
 Find Pin-ctls in the codec_dump and next type in terminal
 
-`hda-verb 0x(pin_complex_number) 0x707 0x(headphones pin-ctls)
-`
+`hda-verb 0x(pin_complex_number) 0x707 0x(headphones pin-ctls)`
 
 In my case:
 
-`hda-verb 0x19 0x707 0x24
-`
+`hda-verb 0x19 0x707 0x24`
 
 But this is a permanent fix because every time you have to type this command (and it's frustrating af).
 
@@ -94,8 +80,6 @@ For more infos: [ALCPlugFix](https://osxlatitude.com/forums/topic/11316-how-to-f
 I've realized (cuz I've removed Windows such as 10 seconds after buying the PC) that the brightness key are not smooth (fluid animation) even in Windows. So I've simply mapped them inside SysPrefs/Keyboard/Shortcuts 
 
 ## Gestures
-
-Personally I use three-fingers swipe right for "Move right a space" and viceversa for left swipe
 
 Thanks to VoodooI2C team I've successfully activated native gestures on my hack. Everything is working except 4-fingers gestures, but who cares -_- 
 

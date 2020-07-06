@@ -23,13 +23,6 @@ Because I don't own a Mac I've created a VM of macOS Mojave 10.14.3 and download
 
 For the bootloader configuration, I have to thanks a lot @1alessandro1 and @marianopela, which helped me through the conversion from Clover to Opencore
 
-## Bootloader
-
-### config.plist
-
-It's the most important file, after drivers and kexts.
-Here I've patched [Intel Framebuffer](https://dortania.github.io/vanilla-laptop-guide/OpenCore/config-laptop.plist/kaby-lake.html#pciroot0x0pci0x20x0) using [Hackintool](https://www.tonymacx86.com/threads/release-hackintool-v2-8-3.254559/)
-
 ### Drivers
 
 Must have for boot:

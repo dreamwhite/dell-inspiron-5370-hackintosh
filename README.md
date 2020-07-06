@@ -30,6 +30,7 @@ Must have for boot:
 * OpenRuntime.efi
 * HFSPlus.efi
 
+#### Note
 For those who are willing to enable FileVault2, please double check that the following drivers are enabled:
 
 * AppleGenericInput.efi

@@ -62,6 +62,14 @@
 				<key>Path</key>
 				<string>SSDT-XOSI.aml</string>
 			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>SSDT-MCHC-SBUS.aml</string>
+				<key>Enabled</key>
+				<true/>
+				<key>Path</key>
+				<string>SSDT-MCHC-SBUS.aml</string>
+			</dict>
 		</array>
 		<key>Delete</key>
 		<array>
@@ -656,6 +664,22 @@
 				<true/>
 				<key>ExecutablePath</key>
 				<string>Contents/MacOS/VoodooInput</string>
+				<key>MaxKernel</key>
+				<string></string>
+				<key>MinKernel</key>
+				<string></string>
+				<key>PlistPath</key>
+				<string>Contents/Info.plist</string>
+			</dict>
+			<dict>
+				<key>BundlePath</key>
+				<string>SMCDellSensors.kext</string>
+				<key>Comment</key>
+				<string></string>
+				<key>Enabled</key>
+				<true/>
+				<key>ExecutablePath</key>
+				<string>Contents/MacOS/SMCDellSensors</string>
 				<key>MaxKernel</key>
 				<string></string>
 				<key>MinKernel</key>

@@ -8,36 +8,30 @@
 * **WiFi Card:** QCA9377 replaced with a DW1830
 * **OS:** Arch Linux (now removed due to low disk space)
 
+## Benchmarks
+
+The following benchmarks were made using Geekbench V5:
+
+- [CPU Single-core and Multi-core](https://browser.geekbench.com/v5/cpu/2830516)
+- [GPU Metal](https://browser.geekbench.com/v5/compute/1173808)
+- [GPU OpenCL](https://browser.geekbench.com/v5/compute/1173815)
+
 
 ## USB Preparing
 
-Because I don't own a Mac I've created a VM of macOS Mojave 10.14.3 and downloaded the original installer from [gibMacOS](https://github.com/corpnewt/gibMacOS) and made the USB drive using [TINU](https://github.com/ITzTravelInTime/TINU/), a GUI for createinstallmedia.
+Because I don't own a Mac I've created a VM of macOS Mojave 10.14.3 and downloaded the original installer from [gibMacOS](https://github.com/corpnewt/gibMacOS) and made the USB drive using [TINU](https://github.com/ITzTravelInTime/TINU/), a GUI for createinstallmedia. For more infos check @dortania [guide](https://dortania.github.io/OpenCore-Desktop-Guide/installer-guide/mac-install.html)
 
-After preparing the USB, I've downloaded [Clover Bootloader installer](https://github.com/Dids/clover-builder/releases/latest) on the USB and checked in Custom mode:
-
-* Clover for UEFI booting only
-* Install Clover in the ESP
-
-## Bootloader
-
-### config.plist
-
-It's the most important file, after drivers and kexts.
-Here I've patched [Intel Framebuffer](https://www.tonymacx86.com/threads/guide-intel-framebuffer-patching-using-whatevergreen.256490/) using [Hackintool](https://www.tonymacx86.com/threads/release-hackintool-v2-8-3.254559/)
+For the bootloader configuration, I have to thanks a lot [@1alessandro1](https://github.com/1alessandro1) and [@marianopela](https://github.com/marianopela), which helped me through the conversion from Clover to Opencore.
 
 ### Drivers
 
 Must have for boot:
 
-* ApfsDriverLoader.efi
-* AptioMemoryFix.efi
+* OpenRuntime.efi
 * HFSPlus.efi
 
-Dump:
-
-* AudioDxe.efi (Audio codec dump)
-
-FileVault2:
+#### Note
+For those who are willing to enable FileVault2, please double check that the following drivers are enabled:
 
 * AppleGenericInput.efi
 * AppleUiSupport.efi
@@ -46,7 +40,7 @@ FileVault2:
 ### Kexts
 
 * [AirportBrcmFixup.kext](https://github.com/acidanthera/AirportBrcmFixup/releases/latest)
-* [Bluetooth](https://github.com/headkaze/OS-X-BrcmPatchRAM/releases)
+* [Bluetooth](https://github.com/acidanthera/BrcmPatchRAM/releases/latest)
 * [CodecCommander.kext](https://bitbucket.org/RehabMan/os-x-eapd-codec-commander/downloads/)
 * EFICheckDisabler.kext
 * [HibernationFixup.kext](https://github.com/acidanthera/HibernationFixup/releases/latest)
@@ -54,14 +48,10 @@ FileVault2:
 * [NoTouchID.kext](https://github.com/al3xtjames/NoTouchID/releases/latest)
 * [VoodooPS2Controller.kext](https://github.com/acidanthera/VoodooPS2/releases/latest) with **VoodooPS2Mouse.kext** and **VoodooPS2Trackpad.kext** removed due to incompatibility with VoodooI2C kext
 * [SystemProfilerMemoryFixup.kext](https://github.com/Goldfish64/SystemProfilerMemoryFixup)
- 	* Lilu Debug and XCode latest version
-* ~USBMap.kext~ Replaced with SSDT-xh_oemdb.aml
-	* ~Generated with [USBMap](https://github.com/corpnewt/USBMap)~ 	
 * [AppleALC.kext](https://github.com/acidanthera/AppleALC/releases/latest)
 * [VirtualSMC.kext](https://github.com/acidanthera/VirtualSMC/releases/latest)
 * [WhateverGreen.kext](https://github.com/acidanthera/WhateverGreen/releases)
 * [VoodooI2C + VoodooI2CHID](https://github.com/alexandred/VoodooI2C/releases/latest)
-* [VoodooInput](https://github.com/acidanthera/VoodooInput/releases/latest)
 
 ## Headphones issue
 
@@ -71,13 +61,11 @@ Download **CodecCommander.kext** place **hda-verb** in */usr/bin*. Next, using A
 
 Find Pin-ctls in the codec_dump and next type in terminal
 
-`hda-verb 0x(pin_complex_number) 0x707 0x(headphones pin-ctls)
-`
+`hda-verb 0x(pin_complex_number) 0x707 0x(headphones pin-ctls)`
 
 In my case:
 
-`hda-verb 0x19 0x707 0x24
-`
+`hda-verb 0x19 0x707 0x24`
 
 But this is a permanent fix because every time you have to type this command (and it's frustrating af).
 
@@ -85,17 +73,16 @@ Here we download ALCPlugFix which will do our dirty work :)
 
 For more infos: [ALCPlugFix](https://osxlatitude.com/forums/topic/11316-how-to-fix-static-noisedistortioncrackling-sound-and-combo-jack-on-laptops/)
 
-**N.B.** Due to macOS Catalina, the system is splitted in two partitions (/ and /Users). The first is read-only and in order to place the ALCPlugFix exec in /usr/bin you have to remount / with RW permissions:
+**N.B.** Due to macOS Catalina, the system is splitted in two partitions (/ and /Users). The first is read-only and in order to place the ALCPlugFix exec in /usr/bin you have to disable SIP if enabled (double check with `crsutil status`) and then remount / with RW permissions:
 
-`sudo mount -uw /`
+`sudo su `
+`mount -uw /`
 
 ## Brightness keys
 
 I've realized (cuz I've removed Windows such as 10 seconds after buying the PC) that the brightness key are not smooth (fluid animation) even in Windows. So I've simply mapped them inside SysPrefs/Keyboard/Shortcuts 
 
 ## Gestures
-
-Personally I use three-fingers swipe right for "Move right a space" and viceversa for left swipe
 
 Thanks to VoodooI2C team I've successfully activated native gestures on my hack. Everything is working except 4-fingers gestures, but who cares -_- 
 

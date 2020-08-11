@@ -805,7 +805,7 @@
 			<key>HaltLevel</key>
 			<integer>2147483648</integer>
 			<key>ScanPolicy</key>
-			<integer>0</integer>
+			<integer>65795</integer>
 			<key>Vault</key>
 			<string>Optional</string>
 		</dict>
@@ -815,7 +815,7 @@
 				<key>Arguments</key>
 				<string></string>
 				<key>Auxiliary</key>
-				<false/>
+				<true/>
 				<key>Comment</key>
 				<string>modGRUBShell.efi</string>
 				<key>Enabled</key>
@@ -829,7 +829,7 @@
 				<key>Arguments</key>
 				<string></string>
 				<key>Auxiliary</key>
-				<false/>
+				<true/>
 				<key>Comment</key>
 				<string>OpenShell.efi</string>
 				<key>Enabled</key>
@@ -843,7 +843,7 @@
 				<key>Arguments</key>
 				<string></string>
 				<key>Auxiliary</key>
-				<false/>
+				<true/>
 				<key>Comment</key>
 				<string>VerifyMsrE2.efi</string>
 				<key>Enabled</key>

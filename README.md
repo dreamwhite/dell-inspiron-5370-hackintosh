@@ -53,6 +53,20 @@ For those who are willing to enable FileVault2, please double check that the fol
 * [WhateverGreen.kext](https://github.com/acidanthera/WhateverGreen/releases)
 * [VoodooI2C + VoodooI2CHID](https://github.com/alexandred/VoodooI2C/releases/latest)
 
+## BIOS Settings
+
+After [extracting my BIOS](https://github.com/dreamwhite/bios-extraction-guide/tree/master/Dell) firmware and looking for `DVMT`, I've applied those changes via modGRUBShell.efi:
+
+**PLEASE DOUBLE CHECK THE OFFSETS**
+
+
+- `DVMT Pre-allocated` to `64M` using `setup_var 0x7E8 0x2`
+- `DVMT Total Gfx Mem` to `MAX` using `setup_var 0x7E9 0x3`
+
+In this way, you won't need more `framebuffer-fbmem` and `framebuffer-stolenmem` properties under `DeviceProperties` :) 
+
+![Offsets](https://i.imgur.com/YnI7V3b.jpg)
+
 ## Headphones issue
 
 Due to a combojack (microphone with headphones jack) in this laptop, after some months I've found the solution:
@@ -85,6 +99,7 @@ I've realized (cuz I've removed Windows such as 10 seconds after buying the PC) 
 ## Gestures
 
 Thanks to VoodooI2C team I've successfully activated native gestures on my hack. Everything is working except 4-fingers gestures, but who cares -_- 
+
 
 ## Some useful links
 

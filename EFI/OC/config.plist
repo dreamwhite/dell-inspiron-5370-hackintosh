@@ -874,6 +874,8 @@
 			<dict>
 				<key>SystemAudioVolume</key>
 				<data>Rg==</data>
+				<key>backlight-level</key>
+				<data>bAU=</data>
 				<key>boot-args</key>
 				<string>-v brcmfx-country=#a alcid=13</string>
 				<key>csr-active-config</key>
@@ -898,6 +900,7 @@
 				<string>prev-lang-kbd</string>
 				<string>SystemAudioVolume</string>
 				<string>run-efi-updater</string>
+				<string>backlight-level</string>
 			</array>
 		</dict>
 		<key>LegacyEnable</key>

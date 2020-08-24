@@ -55,11 +55,11 @@ For those who are willing to enable FileVault2, please double check that the fol
 
 ## BIOS Settings
 
-After [extracting my BIOS](https://github.com/dreamwhite/bios-extraction-guide/tree/master/Dell) firmware and looking for `DVMT`, I've applied those changes via modGRUBShell.efi:
+After [extracting my BIOS](https://github.com/dreamwhite/bios-extraction-guide/tree/master/Dell) firmware and looking for `DVMT` and `CFG Lock`, I've applied those changes via modGRUBShell.efi:
 
 **PLEASE DOUBLE CHECK THE OFFSETS**
 
-
+- `CFG Lock` to `0x0` using `setup_var 0x527 0x00`
 - `DVMT Pre-allocated` to `64M` using `setup_var 0x7E8 0x2`
 - `DVMT Total Gfx Mem` to `MAX` using `setup_var 0x7E9 0x3`
 

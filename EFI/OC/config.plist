@@ -70,6 +70,14 @@
 				<key>Path</key>
 				<string>SSDT-MCHC-SBUS.aml</string>
 			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>SSDT-GPI0.aml</string>
+				<key>Enabled</key>
+				<true/>
+				<key>Path</key>
+				<string>SSDT-GPI0.aml</string>
+			</dict>
 		</array>
 		<key>Delete</key>
 		<array>
@@ -815,7 +823,7 @@
 				<key>Arguments</key>
 				<string></string>
 				<key>Auxiliary</key>
-				<true/>
+				<false/>
 				<key>Comment</key>
 				<string>modGRUBShell.efi</string>
 				<key>Enabled</key>
@@ -829,7 +837,7 @@
 				<key>Arguments</key>
 				<string></string>
 				<key>Auxiliary</key>
-				<true/>
+				<false/>
 				<key>Comment</key>
 				<string>OpenShell.efi</string>
 				<key>Enabled</key>
@@ -843,7 +851,7 @@
 				<key>Arguments</key>
 				<string></string>
 				<key>Auxiliary</key>
-				<true/>
+				<false/>
 				<key>Comment</key>
 				<string>VerifyMsrE2.efi</string>
 				<key>Enabled</key>

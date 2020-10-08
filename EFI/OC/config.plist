@@ -871,7 +871,7 @@
 				bAU=
 				</data>
 				<key>boot-args</key>
-				<string>-v brcmfx-country=#a alcid=13</string>
+				<string>-v brcmfx-country=#a alcid=13 keepsyms=1</string>
 				<key>csr-active-config</key>
 				<data>
 				AAAAAA==

@@ -1,12 +1,13 @@
 # Dell Inspiron 5370 i5-8250U
 
 ## Specs
-* **CPU:** Intel Core i5-8250U @ 1.8 GHz
-* **iGPU:** Intel UHD Graphics 620
-* **Storage:** Toshiba KSG60ZMV256G M.2 2280 256GB
-* **Audio Codec** Realtek ALC295 (ALC3254)
-* **WiFi Card:** QCA9377 replaced with a DW1830
-* **OS:** Arch Linux (now removed due to low disk space)
+* **CPU:** `Intel Core i5-8250U @ 1.8 GHz`
+* **iGPU:** `Intel UHD Graphics 620`
+* **Storage:** `Sabrent ROCKET NVMe PCIe M.2 2280 512GB`
+* **Audio Code:** `Realtek ALC295 (ALC3254)`
+* **WiFi Card:** `BCM943602BAED aka DW1830`
+* **OS:** `macOS Catalina 10.15.7 (19H2)`
+
 
 ## Benchmarks
 
@@ -15,6 +16,10 @@ The following benchmarks were made using Geekbench V5:
 - [CPU Single-core and Multi-core](https://browser.geekbench.com/v5/cpu/2830516)
 - [GPU Metal](https://browser.geekbench.com/v5/compute/1173808)
 - [GPU OpenCL](https://browser.geekbench.com/v5/compute/1173815)
+
+### SSD
+
+![SSD Sabrent Rocket NVMe](https://i.imgur.com/hEA5Da5.png)
 
 
 ## USB Preparing

@@ -38,14 +38,13 @@ Must have for boot:
 ### Kexts
 
 * [AirportBrcmFixup.kext](https://github.com/acidanthera/AirportBrcmFixup/releases/latest)
-* [Bluetooth](https://github.com/acidanthera/BrcmPatchRAM/releases/latest)
+* [BrcmPatchRam](https://github.com/acidanthera/BrcmPatchRAM/releases/latest)
 * [CodecCommander.kext](https://bitbucket.org/RehabMan/os-x-eapd-codec-commander/downloads/)
 * EFICheckDisabler.kext
-* [HibernationFixup.kext](https://github.com/acidanthera/HibernationFixup/releases/latest)
 * [Lilu.kext](https://github.com/acidanthera/Lilu/releases/latest)
 * [NoTouchID.kext](https://github.com/al3xtjames/NoTouchID/releases/latest)
+* [NVMeFix.kext](https://github.com/acidanthera/NVMeFix/releases/latest)
 * [VoodooPS2Controller.kext](https://github.com/acidanthera/VoodooPS2/releases/latest) with **VoodooPS2Mouse.kext** and **VoodooPS2Trackpad.kext** removed due to incompatibility with VoodooI2C kext
-* [SystemProfilerMemoryFixup.kext](https://github.com/Goldfish64/SystemProfilerMemoryFixup)
 * [AppleALC.kext](https://github.com/acidanthera/AppleALC/releases/latest)
 * [VirtualSMC.kext](https://github.com/acidanthera/VirtualSMC/releases/latest)
 * [WhateverGreen.kext](https://github.com/acidanthera/WhateverGreen/releases)

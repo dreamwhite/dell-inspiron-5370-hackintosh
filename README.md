@@ -1,5 +1,7 @@
 # Dell Inspiron 5370 i5-8250U
 
+![About this Mac](https://i.imgur.com/sL3fQd0.png)
+
 ## Specs
 * **CPU:** `Intel Core i5-8250U @ 1.8 wGHz`
 * **iGPU:** `Intel UHD Graphics 620`
@@ -8,7 +10,6 @@
 * **WiFi Card:** `BCM943602BAED aka DW1830`
 * **OS:** `macOS Big Sur 11.0.1 (20B29)`
 
-![About this Mac](https://i.imgur.com/sL3fQd0.png)
 
 ## Benchmarks
 

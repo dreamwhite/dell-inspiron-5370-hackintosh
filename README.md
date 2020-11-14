@@ -1,13 +1,14 @@
 # Dell Inspiron 5370 i5-8250U
 
 ## Specs
-* **CPU:** `Intel Core i5-8250U @ 1.8 GHz`
+* **CPU:** `Intel Core i5-8250U @ 1.8 wGHz`
 * **iGPU:** `Intel UHD Graphics 620`
 * **Storage:** `Sabrent ROCKET NVMe PCIe M.2 2280 512GB`
 * **Audio Code:** `Realtek ALC295 (ALC3254)`
 * **WiFi Card:** `BCM943602BAED aka DW1830`
-* **OS:** `macOS Catalina 10.15.7 (19H2)`
+* **OS:** `macOS Big Sur 11.0.1 (20B29)`
 
+![About this Mac](https://i.imgur.com/sL3fQd0.png)
 
 ## Benchmarks
 

@@ -3,7 +3,7 @@
 ![About this Mac](https://i.imgur.com/sL3fQd0.png)
 
 ## Specs
-* **CPU:** `Intel Core i5-8250U @ 1.8 wGHz`
+* **CPU:** `Intel Core i5-8250U @ 1.8 GHz`
 * **iGPU:** `Intel UHD Graphics 620`
 * **Storage:** `Sabrent ROCKET NVMe PCIe M.2 2280 512GB`
 * **Audio Code:** `Realtek ALC295 (ALC3254)`

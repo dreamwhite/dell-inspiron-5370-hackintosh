@@ -41,8 +41,6 @@ Must have for boot:
 
 * [AirportBrcmFixup.kext](https://github.com/acidanthera/AirportBrcmFixup/releases/latest)
 * [BrcmPatchRam](https://github.com/acidanthera/BrcmPatchRAM/releases/latest)
-* [CodecCommander.kext](https://bitbucket.org/RehabMan/os-x-eapd-codec-commander/downloads/)
-* EFICheckDisabler.kext
 * [Lilu.kext](https://github.com/acidanthera/Lilu/releases/latest)
 * [NoTouchID.kext](https://github.com/al3xtjames/NoTouchID/releases/latest)
 * [NVMeFix.kext](https://github.com/acidanthera/NVMeFix/releases/latest)

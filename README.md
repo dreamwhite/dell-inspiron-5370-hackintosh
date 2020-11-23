@@ -86,7 +86,7 @@ For more infos: [ALCPlugFix](https://osxlatitude.com/forums/topic/11316-how-to-f
 
 **N.B.** Due to macOS Catalina, the system is splitted in two partitions (/ and /Users). The first is read-only and in order to place the ALCPlugFix exec in /usr/bin you have to disable SIP if enabled (double check with `crsutil status`) and then remount / with RW permissions:
 
-`sudo su `
+`sudo su`
 `mount -uw /`
 
 ## Brightness keys

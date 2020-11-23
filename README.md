@@ -66,28 +66,22 @@ In this way, you won't need more `framebuffer-fbmem` and `framebuffer-stolenmem`
 
 ## Headphones issue
 
+**Please note that the following procedure doesn't require disabled SIP as it installs the executable inside /usr/local/bin :")**
+
 Due to a combojack (microphone with headphones jack) in this laptop, after some months I've found the solution:
 
-Download **CodecCommander.kext** place **hda-verb** in */usr/bin*. Next, using AudioDxe.efi driver, in Clover bootloader press F8 for extracting the audio codec in /Volumes/ESP/EFI/CLOVER/misc folder. 
+Extract your codec dump (e.g. use HdaCodecDump.efi OpenCore tool) and find Pin-ctls of Mic Line-In (e.g. 0x19 has Pin-Ctls 0x24, and 0x1a has Pin-Ctls 0x20).
+Downloaded the latest release of AppleALC and from a terminal drag `alc-verb` executable and complete the command as follows:
 
-Find Pin-ctls in the codec_dump and next type in terminal
-
-`hda-verb 0x(pin_complex_number) 0x707 0x(headphones pin-ctls)`
+`alc-verb 0x(pin_complex_number) 0x707 0x(headphones pin-ctls)`
 
 In my case:
 
-`hda-verb 0x19 0x707 0x24`
+`alc-verb 0x19 0x707 0x24`
 
-But this is a permanent fix because every time you have to type this command (and it's frustrating af).
+`alc-verb 0x1a 0x707 0x20`
 
-Here we download ALCPlugFix which will do our dirty work :)
-
-For more infos: [ALCPlugFix](https://osxlatitude.com/forums/topic/11316-how-to-fix-static-noisedistortioncrackling-sound-and-combo-jack-on-laptops/)
-
-**N.B.** Due to macOS Catalina, the system is splitted in two partitions (/ and /Users). The first is read-only and in order to place the ALCPlugFix exec in /usr/bin you have to disable SIP if enabled (double check with `crsutil status`) and then remount / with RW permissions:
-
-`sudo su`
-`mount -uw /`
+For more infos check out [ALCPlugFix Swift](https://github.com/black-dragon74/ALCPlugFix-Swift)
 
 ## Brightness keys
 
@@ -96,7 +90,6 @@ I've realized (cuz I've removed Windows such as 10 seconds after buying the PC) 
 ## Gestures
 
 Thanks to VoodooI2C team I've successfully activated native gestures on my hack. Everything is working except 4-fingers gestures, but who cares -_- 
-
 
 ## Some useful links
 

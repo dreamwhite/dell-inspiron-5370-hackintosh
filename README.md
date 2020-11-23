@@ -71,7 +71,8 @@ In this way, you won't need more `framebuffer-fbmem` and `framebuffer-stolenmem`
 Due to a combojack (microphone with headphones jack) in this laptop, after some months I've found the solution:
 
 Extract your codec dump (e.g. use HdaCodecDump.efi OpenCore tool) and find Pin-ctls of Mic Line-In (e.g. 0x19 has Pin-Ctls 0x24, and 0x1a has Pin-Ctls 0x20).
-Downloaded the latest release of AppleALC and from a terminal drag `alc-verb` executable and complete the command as follows:
+
+Download the latest release of AppleALC and from a terminal drag `alc-verb` executable and complete the command as follows:
 
 `alc-verb 0x(pin_complex_number) 0x707 0x(headphones pin-ctls)`
 

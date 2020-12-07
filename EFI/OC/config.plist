@@ -173,7 +173,7 @@
 				<key>Address</key>
 				<integer>4278190080</integer>
 				<key>Comment</key>
-				<string>MMIO Devirt FF000000</string>
+				<string>MMIO Devirt 0xFF000000</string>
 				<key>Enabled</key>
 				<true/>
 			</dict>

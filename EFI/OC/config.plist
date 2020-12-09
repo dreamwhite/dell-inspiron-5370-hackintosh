@@ -721,7 +721,20 @@
 		<key>Block</key>
 		<array/>
 		<key>Emulate</key>
-		<dict/>
+		<dict>
+			<key>Cpuid1Data</key>
+			<data>
+			</data>
+			<key>Cpuid1Mask</key>
+			<data>
+			</data>
+			<key>DummyPowerManagement</key>
+			<false/>
+			<key>MaxKernel</key>
+			<string></string>
+			<key>MinKernel</key>
+			<string></string>
+		</dict>
 		<key>Force</key>
 		<array/>
 		<key>Patch</key>
@@ -990,6 +1003,10 @@
 		</dict>
 		<key>LegacyEnable</key>
 		<false/>
+		<key>LegacyOverwrite</key>
+		<false/>
+		<key>LegacySchema</key>
+		<dict/>
 		<key>WriteFlash</key>
 		<true/>
 	</dict>

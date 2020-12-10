@@ -64,41 +64,17 @@ In this way, you won't need more `framebuffer-fbmem` and `framebuffer-stolenmem`
 
 ![Offsets](https://i.imgur.com/YnI7V3b.jpg)
 
-## Headphones issue
-
-**Please note that the following procedure doesn't require disabled SIP as it installs the executable inside /usr/local/bin :")**
-
-Due to a combojack (microphone with headphones jack) in this laptop, after some months I've found the solution:
-
-Extract your codec dump (e.g. use HdaCodecDump.efi OpenCore tool) and find Pin-ctls of Mic Line-In (e.g. 0x19 has Pin-Ctls 0x24, and 0x1a has Pin-Ctls 0x20).
-
-Download the latest release of AppleALC and from a terminal drag `alc-verb` executable and complete the command as follows:
-
-`alc-verb 0x(pin_complex_number) 0x707 0x(headphones pin-ctls)`
-
-In my case:
-
-`alc-verb 0x19 0x707 0x24`
-
-`alc-verb 0x1a 0x707 0x20`
-
-For more infos check out [ALCPlugFix Swift](https://github.com/black-dragon74/ALCPlugFix-Swift)
-
 ## Brightness keys
 
 I've realized (cuz I've removed Windows such as 10 seconds after buying the PC) that the brightness key are not smooth (fluid animation) even in Windows. So I've simply mapped them inside SysPrefs/Keyboard/Shortcuts 
 
+## Crackling sound coming from combojack
+
+Follow [README.md](headphones_fix/README.md)
+
 ## Gestures
 
 Thanks to VoodooI2C team I've successfully activated native gestures on my hack. Everything is working except 4-fingers gestures, but who cares -_- 
-
-## Some useful links
-
-[Combojack](https://osxlatitude.com/forums/topic/11316-how-to-fix-static-noisedistortioncrackling-sound-and-combo-jack-on-laptops/)
-
-[How does AppleALC work](https://osxlatitude.com/forums/topic/1946-complete-applehda-patching-guide/)
-
-[gibMacOS](https://github.com/corpnewt/gibMacOS)
 
 ## Credits
 

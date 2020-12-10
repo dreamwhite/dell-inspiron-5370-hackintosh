@@ -964,10 +964,6 @@
 			</dict>
 			<key>7C436110-AB2A-4BBB-A880-FE41995C9F82</key>
 			<dict>
-				<key>SystemAudioVolume</key>
-				<data>
-				Rg==
-				</data>
 				<key>backlight-level</key>
 				<data>
 				bAU=
@@ -993,7 +989,6 @@
 			</array>
 			<key>7C436110-AB2A-4BBB-A880-FE41995C9F82</key>
 			<array>
-				<string>SystemAudioVolume</string>
 				<string>backlight-level</string>
 				<string>boot-args</string>
 				<string>run-efi-updater</string>

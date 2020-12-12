@@ -35,7 +35,7 @@ For the bootloader configuration, I have to thank a lot [@1alessandro1](https://
 Must have for boot:
 
 * OpenRuntime.efi
-* HFSPlus.efi
+* HfsPlus.efi
 
 ### Kexts
 
@@ -71,6 +71,10 @@ I've realized (cuz I've removed Windows such as 10 seconds after buying the PC) 
 ## Crackling sound coming from combojack
 
 Follow [README.md](headphones_fix/README.md)
+
+## Fixing buggy MAT Support
+
+Follow [README.md](SysReport/README.md)
 
 ## Gestures
 

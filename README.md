@@ -8,7 +8,7 @@
 * **Storage:** `Sabrent ROCKET NVMe PCIe M.2 2280 512GB`
 * **Audio Code:** `Realtek ALC295 (ALC3254)`
 * **WiFi Card:** `BCM943602BAED aka DW1830`
-* **OS:** `macOS Big Sur 11.0.1 (20B50)`
+* **OS:** `macOS Big Sur 11.1 (20C69)`
 
 
 ## Benchmarks

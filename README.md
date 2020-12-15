@@ -1,6 +1,6 @@
 # Dell Inspiron 5370 i5-8250U
 
-![About this Mac](https://i.imgur.com/sL3fQd0.png)
+![About this Mac](https://i.imgur.com/ynuZMKo.png)
 
 ## Specs
 * **CPU:** `Intel Core i5-8250U @ 1.8 GHz`

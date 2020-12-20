@@ -9,6 +9,7 @@
 * **Audio Code:** `Realtek ALC295 (ALC3254)`
 * **WiFi Card:** `BCM943602BAED aka DW1830`
 * **OS:** `macOS Big Sur 11.1 (20C69)`
+* **BIOS:** `v1.16`
 
 
 ## Benchmarks
@@ -58,7 +59,7 @@ Must have for boot:
 
 ## BIOS Settings
 
-After [extracting my BIOS](https://github.com/dreamwhite/bios-extraction-guide/tree/master/Dell) firmware and looking for `DVMT` and `CFG Lock`, I've applied those changes via modGRUBShell.efi:
+After [extracting my BIOS](https://github.com/dreamwhite/bios-extraction-guide/tree/master/Dell) firmware and looking for `DVMT` and `CFG Lock`, I've applied those changes via `modGRUBShell.efi`:
 
 **PLEASE DOUBLE CHECK THE OFFSETS**
 
@@ -67,6 +68,8 @@ After [extracting my BIOS](https://github.com/dreamwhite/bios-extraction-guide/t
 - `DVMT Total Gfx Mem` to `MAX` using `setup_var 0x7E9 0x3`
 
 In this way, you won't need more `framebuffer-fbmem` and `framebuffer-stolenmem` properties under `DeviceProperties` :) 
+
+You can check the content of my BIOS [here](/BIOS/README.md)
 
 ![Offsets](https://i.imgur.com/YnI7V3b.jpg)
 

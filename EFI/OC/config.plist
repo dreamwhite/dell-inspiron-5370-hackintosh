@@ -899,7 +899,7 @@
 				bAU=
 				</data>
 				<key>boot-args</key>
-				<string>-v alcid=13 alcverbs=1 brcmfx-country=#a</string>
+				<string>-v alcid=13 alcverbs=1 brcmfx-country=#a -vi2c-force-polling</string>
 				<key>csr-active-config</key>
 				<data>
 				AAAAAA==

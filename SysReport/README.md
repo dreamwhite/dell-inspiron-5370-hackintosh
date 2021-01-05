@@ -7,6 +7,7 @@ If you open [opencore-2020-12-07-173231.txt](/SysReport/opencore-2020-12-07-1732
 According to [OpenCore Configuration.pdf](https://github.com/acidanthera/OpenCorePkg/blob/master/Docs/Configuration.pdf), I had to edit `config.plist/Booter/Quirks` as it follows:
 
 - `EnableWriteUnprotector` set to `False`
+- `ProtectUefiServices ` set to `True` ([source](https://github.com/osy/HaC-Mini/pull/470#discussion_r551600458))
 - `RebuildAppleMemoryMap` set to `True`
 - `SyncRuntimePermissions ` set to `True`
 

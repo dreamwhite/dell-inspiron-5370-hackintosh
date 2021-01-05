@@ -29,11 +29,15 @@ The following benchmarks were made using Geekbench V5:
 
 ![16GB DDR4 @ 2400MHz AmorphousMemoryMark](https://i.imgur.com/bc99GdJ.png)
 
+## VideoProc Hardware Infos
 
+![Hardware Info detected by VideoProc](https://i.imgur.com/QX4F1Qp.png)
 
 ## USB Preparing
 
-Because I don't own a Mac I've created a VM of macOS Mojave 10.14.3 and downloaded the original installer from [gibMacOS](https://github.com/corpnewt/gibMacOS) and made the USB drive using [TINU](https://github.com/ITzTravelInTime/TINU/), a GUI for createinstallmedia. For more infos check @dortania [guide](https://dortania.github.io/OpenCore-Desktop-Guide/installer-guide/mac-install.html)
+Because I don't own a Mac I've created a VM of macOS Mojave 10.14.3 and downloaded the original installer from [gibMacOS](https://github.com/corpnewt/gibMacOS) and made the USB drive using [TINU](https://github.com/ITzTravelInTime/TINU/), a GUI for createinstallmedia. 
+
+Luckily, there's a new way to download macOS Installer: for more infos check @dortania [guide](https://dortania.github.io/OpenCore-Desktop-Guide/installer-guide/mac-install.html)
 
 For the bootloader configuration, I have to thank a lot [@1alessandro1](https://github.com/1alessandro1) and [@marianopela](https://github.com/marianopela), which helped me through the conversion from Clover to Opencore.
 

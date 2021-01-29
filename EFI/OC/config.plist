@@ -877,7 +877,7 @@
 				<key>backlight-level</key>
 				<data>bAU=</data>
 				<key>boot-args</key>
-				<string>-v alcid=13 alcverbs=1 brcmfx-country=#a</string>
+				<string>-v debug=0x100 keepsyms=1 alcid=13 alcverbs=1 brcmfx-country=#a</string>
 				<key>csr-active-config</key>
 				<data>AAAAAA==</data>
 				<key>prev-lang:kbd</key>

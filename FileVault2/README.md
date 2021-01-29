@@ -25,7 +25,7 @@ You may notice a lower performance from your machine, but that's pretty normal s
 
 Anyways, I did a few benchmarks using AmorphousMemoryMark and AmorphousDiskMark and the gap with no-FileVault performances isn't too big at all:
 
-![AmorphousDiskMark](https://i.imgur.com/Sepchra.png)
+![AmorphousDiskMark](https://i.imgur.com/fMK0Q2E.png)
 ![AmorphousMemoryMark](https://i.imgur.com/fDPbPB5.png)
 
 # Credits

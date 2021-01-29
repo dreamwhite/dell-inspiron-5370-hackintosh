@@ -25,7 +25,7 @@ The following benchmarks were made using Geekbench V5:
 ![SSD Sabrent Rocket NVMe 3.0 512GB BlackMagic Disk Speed Test](https://i.imgur.com/hEA5Da5.png)
 ![SSD Sabrent Rocket NVMe 3.0 512GB AmorphousDiskMark](https://i.imgur.com/Z6AI68c.png)
 
-### RAM:
+### RAM
 
 ![16GB DDR4 @ 2400MHz AmorphousMemoryMark](https://i.imgur.com/bc99GdJ.png)
 

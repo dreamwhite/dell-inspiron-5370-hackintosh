@@ -50,16 +50,17 @@ Must have for boot:
 
 ### Kexts
 
-* [AirportBrcmFixup.kext](https://github.com/acidanthera/AirportBrcmFixup/releases/latest)
-* [BrcmPatchRam](https://github.com/acidanthera/BrcmPatchRAM/releases/latest)
-* [Lilu.kext](https://github.com/acidanthera/Lilu/releases/latest)
-* [NoTouchID.kext](https://github.com/al3xtjames/NoTouchID/releases/latest)
-* [NVMeFix.kext](https://github.com/acidanthera/NVMeFix/releases/latest)
-* [VoodooPS2Controller.kext](https://github.com/acidanthera/VoodooPS2/releases/latest) with **VoodooPS2Mouse.kext** and **VoodooPS2Trackpad.kext** removed due to incompatibility with VoodooI2C kext
-* [AppleALC.kext](https://github.com/acidanthera/AppleALC/releases/latest)
-* [VirtualSMC.kext](https://github.com/acidanthera/VirtualSMC/releases/latest)
-* [WhateverGreen.kext](https://github.com/acidanthera/WhateverGreen/releases)
-* [VoodooI2C + VoodooI2CHID](https://github.com/alexandred/VoodooI2C/releases/latest)
+* [AirportBrcmFixup](https://github.com/acidanthera/AirportBrcmFixup)
+* [AppleALC](https://github.com/acidanthera/AppleALC)
+* [AppleBacklightSmoother](https://github.com/hieplpvip/AppleBacklightSmoother)
+* [BrcmPatchRam](https://github.com/acidanthera/BrcmPatchRAM)
+* [Lilu](https://github.com/acidanthera/Lilu)
+* [NoTouchID](https://github.com/al3xtjames/NoTouchID)
+* [NVMeFix](https://github.com/acidanthera/NVMeFix)
+* [VirtualSMC](https://github.com/acidanthera/VirtualSMC)
+* [VoodooI2C + VoodooI2CHID](https://github.com/alexandred/VoodooI2C)
+* [VoodooPS2Controller](https://github.com/acidanthera/VoodooPS2) with **VoodooPS2Mouse.kext** and **VoodooPS2Trackpad.kext** removed due to incompatibility with VoodooI2C kext
+* [WhateverGreen](https://github.com/acidanthera/WhateverGreen)
 
 ## BIOS Settings
 

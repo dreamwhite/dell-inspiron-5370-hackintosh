@@ -9,7 +9,7 @@
 * **Audio Code:** `Realtek ALC295 (ALC3254)`
 * **WiFi Card:** `BCM943602BAED aka DW1830`
 * **OS:** `macOS Big Sur 11.1 (20C69)`
-* **BIOS:** `v1.16`
+* **BIOS:** `v1.17`
 
 
 ## Benchmarks

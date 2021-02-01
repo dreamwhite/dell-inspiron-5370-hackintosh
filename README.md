@@ -11,7 +11,6 @@
 * **OS:** `macOS Big Sur 11.1 (20C69)`
 * **BIOS:** `v1.17`
 
-
 ## Benchmarks
 
 The following benchmarks were made using Geekbench V5:
@@ -93,6 +92,14 @@ Follow [README.md](SysReport/README.md)
 ## Gestures
 
 Thanks to VoodooI2C team I've successfully activated native gestures on my hack. Everything is working except 4-fingers gestures, but who cares -_- 
+
+## USB Mapping
+
+![](https://i.imgur.com/yJNDcKV.png)
+
+## WiFi/BT antenna wiring
+
+![](https://i.imgur.com/8Dtge9t.png)
 
 ## FileVault2
 

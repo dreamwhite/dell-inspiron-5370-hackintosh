@@ -616,8 +616,6 @@
 				<string>Contents/Info.plist</string>
 			</dict>
 			<dict>
-				<key>Arch</key>
-				<string>Any</string>
 				<key>BundlePath</key>
 				<string>AppleBacklightSmoother.kext</string>
 				<key>Comment</key>
@@ -626,6 +624,8 @@
 				<true/>
 				<key>ExecutablePath</key>
 				<string>Contents/MacOS/AppleBacklightSmoother</string>
+				<key>Arch</key>
+				<string>Any</string>
 				<key>MaxKernel</key>
 				<string></string>
 				<key>MinKernel</key>
@@ -783,7 +783,7 @@
 			<key>PasswordSalt</key>
 			<data></data>
 			<key>ScanPolicy</key>
-			<integer>2687747</integer>
+			<integer>0</integer>
 			<key>SecureBootModel</key>
 			<string>Disabled</string>
 			<key>Vault</key>
@@ -881,7 +881,7 @@
 				<key>backlight-level</key>
 				<data>bAU=</data>
 				<key>boot-args</key>
-				<string>-v debug=0x100 keepsyms=1 alcid=13 alcverbs=1 brcmfx-country=#a</string>
+				<string>-v alcid=13 alcverbs=1 brcmfx-country=#a</string>
 				<key>csr-active-config</key>
 				<data>AAAAAA==</data>
 				<key>prev-lang:kbd</key>
@@ -925,10 +925,10 @@
 		<dict>
 			<key>AdviseWindows</key>
 			<false/>
-			<key>MaxBIOSVersion</key>
-			<false/>
 			<key>MLB</key>
 			<string>XX_CHANGE_ME_XX</string>
+			<key>MaxBIOSVersion</key>
+			<false/>
 			<key>ProcessorType</key>
 			<integer>0</integer>
 			<key>ROM</key>
@@ -952,6 +952,8 @@
 		<true/>
 		<key>UpdateSMBIOSMode</key>
 		<string>Custom</string>
+		<key>UseRawUuidEncoding</key>
+		<false/>
 	</dict>
 	<key>UEFI</key>
 	<dict>
@@ -993,8 +995,8 @@
 		<true/>
 		<key>Drivers</key>
 		<array>
+			<string>OpenHfsPlus.efi</string>
 			<string>OpenRuntime.efi</string>
-			<string>HfsPlus.efi</string>
 		</array>
 		<key>Input</key>
 		<dict>

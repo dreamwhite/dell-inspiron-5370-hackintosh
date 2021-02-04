@@ -202,8 +202,6 @@
 			<dict>
 				<key>AAPL,ig-platform-id</key>
 				<data>AADAhw==</data>
-				<key>AAPL,slot-name</key>
-				<string>Built In</string>
 				<key>device-id</key>
 				<data>wIcAAA==</data>
 				<key>device_type</key>

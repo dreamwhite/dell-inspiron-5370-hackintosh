@@ -1,6 +1,6 @@
 # OpenCore 0.6.6 - Dell Inspiron 5370 i5-8250U
 
-![About this Mac](https://i.imgur.com/sXikMmW.png)
+![About this Mac](https://i.imgur.com/z324a0z.png)
 
 ## Specs
 

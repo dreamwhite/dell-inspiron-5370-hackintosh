@@ -114,6 +114,14 @@ Thanks to VoodooI2C team I've successfully activated native gestures on my hack.
 
 Follow [README.md](FileVault2/README.md)
 
+# IORegistryExplorer dump
+
+I attached a zip file containing my anonymized IORegistryExplorer dump by using [DarwinDumper](https://bitbucket.org/blackosx/darwindumper/downloads/). Every credits for the application goes to the developer.
+
+You can download the dump [here](DarwinDumper_ioreg.zip)
+
+Please note that if you're experiencing weird issues with the viewer, try another browser like Safari or Google Chrome
+
 ## Credits
 
 * **Apple** for macOS

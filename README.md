@@ -1,15 +1,18 @@
 # OpenCore 0.6.7 - Dell Inspiron 5370 i5-8250U
 
-![About this Mac](https://i.imgur.com/sXikMmW.png)
+![About this Mac](.assets/images/README.md/about_this_mac.png)
 
 ## Specs
-* **CPU:** `Intel Core i5-8250U @ 1.8 GHz`
-* **iGPU:** `Intel UHD Graphics 620`
-* **Storage:** `Sabrent ROCKET NVMe PCIe M.2 2280 512GB`
-* **Audio Code:** `Realtek ALC295 (ALC3254)`
-* **WiFi Card:** `BCM943602BAED aka DW1830`
-* **OS:** `macOS Big Sur 11.1 (20D64)`
-* **BIOS:** `v1.17`
+
+|Component       | Brand                                     |
+|----------------|-------------------------------------------|
+| **CPU**        | `Intel Core i5-8250U @ 1.8 GHz`           |
+| **iGPU**       | `Intel UHD Graphics 620`                  |
+| **Storage**    | `Sabrent ROCKET NVMe PCIe M.2 2280 512GB` |
+| **Audio Code** | `Realtek ALC295 (ALC3254)`                |
+| **WiFi Card**  | `BCM943602BAED aka DW1830`                |
+| **OS**         | `macOS Big Sur 11.1 (20D74)`              |
+| **BIOS**       | `v1.17`                                   |
 
 ## Benchmarks
 
@@ -21,16 +24,16 @@ The following benchmarks were made using Geekbench V5:
 
 ### SSD
 
-![SSD Sabrent Rocket NVMe 3.0 512GB BlackMagic Disk Speed Test](https://i.imgur.com/hEA5Da5.png)
-![SSD Sabrent Rocket NVMe 3.0 512GB AmorphousDiskMark](https://i.imgur.com/Z6AI68c.png)
+![SSD Sabrent Rocket NVMe 3.0 512GB BlackMagic Disk Speed Test](.assets/images/benchmarks/ssd/Blackmagic.png)
+![SSD Sabrent Rocket NVMe 3.0 512GB AmorphousDiskMark](.assets/images/benchmarks/ssd/AmorphousDiskMark.png)
 
 ### RAM
 
-![16GB DDR4 @ 2400MHz AmorphousMemoryMark](https://i.imgur.com/bc99GdJ.png)
+![16GB DDR4 @ 2400MHz AmorphousMemoryMark](.assets/images/benchmarks/ram/AmorphousMemoryMark.png)
 
 ## VideoProc Hardware Infos
 
-![Hardware Info detected by VideoProc](https://i.imgur.com/QX4F1Qp.png)
+![Hardware Info detected by VideoProc](.assets/images/benchmarks/videoproc/VideoProc.png)
 
 ## USB Preparing
 
@@ -44,14 +47,14 @@ For the bootloader configuration, I have to thank a lot [@1alessandro1](https://
 
 Must have for boot:
 
+* OpenHfsPlus.efi
 * OpenRuntime.efi
-* HfsPlus.efi
 
 ### Kexts
 
 * [AirportBrcmFixup](https://github.com/acidanthera/AirportBrcmFixup)
 * [AppleALC](https://github.com/acidanthera/AppleALC)
-* [AppleBacklightSmoother](https://github.com/hieplpvip/AppleBacklightSmoother)
+* Temporarely disabled [AppleBacklightSmoother](https://github.com/hieplpvip/AppleBacklightSmoother)
 * [BrcmPatchRam](https://github.com/acidanthera/BrcmPatchRAM)
 * [Lilu](https://github.com/acidanthera/Lilu)
 * [NoTouchID](https://github.com/al3xtjames/NoTouchID)
@@ -67,15 +70,41 @@ After [extracting my BIOS](https://github.com/dreamwhite/bios-extraction-guide/t
 
 **PLEASE DOUBLE CHECK THE OFFSETS**
 
-- `CFG Lock` to `0x0` using `setup_var 0x527 0x00`
+- `Above 4G` to `Disabled` using `setup_var 0x7ED 0x00` (there's no sense of having it enabled, so double check if it's enabled or not)
+
+![Above 4G offset](.assets/images/README.md/bios/above_4g.png)
+
+- `CFG Lock` to `Disabled` using `setup_var 0x527 0x00`
+
+![CFG Lock offset](.assets/images/README.md/bios/cfg_lock.png)
+
+- `CSM Support` to `Disabled` using `setup_var 0x104A 0x00`
+
+![CSM Support offset](.assets/images/README.md/bios/csm_support.png)
+
 - `DVMT Pre-allocated` to `64M` using `setup_var 0x7E8 0x2`
+
+![DVMT Pre-allocated offset](.assets/images/README.md/bios/dvmt_pre_allocated.png)
+
 - `DVMT Total Gfx Mem` to `MAX` using `setup_var 0x7E9 0x3`
 
-In this way, you won't need more `framebuffer-fbmem` and `framebuffer-stolenmem` properties under `DeviceProperties` :) 
+![DVMT Total Gfx Mem offset](.assets/images/README.md/bios/dvmt_total_gfx.png)
+
+- `Serial Port` to `Disabled` using `setup_var 0x1272 0x00`
+
+![Serial Port offset](.assets/images/README.md/bios/serial_port.png)
+
+- `SW Guard Extension` to `Disabled` using `setup_var 0x5DC 0x00`
+
+![SW Guard Extension offset](.assets/images/README.md/bios/sgx.png)
+
+- `TPM State` to `Disabled` using `setup_var 0xF7A 0x00`
+
+![TPM State offset](.assets/images/README.md/bios/tpm_state.png)
+
+In this way, you won't need more `framebuffer-fbmem` and `framebuffer-stolenmem` properties under `DeviceProperties` for the graphics patch :) 
 
 You can check the content of my BIOS [here](/BIOS/README.md)
-
-![Offsets](https://i.imgur.com/YnI7V3b.jpg)
 
 ## Brightness keys
 
@@ -95,15 +124,23 @@ Thanks to VoodooI2C team I've successfully activated native gestures on my hack.
 
 ## USB Mapping
 
-![](https://i.imgur.com/yJNDcKV.png)
+![USB Mapping](.assets/images/README.md/usb/usb_mapping.png)
 
 ## WiFi/BT antenna wiring
 
-![](https://i.imgur.com/8Dtge9t.png)
+![WiFi/BT antenna wiring](.assets/images/README.md/wifi-bt-card/wiring.png)
 
 ## FileVault2
 
 Follow [README.md](FileVault2/README.md)
+
+# IORegistryExplorer dump
+
+I attached a zip file containing my anonymized IORegistryExplorer dump by using [DarwinDumper](https://bitbucket.org/blackosx/darwindumper/downloads/). Every credits for the application goes to the developer.
+
+You can download the dump [here](DarwinDumper_ioreg.zip)
+
+Please note that if you're experiencing weird issues with the viewer, try another browser like Safari or Google Chrome
 
 ## Credits
 

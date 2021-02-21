@@ -94,7 +94,7 @@ After [extracting my BIOS](https://github.com/dreamwhite/bios-extraction-guide/t
 
 ![Serial Port offset](.assets/images/README.md/bios/serial_port.png)
 
-- `SW Guard Extension` to `MAX` using `setup_var 0x5DC 0x00`
+- `SW Guard Extension` to `Disabled` using `setup_var 0x5DC 0x00`
 
 ![SW Guard Extension offset](.assets/images/README.md/bios/sgx.png)
 

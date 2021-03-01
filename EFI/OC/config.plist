@@ -613,24 +613,6 @@
                     <key>PlistPath</key>
                     <string>Contents/Info.plist</string>
                 </dict>
-                <dict>
-                    <key>BundlePath</key>
-                    <string>AppleBacklightSmoother.kext</string>
-                    <key>Comment</key>
-                    <string></string>
-                    <key>Enabled</key>
-                    <false/>
-                    <key>ExecutablePath</key>
-                    <string>Contents/MacOS/AppleBacklightSmoother</string>
-                    <key>Arch</key>
-                    <string>Any</string>
-                    <key>MaxKernel</key>
-                    <string></string>
-                    <key>MinKernel</key>
-                    <string></string>
-                    <key>PlistPath</key>
-                    <string>Contents/Info.plist</string>
-                </dict>
             </array>
             <key>Block</key>
             <array/>
@@ -742,7 +724,7 @@
                 <key>ApplePanic</key>
                 <true/>
                 <key>DisableWatchDog</key>
-                <false/>
+                <true/>
                 <key>DisplayDelay</key>
                 <integer>0</integer>
                 <key>DisplayLevel</key>
@@ -984,6 +966,8 @@
                 <integer>0</integer>
                 <key>PlayChime</key>
                 <string>Disabled</string>
+                <key>ResetTrafficClass</key>
+                <false/>
                 <key>SetupDelay</key>
                 <integer>0</integer>
                 <key>VolumeAmplifier</key>
@@ -1002,8 +986,6 @@
                 <false/>
                 <key>KeyForgetThreshold</key>
                 <integer>5</integer>
-                <key>KeyMergeThreshold</key>
-                <integer>2</integer>
                 <key>KeySupport</key>
                 <true/>
                 <key>KeySupportMode</key>
@@ -1026,6 +1008,8 @@
                 <key>DirectGopRendering</key>
                 <false/>
                 <key>ForceResolution</key>
+                <false/>
+                <key>GopPassThrough</key>
                 <false/>
                 <key>IgnoreTextInGraphics</key>
                 <false/>
@@ -1085,6 +1069,8 @@
             </dict>
             <key>Quirks</key>
             <dict>
+                <key>ActivateHpetSupport</key>
+                <false/>
                 <key>DisableSecurityPolicy</key>
                 <false/>
                 <key>ExitBootServicesDelay</key>

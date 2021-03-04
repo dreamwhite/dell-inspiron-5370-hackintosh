@@ -4,7 +4,7 @@
 
 ## Specs
 
-|Component       | Brand                                     |
+| Component      | Brand                                     |
 |----------------|-------------------------------------------|
 | **CPU**        | `Intel Core i5-8250U @ 1.8 GHz`           |
 | **iGPU**       | `Intel UHD Graphics 620`                  |

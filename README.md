@@ -4,14 +4,14 @@
 
 ## Specs
 
-|Component       | Brand                                     |
+| Component      | Brand                                     |
 |----------------|-------------------------------------------|
 | **CPU**        | `Intel Core i5-8250U @ 1.8 GHz`           |
 | **iGPU**       | `Intel UHD Graphics 620`                  |
 | **Storage**    | `Sabrent ROCKET NVMe PCIe M.2 2280 512GB` |
 | **Audio Code** | `Realtek ALC295 (ALC3254)`                |
 | **WiFi Card**  | `BCM943602BAED aka DW1830`                |
-| **OS**         | `macOS Big Sur 11.1 (20D80)`              |
+| **OS**         | `macOS Big Sur 11.2.3 (20D91)`            |
 | **BIOS**       | `v1.17`                                   |
 
 ## Benchmarks

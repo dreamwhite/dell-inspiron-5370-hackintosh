@@ -22,7 +22,7 @@
 		<key>On Unmute</key>
 		<false/>
 		<key>On Wake</key>
-		<false/>
+		<true/>
 		<key>Param</key>
 		<string>0x24</string>
 		<key>Verb</key>
@@ -48,7 +48,7 @@
 		<key>On Unmute</key>
 		<false/>
 		<key>On Wake</key>
-		<false/>
+		<true/>
 		<key>Param</key>
 		<string>0x20</string>
 		<key>Verb</key>

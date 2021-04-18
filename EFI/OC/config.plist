@@ -78,6 +78,14 @@
 				<key>Path</key>
 				<string>SSDT-TPD0.aml</string>
 			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>Custom SSDT for disabling HPET</string>
+				<key>Enabled</key>
+				<true/>
+				<key>Path</key>
+				<string>SSDT-HPET-DISABLE.aml</string>
+			</dict>
 		</array>
 		<key>Delete</key>
 		<array>

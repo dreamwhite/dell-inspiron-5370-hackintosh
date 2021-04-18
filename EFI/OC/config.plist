@@ -211,10 +211,10 @@
 			</dict>
 			<key>PciRoot(0x0)/Pci(0x1F,0x3)</key>
 			<dict>
+				<key>alc-verbs</key>
+				<data>AQAAAA==</data>
 				<key>layout-id</key>
 				<integer>13</integer>
-				<key>alc-verbs</key>
-				<true/>
 			</dict>
 			<key>PciRoot(0x0)/Pci(0x2,0x0)</key>
 			<dict>
@@ -886,7 +886,7 @@
 			<key>AdviseWindows</key>
 			<false/>
 			<key>MLB</key>
-			<string>XX_CHANGE_ME_XX</string>
+			<string>XX-CHANGE_ME-XX</string>
 			<key>MaxBIOSVersion</key>
 			<false/>
 			<key>ProcessorType</key>
@@ -900,9 +900,9 @@
 			<key>SystemProductName</key>
 			<string>MacBookPro15,2</string>
 			<key>SystemSerialNumber</key>
-			<string>XX_CHANGE_ME_XX</string>
+			<string>XX-CHANGE_ME-XX</string>
 			<key>SystemUUID</key>
-			<string>XX_CHANGE_ME_XX</string>
+			<string>XX-CHANGE_ME-XX</string>
 		</dict>
 		<key>UpdateDataHub</key>
 		<true/>

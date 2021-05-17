@@ -8,7 +8,7 @@
 |----------------|-------------------------------------------|
 | **CPU**        | `Intel Core i5-8250U @ 1.8 GHz`           |
 | **iGPU**       | `Intel UHD Graphics 620`                  |
-| **Storage**    | `Sabrent ROCKET NVMe PCIe M.2 2280 512GB` |
+| **Storage**    | `Western Digital SN750 Black NVMe 512GB`  |
 | **Audio Code** | `Realtek ALC295 (ALC3254)`                |
 | **WiFi Card**  | `BCM943602BAED aka DW1830`                |
 | **OS**         | `macOS Big Sur 11.3.1 (20E241)`           |
@@ -24,7 +24,7 @@ The following benchmarks were made using Geekbench V5:
 
 ### SSD
 
-![SSD Sabrent Rocket NVMe 3.0 512GB BlackMagic Disk Speed Test](.assets/images/benchmarks/ssd/Blackmagic.png)
+![SSD Western Digital SN750 Black NVMe 512GB BlackMagic Disk Speed Test](.assets/images/benchmarks/ssd/Blackmagic.png)
 ![SSD Sabrent Rocket NVMe 3.0 512GB AmorphousDiskMark](.assets/images/benchmarks/ssd/AmorphousDiskMark.png)
 
 ### RAM

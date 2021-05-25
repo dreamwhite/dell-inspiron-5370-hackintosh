@@ -11,7 +11,7 @@
 | **Storage**    | `Western Digital SN750 Black NVMe 512GB`  |
 | **Audio Code** | `Realtek ALC295 (ALC3254)`                |
 | **WiFi Card**  | `BCM943602BAED aka DW1830`                |
-| **OS**         | `macOS Big Sur 11.3.1 (20E241)`           |
+| **OS**         | `macOS Big Sur 11.4 (20F71)`              |
 | **BIOS**       | `v1.17`                                   |
 
 ## Benchmarks

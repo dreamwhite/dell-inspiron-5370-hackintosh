@@ -149,6 +149,8 @@
 			<false/>
 			<key>ResetLogoStatus</key>
 			<false/>
+			<key>SyncTableIds</key>
+			<false/>
 		</dict>
 	</dict>
 	<key>Booter</key>
@@ -684,6 +686,8 @@
 		</dict>
 		<key>Scheme</key>
 		<dict>
+			<key>CustomKernel</key>
+			<false/>
 			<key>FuzzyMatch</key>
 			<true/>
 			<key>KernelArch</key>
@@ -705,7 +709,7 @@
 			<key>HideAuxiliary</key>
 			<true/>
 			<key>LauncherOption</key>
-			<string>Full</string>
+			<string>Disabled</string>
 			<key>LauncherPath</key>
 			<string>Default</string>
 			<key>PickerAttributes</key>

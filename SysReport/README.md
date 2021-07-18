@@ -2,7 +2,7 @@
 
 ## Problem
 
-If you open [opencore-2020-12-07-173231.txt](/SysReport/opencore-2020-12-07-173231.txt) and look for `OCABC: MAT support` you'll see that this laptop has MAT Support. 
+If you open [this OpenCore DEBUG log](/SysReport/LOG%20MMIO%20opencore-2020-12-10-164336.txt) and look for `OCABC: MAT support` you'll see that this laptop has MAT Support. 
 
 According to [OpenCore Configuration.pdf](https://github.com/acidanthera/OpenCorePkg/blob/master/Docs/Configuration.pdf), I had to edit `config.plist/Booter/Quirks` as it follows:
 

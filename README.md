@@ -43,26 +43,42 @@ Luckily, there's a new way to download macOS Installer: for more infos check [@d
 
 For the bootloader configuration, I have to thank a lot [@1alessandro1](https://github.com/1alessandro1) and [@marianopela](https://github.com/marianopela), which helped me through the conversion from Clover to Opencore.
 
+### SSDTs
+
+| SSDT | Function |
+| ---- | -------- |
+| `SSDT-3-xh_OEMBD` | OEM USB SSDT customized for enabling just the necessary USB ports |
+| `SSDT-EC-USBX` | Used for disabling your real Embedded controller and creating a fake one for macOS to play with ; USBX portion is used for injection USB power properties missing on Skylake and newer |
+| `SSDT-GPI0` | Used for enabling GPI0 controller for trackpad. Paired with `SSDT-TPD0` |
+| `SSDT-GPRW` | Used for fixing sleep problems - Requires `GPRW to XPRW` patch in `ACPI > Patch` |
+| `SSDT-HPET-DISABLE` | Used for disabling HPET device on macOS |
+| `SSDT-MCHC-SBUS` | Used for fixing SMBus support on macOS |
+| `SSDT-PLUG` | Used for enabling Apple's XCPM in macOS, allowing for far better CPU power management |
+| `SSDT-PNLF` | Used for controlling the backlight on internal display |
+| `SSDT-PS2K` | Used for binding some keys like `Stamp to F13` and disabling `Swap command and option` |
+| `SSDT-TPD0` | Way better alternative to `SSDT-XOSI` to force the trackpad behave like on Windows 8 [infos](https://docs.microsoft.com/en-us/windows-hardware/drivers/acpi/winacpi-osi) |
+
+
 ### Drivers
 
-Must have for boot:
-
-* OpenHfsPlus.efi
-* OpenRuntime.efi
+| Driver | Function |
+| ---- | -------- |
+| `HfsPlus or OpenHfsPlus` | Allow detecting and booting from HFS+ formatted partitions |
+| `OpenRuntime` | Memory correction driver. Essential |
 
 ### Kexts
 
-* [AirportBrcmFixup](https://github.com/acidanthera/AirportBrcmFixup)
-* [AppleALC](https://github.com/acidanthera/AppleALC)
-* Temporarely disabled [AppleBacklightSmoother](https://github.com/hieplpvip/AppleBacklightSmoother)
-* [BrcmPatchRam](https://github.com/acidanthera/BrcmPatchRAM)
-* [Lilu](https://github.com/acidanthera/Lilu)
-* [NoTouchID](https://github.com/al3xtjames/NoTouchID)
-* [NVMeFix](https://github.com/acidanthera/NVMeFix)
-* [VirtualSMC](https://github.com/acidanthera/VirtualSMC)
-* [VoodooI2C + VoodooI2CHID](https://github.com/alexandred/VoodooI2C)
-* [VoodooPS2Controller](https://github.com/acidanthera/VoodooPS2) with **VoodooPS2Mouse.kext** and **VoodooPS2Trackpad.kext** removed due to incompatibility with VoodooI2C kext
-* [WhateverGreen](https://github.com/acidanthera/WhateverGreen)
+| Kext | Function |
+| ---- | -------- |
+| [AirportBrcmFixup](https://github.com/acidanthera/AirportBrcmFixup) | Various patches for Broadcom Airport Wi-Fi cards |
+| [AppleALC](https://github.com/acidanthera/AppleALC) | Native macOS HD audio for not officially supported codecs |
+| [BrcmPatchRam](https://github.com/acidanthera/BrcmPatchRAM) | Broadcom Bluetooth kexts |
+| [Lilu](https://github.com/acidanthera/Lilu) | Patching framework needed by most kexts |
+| [NVMeFix](https://github.com/acidanthera/NVMeFix) | Improved power management for generic NVMe SSDs |
+| [VirtualSMC](https://github.com/acidanthera/VirtualSMC) | Advanced SMC emulation |
+| [VoodooI2C + VoodooI2CHID](https://github.com/alexandred/VoodooI2C) | Adds support for I2C trackpad |
+| [VoodooPS2Controller](https://github.com/acidanthera/VoodooPS2) | Adds support for keyboard -  **VoodooPS2Mouse.kext** and **VoodooPS2Trackpad.kext** removed due to incompatibility with VoodooI2C kext itself |
+| [WhateverGreen](https://github.com/acidanthera/WhateverGreen) | Various patches necessary for GPUs |
 
 ## BIOS Settings
 

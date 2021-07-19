@@ -62,6 +62,7 @@
 - [x] Native NVRAM support
 - [x] Recovery (macOS) boot from OpenCore
 - [x] Windows 10/Linux boot from OpenCore
+
 ## Benchmarks
 
 The following benchmarks were made using Geekbench V5:

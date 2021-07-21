@@ -105,7 +105,7 @@ For the bootloader configuration, I have to thank a lot [@1alessandro1](https://
 | `SSDT-PLUG` | Used for enabling Apple's XCPM in macOS, allowing for far better CPU power management |
 | `SSDT-PNLF` | Used for controlling the backlight on internal display |
 | `SSDT-PS2K` | Used for binding some keys like `Stamp to F13` and disabling `Swap command and option` |
-| `SSDT-TPD0` | Way better alternative to `SSDT-XOSI` to force the trackpad behave like on Windows 8 [infos](https://docs.microsoft.com/en-us/windows-hardware/drivers/acpi/winacpi-osi) |
+| `SSDT-TPD0` | Way better alternative to `SSDT-XOSI` to force the trackpad behave like on Windows 8 - [infos](https://docs.microsoft.com/en-us/windows-hardware/drivers/acpi/winacpi-osi) |
 
 
 ### Drivers

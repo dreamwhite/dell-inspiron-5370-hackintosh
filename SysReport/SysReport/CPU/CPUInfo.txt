@@ -1,5 +1,5 @@
 CPU BrandString: Intel(R) Core(TM) i5-8250U CPU @ 1.60GHz
-MicrocodeRevision: 0x000000E0
+MicrocodeRevision: 0x000000EA
 Virtualization 0
 CPUID 000806EA 00100800 77FAFBBF BFEBFBFF
 ExtSigEcx 00000121
@@ -25,7 +25,7 @@ ThreadCount 8
 ExternalClock 100
 ARTFrequency 24000000
 CPUFrequency 1800000000
-CPUFrequencyFromTSC 1800002834
+CPUFrequencyFromTSC 1799999430
 CPUFrequencyFromART 1800000000
 TscAdjust 0
 CPUFrequencyFromApple 0

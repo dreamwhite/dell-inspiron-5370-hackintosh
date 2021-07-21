@@ -12,7 +12,56 @@
 | **Audio Code** | `Realtek ALC295 (ALC3254)`                |
 | **WiFi Card**  | `BCM943602BAED aka DW1830`                |
 | **OS**         | `macOS Big Sur 11.4 (20F71)`              |
-| **BIOS**       | `v1.17`                                   |
+| **BIOS**       | `v1.18`                                   |
+
+
+### Working/Not working:
+
+#### iGPU 
+
+- [x] Intel UHD 620 iGPU Backlight support
+- [x] Intel UHD 620 iGPU HDMI1.4b Output
+- [x] Intel UHD 620 iGPU Type-C to HDMI Output
+- [x] Intel UHD 620 iGPU - H264 & HEVC
+
+#### Audio 
+
+
+- [x] ALC295 Internal Speakers
+- [x] ALC295 Internal Microphone
+- [x] ALC295 Combojack headphones
+- [ ] ALC295 Combojack microphone - Not interested at all
+- [x] ALC295 HDMI Audio Output
+- [x] ALC295 Type-C to HDMI Audio Output
+
+#### USB
+- [x] All USB ports working and mapped
+- [x] Micro SD Card Reader (USB based)
+- [x] Webcam (USB based)
+
+#### Keyboard
+- [x] Keyboard (PS2 based)
+- [x] HID Key PWRB & SLPB 
+- [x] F11 & F12 remapped brightness keys
+- [x] F13 Print Screen remapped key
+- [x] Multimedia control sound keys
+
+#### Trackpad
+
+- [x] I2C Touchpad with gestures
+
+
+#### Misc
+
+- [x] SpeedStep
+- [x] Sleep/Wake using both `hibernatemode` `0` and `25`
+- [x] Wi-Fi/BT 4.1 `BCM943602BAED` (`DW1830`) module
+- [x] SATA/NVMe PCIe Gen3x4 on M.2 slot
+- [x] Sensors CPU, iGPU, Battery, NVMe, Fans
+- [x] Native ACPI Battery 8-bit support
+- [x] Native NVRAM support
+- [x] Recovery (macOS) boot from OpenCore
+- [x] Windows 10/Linux boot from OpenCore
 
 ## Benchmarks
 
@@ -56,7 +105,7 @@ For the bootloader configuration, I have to thank a lot [@1alessandro1](https://
 | `SSDT-PLUG` | Used for enabling Apple's XCPM in macOS, allowing for far better CPU power management |
 | `SSDT-PNLF` | Used for controlling the backlight on internal display |
 | `SSDT-PS2K` | Used for binding some keys like `Stamp to F13` and disabling `Swap command and option` |
-| `SSDT-TPD0` | Way better alternative to `SSDT-XOSI` to force the trackpad behave like on Windows 8 [infos](https://docs.microsoft.com/en-us/windows-hardware/drivers/acpi/winacpi-osi) |
+| `SSDT-TPD0` | Way better alternative to `SSDT-XOSI` to force the trackpad behave like on Windows 8 - [infos](https://docs.microsoft.com/en-us/windows-hardware/drivers/acpi/winacpi-osi) |
 
 
 ### Drivers

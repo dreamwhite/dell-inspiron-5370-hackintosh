@@ -20,7 +20,7 @@
 #### iGPU 
 
 - [x] Intel UHD 620 iGPU Backlight support
-- [x] Intel UHD 620 iGPU HDMI1.4b Output
+- [x] Intel UHD 620 iGPU HDMI1.4b Output (1920x1080@120Hz)
 - [x] Intel UHD 620 iGPU Type-C to HDMI Output
 - [x] Intel UHD 620 iGPU - H264 & HEVC
 

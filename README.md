@@ -16,43 +16,55 @@
 
 
 ### Working/Not working:
-
-#### iGPU 
-
+<details>
+<summary>iGPU</summary>
+  
 - [x] Intel UHD 620 iGPU Backlight support
 - [x] Intel UHD 620 iGPU HDMI1.4b Output (1920x1080@120Hz)
 - [x] Intel UHD 620 iGPU Type-C to HDMI Output
 - [x] Intel UHD 620 iGPU - H264 & HEVC
+</details>
 
-#### Audio 
-
-
+<details>
+<summary>Audio</summary>
+  
 - [x] ALC295 Internal Speakers
 - [x] ALC295 Internal Microphone
 - [x] ALC295 Combojack headphones
 - [ ] ALC295 Combojack microphone - Not interested at all
 - [x] ALC295 HDMI Audio Output
 - [x] ALC295 Type-C to HDMI Audio Output
+</details>
 
-#### USB
+<details>
+<summary>USB</summary>
+  
 - [x] All USB ports working and mapped
 - [x] Micro SD Card Reader (USB based)
 - [x] Webcam (USB based)
+</details>
 
-#### Keyboard
+<details>
+<summary>Keyboard</summary>
+  
 - [x] Keyboard (PS2 based)
 - [x] HID Key PWRB & SLPB 
 - [x] F11 & F12 remapped brightness keys
 - [x] F13 Print Screen remapped key
 - [x] Multimedia control sound keys
+</details>
 
-#### Trackpad
-
+<details>
+<summary>Trackpad</summary>
+  
 - [x] I2C Touchpad with gestures
+- [x] Force Touch
+</details>
 
 
-#### Misc
-
+<details>
+<summary>Misc</summary>
+  
 - [x] SpeedStep
 - [x] Sleep/Wake using both `hibernatemode` `0` and `25`
 - [x] Wi-Fi/BT 4.1 `BCM943602BAED` (`DW1830`) module
@@ -62,6 +74,7 @@
 - [x] Native NVRAM support
 - [x] Recovery (macOS) boot from OpenCore
 - [x] Windows 10/Linux boot from OpenCore
+</details>
 
 ## Benchmarks
 

@@ -223,8 +223,10 @@ Please note that if you're experiencing weird issues with the viewer, try anothe
 ## Credits
 
 * **Apple** for macOS
-* **Acidanthera** for some Lilu-based kexts
-* **RehabMan** for DSDT patching guide
+* [**Acidanthera**](https://github.com/acidanthera) for OpenCore and the majority of the kexts
+* [**RehabMan**](https://github.com/RehabMan) for contributing to most of the ACPI patching guides I used
+* [**macOS86 and its staff**](https://github.com/macos86) for helping me hackintoshing this laptop
+* [**1alessandro1**](https://github.com/1alessandro1) and [**marianopela**](https://github.com/marianopela) <!-- wamawwo mawwone --> for helping me optimizing this EFI 
 * **every other people that contributed to the hackintosh world :haha:**
 
 

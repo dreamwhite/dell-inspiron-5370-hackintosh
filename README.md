@@ -1,5 +1,7 @@
 # OpenCore 0.7.1 - Dell Inspiron 5370 i5-8250U
 
+# Please note that the EFI in this branch is slightly different from the master branch
+
 ![About this Mac](.assets/images/README.md/about_this_mac.png)
 
 ## Specs

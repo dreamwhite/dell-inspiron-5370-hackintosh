@@ -16,6 +16,8 @@
 
 
 ### Working/Not working:
+
+###### Click on the arrow icons to expand the spoilers
 <details>
 <summary>iGPU</summary>
   

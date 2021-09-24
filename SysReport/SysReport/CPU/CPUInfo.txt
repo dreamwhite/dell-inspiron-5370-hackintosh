@@ -25,7 +25,7 @@ ThreadCount 8
 ExternalClock 100
 ARTFrequency 24000000
 CPUFrequency 1800000000
-CPUFrequencyFromTSC 1799998115
+CPUFrequencyFromTSC 1800001698
 CPUFrequencyFromART 1800000000
 TscAdjust 0
 CPUFrequencyFromApple 0

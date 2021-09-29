@@ -1,4 +1,4 @@
-# OpenCore 0.7.2 - Dell Inspiron 5370 i5-8250U
+# OpenCore 0.7.4 - Dell Inspiron 5370 i5-8250U
 
 # Please note that the EFI in this branch is slightly different from the master branch
 
@@ -13,7 +13,7 @@
 | **Storage**    | `Western Digital SN750 Black NVMe 512GB`  |
 | **Audio Code** | `Realtek ALC295 (ALC3254)`                |
 | **WiFi Card**  | `BCM943602BAED aka DW1830`                |
-| **OS**         | `macOS Monterey 12.0 Beta (21A5506j)`     |
+| **OS**         | `macOS Monterey 12.0 Beta (21A5534d)`     |
 | **BIOS**       | `v1.18`                                   |
 
 

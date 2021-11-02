@@ -16,4 +16,4 @@ For the Bluetooth however, you'll need a different set of kexts to use.
 
 # Credits
 
-- Acidanthera for AirportBrcmFixup and BrcmPatchRAM
+- [Acidanthera](https://github.com/acidanthera) for [AirportBrcmFixup](https://github.com/acidanthera/AirportBrcmFixup) and [BrcmPatchRAM](https://github.com/acidanthera/BrcmPatchRAM)

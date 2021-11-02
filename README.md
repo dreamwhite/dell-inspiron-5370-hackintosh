@@ -206,7 +206,9 @@ Thanks to VoodooI2C team I've successfully activated native gestures on my hack.
 
 ![USB Mapping](.assets/images/README.md/usb/usb_mapping.png)
 
-## WiFi/BT antenna wiring
+## WiFi/BT
+
+![Broadcom compatible chipsets kexts](wifi_and_bt/README.md)
 
 ![WiFi/BT antenna wiring](.assets/images/README.md/wifi-bt-card/wiring.png)
 

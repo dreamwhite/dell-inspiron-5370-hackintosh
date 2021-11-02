@@ -11,11 +11,7 @@
 | **Storage**    | `Western Digital SN750 Black NVMe 512GB`  |
 | **Audio Code** | `Realtek ALC295 (ALC3254)`                |
 | **WiFi Card**  | `BCM943602BAED aka DW1830`                |
-<<<<<<< Updated upstream
-| **OS**         | `macOS Big Sur 11.6 (20G165)`             |
-=======
 | **OS**         | `macOS Monterey 12.0.1 (21A559)`          |
->>>>>>> Stashed changes
 | **BIOS**       | `v1.18`                                   |
 
 

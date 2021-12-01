@@ -1,4 +1,4 @@
-# OpenCore 0.7.5 - Dell Inspiron 5370 i5-8250U
+# OpenCore 0.7.6 - Dell Inspiron 5370 i5-8250U
 
 # Please note that the EFI in this branch is slightly different from the master branch
 

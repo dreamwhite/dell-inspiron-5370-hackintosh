@@ -224,6 +224,10 @@ You can download the dump [here](DarwinDumper_ioreg.zip)
 
 Please note that if you're experiencing weird issues with the viewer, try another browser like Safari or Google Chrome
 
+## FileVault2
+
+Follow [README.md](hidpi/README.md)
+
 ## Credits
 
 * **Apple** for macOS

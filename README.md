@@ -128,6 +128,7 @@ For the bootloader configuration, I have to thank a lot [@1alessandro1](https://
 | Driver | Function |
 | ---- | -------- |
 | `HfsPlus or OpenHfsPlus` | Allow detecting and booting from HFS+ formatted partitions |
+| `OpenCanopy` | Fancy GUI for OpenCore. Not necessary but I like it |
 | `OpenRuntime` | Memory correction driver. Essential |
 
 ### Kexts

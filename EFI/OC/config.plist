@@ -16,7 +16,7 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>Enables USB Power Management</string>
+				<string>AppleUsbPower compatibility table</string>
 				<key>Enabled</key>
 				<true/>
 				<key>Path</key>
@@ -24,7 +24,7 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>Paired with SSDT-TPD0 enables trackpad</string>
+				<string>Enable I2C Trackpad - SSDT-TPD0 companion</string>
 				<key>Enabled</key>
 				<true/>
 				<key>Path</key>
@@ -32,7 +32,7 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>Paired with SSDT-UPRW.aml needed for fixing sleep problems</string>
+				<string>Fix sleep problems - SSDT-UPRW companion</string>
 				<key>Enabled</key>
 				<true/>
 				<key>Path</key>
@@ -40,7 +40,7 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>Custom SSDT for disabling HPET</string>
+				<string>Disable HPET device</string>
 				<key>Enabled</key>
 				<true/>
 				<key>Path</key>
@@ -48,7 +48,7 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>Enables SmBus support</string>
+				<string>SMBus compatibility table</string>
 				<key>Enabled</key>
 				<true/>
 				<key>Path</key>
@@ -56,7 +56,7 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>Enable CPU Power Management</string>
+				<string>XCPM power management compatibility table</string>
 				<key>Enabled</key>
 				<true/>
 				<key>Path</key>
@@ -72,7 +72,7 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>Disables some keystrokes</string>
+				<string>Custom keyboard mapping</string>
 				<key>Enabled</key>
 				<true/>
 				<key>Path</key>
@@ -80,7 +80,7 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>Paired with SSDT-GPI0 enables trackpad</string>
+				<string>Enable I2C Trackpad - SSDT-GPI0 companion</string>
 				<key>Enabled</key>
 				<true/>
 				<key>Path</key>
@@ -202,6 +202,8 @@
 			<integer>0</integer>
 			<key>RebuildAppleMemoryMap</key>
 			<true/>
+			<key>ResizeAppleGpuBars</key>
+			<integer>-1</integer>
 			<key>SetupVirtualMap</key>
 			<true/>
 			<key>SignalAppleOS</key>
@@ -229,33 +231,33 @@
 			<key>PciRoot(0x0)/Pci(0x2,0x0)</key>
 			<dict>
 				<key>AAPL,ig-platform-id</key>
-                    		<data>AADAhw==</data>
-                    		<key>backlight-smoother-interval</key>
-                    		<data>BwAAAA==</data>
-                    		<key>backlight-smoother-steps</key>
-                    		<data>IwAAAA==</data>
-                    		<key>backlight-smoother-threshold</key>
-                    		<data>LAEAAA==</data>
-                    		<key>device-id</key>
-                    		<data>FlkAAA==</data>
-                    		<key>enable-backlight-smoother</key>
-                    		<data>AQAAAA==</data>
-                    		<key>framebuffer-con0-alldata</key>
-                    		<data>AAAIAAIAAACYAAAA</data>
-                    		<key>framebuffer-con0-enable</key>
-                    		<data>AQAAAA==</data>
-                    		<key>framebuffer-con1-alldata</key>
-                    		<data>AQUJAAAIAACHAQAA</data>
-                    		<key>framebuffer-con1-enable</key>
-                    		<data>AQAAAA==</data>
-                    		<key>framebuffer-con2-alldata</key>
-                    		<data>AgQKAAAEAACHAQAA</data>
-                    		<key>framebuffer-con2-enable</key>
-                    		<data>AQAAAA==</data>
-                    		<key>framebuffer-patch-enable</key>
-                    		<data>AQAAAA==</data>
-                    		<key>model</key>
-                    		<string>Intel UHD Graphics 620</string>
+				<data>AADAhw==</data>
+				<key>backlight-smoother-interval</key>
+				<data>BwAAAA==</data>
+				<key>backlight-smoother-steps</key>
+				<data>IwAAAA==</data>
+				<key>backlight-smoother-threshold</key>
+				<data>LAEAAA==</data>
+				<key>device-id</key>
+				<data>FlkAAA==</data>
+				<key>enable-backlight-smoother</key>
+				<data>AQAAAA==</data>
+				<key>framebuffer-con0-alldata</key>
+				<data>AAAIAAIAAACYAAAA</data>
+				<key>framebuffer-con0-enable</key>
+				<data>AQAAAA==</data>
+				<key>framebuffer-con1-alldata</key>
+				<data>AQUJAAAIAACHAQAA</data>
+				<key>framebuffer-con1-enable</key>
+				<data>AQAAAA==</data>
+				<key>framebuffer-con2-alldata</key>
+				<data>AgQKAAAEAACHAQAA</data>
+				<key>framebuffer-con2-enable</key>
+				<data>AQAAAA==</data>
+				<key>framebuffer-patch-enable</key>
+				<data>AQAAAA==</data>
+				<key>model</key>
+				<string>Intel UHD Graphics 620</string>
 			</dict>
 		</dict>
 		<key>Delete</key>
@@ -449,17 +451,17 @@
 				<key>Arch</key>
 				<string>x86_64</string>
 				<key>BundlePath</key>
-				<string>BrcmBluetoothInjector.kext</string>
+				<string>BlueToolFixup.kext</string>
 				<key>Comment</key>
-				<string>Broadcom Bluetooth firmware injector</string>
+				<string></string>
 				<key>Enabled</key>
 				<true/>
 				<key>ExecutablePath</key>
-				<string></string>
+				<string>Contents/MacOS/BlueToolFixup</string>
 				<key>MaxKernel</key>
 				<string></string>
 				<key>MinKernel</key>
-				<string>14.0.0</string>
+				<string></string>
 				<key>PlistPath</key>
 				<string>Contents/Info.plist</string>
 			</dict>
@@ -713,7 +715,7 @@
 			<key>HideAuxiliary</key>
 			<true/>
 			<key>LauncherOption</key>
-			<string>Full</string>
+			<string>Disabled</string>
 			<key>LauncherPath</key>
 			<string>Default</string>
 			<key>PickerAttributes</key>
@@ -721,7 +723,7 @@
 			<key>PickerAudioAssist</key>
 			<false/>
 			<key>PickerMode</key>
-			<string>Builtin</string>
+			<string>External</string>
 			<key>PickerVariant</key>
 			<string>Auto</string>
 			<key>PollAppleHotKeys</key>
@@ -783,7 +785,7 @@
 			<key>ScanPolicy</key>
 			<integer>0</integer>
 			<key>SecureBootModel</key>
-			<string>Disabled</string>
+			<string>j185</string>
 			<key>Vault</key>
 			<string>Optional</string>
 		</dict>
@@ -795,13 +797,33 @@
 				<key>Auxiliary</key>
 				<true/>
 				<key>Comment</key>
-				<string>modGRUBShell.efi</string>
+				<string>Interactive MsrE2 controller for unlocking CFG Lock</string>
 				<key>Enabled</key>
 				<true/>
 				<key>Flavour</key>
 				<string>Auto</string>
 				<key>Name</key>
-				<string>modGRUBShell.efi</string>
+				<string>ControlMsrE2 - Interactive MsrE2 Controller</string>
+				<key>Path</key>
+				<string>ControlMsrE2.efi</string>
+				<key>RealPath</key>
+				<false/>
+				<key>TextMode</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>Arguments</key>
+				<string></string>
+				<key>Auxiliary</key>
+				<true/>
+				<key>Comment</key>
+				<string>Launch a modified version of GRUB with additional features on hidden BIOS settings</string>
+				<key>Enabled</key>
+				<true/>
+				<key>Flavour</key>
+				<string>Auto</string>
+				<key>Name</key>
+				<string>modGRUBShell - Custom GrubShell for setup_var</string>
 				<key>Path</key>
 				<string>modGRUBShell.efi</string>
 				<key>RealPath</key>
@@ -824,26 +846,6 @@
 				<string>OpenShell.efi</string>
 				<key>Path</key>
 				<string>OpenShell.efi</string>
-				<key>RealPath</key>
-				<false/>
-				<key>TextMode</key>
-				<false/>
-			</dict>
-			<dict>
-				<key>Arguments</key>
-				<string></string>
-				<key>Auxiliary</key>
-				<true/>
-				<key>Comment</key>
-				<string>ControlMsrE2.efi</string>
-				<key>Enabled</key>
-				<true/>
-				<key>Flavour</key>
-				<string>Auto</string>
-				<key>Name</key>
-				<string>ControlMsrE2.efi</string>
-				<key>Path</key>
-				<string>ControlMsrE2.efi</string>
 				<key>RealPath</key>
 				<false/>
 				<key>TextMode</key>
@@ -859,8 +861,6 @@
 			<dict>
 				<key>DefaultBackgroundColor</key>
 				<data>AAAAAA==</data>
-				<key>UIScale</key>
-				<data>AQ==</data>
 			</dict>
 			<key>7C436110-AB2A-4BBB-A880-FE41995C9F82</key>
 			<dict>
@@ -883,7 +883,6 @@
 			<key>4D1EDE05-38C7-4A6A-9CC6-4BCCA8B38C14</key>
 			<array>
 				<string>DefaultBackgroundColor</string>
-				<string>UIScale</string>
 			</array>
 			<key>7C436110-AB2A-4BBB-A880-FE41995C9F82</key>
 			<array>
@@ -1006,6 +1005,28 @@
 			<dict>
 				<key>Arguments</key>
 				<string></string>
+				<key>Comment</key>
+				<string>HFS+ scanning driver</string>
+				<key>Enabled</key>
+				<true/>
+				<key>Path</key>
+				<string>HfsPlus.efi</string>
+			</dict>
+			<dict>
+				<key>Arguments</key>
+				<string></string>
+				<key>Comment</key>
+				<string>qt3.14 GUI</string>
+				<key>Enabled</key>
+				<true/>
+				<key>Path</key>
+				<string>OpenCanopy.efi</string>
+			</dict>
+			<dict>
+				<key>Arguments</key>
+				<string></string>
+				<key>Comment</key>
+				<string>Memory fixes</string>
 				<key>Enabled</key>
 				<true/>
 				<key>Path</key>
@@ -1047,6 +1068,8 @@
 			<false/>
 			<key>ProvideConsoleGop</key>
 			<true/>
+			<key>ReconnectGraphicsOnConnect</key>
+			<false/>
 			<key>ReconnectOnResChange</key>
 			<false/>
 			<key>ReplaceTabWithSpace</key>
@@ -1057,6 +1080,8 @@
 			<false/>
 			<key>TextRenderer</key>
 			<string>BuiltinGraphics</string>
+			<key>UIScale</key>
+			<integer>0</integer>
 			<key>UgaPassThrough</key>
 			<false/>
 		</dict>
@@ -1107,6 +1132,8 @@
 			<false/>
 			<key>EnableVectorAcceleration</key>
 			<true/>
+			<key>EnableVmx</key>
+			<false/>
 			<key>ExitBootServicesDelay</key>
 			<integer>0</integer>
 			<key>ForceOcWriteFlash</key>
@@ -1121,6 +1148,8 @@
 			<false/>
 			<key>RequestBootVarRouting</key>
 			<true/>
+			<key>ResizeGpuBars</key>
+			<integer>-1</integer>
 			<key>TscSyncTimeout</key>
 			<integer>0</integer>
 			<key>UnblockFsConnect</key>

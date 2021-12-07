@@ -1,4 +1,4 @@
-# OpenCore 0.7.3 - Dell Inspiron 5370 i5-8250U
+# OpenCore 0.7.6 - Dell Inspiron 5370 i5-8250U
 
 ![About this Mac](.assets/images/README.md/about_this_mac.png)
 
@@ -11,7 +11,7 @@
 | **Storage**    | `Western Digital SN750 Black NVMe 512GB`  |
 | **Audio Code** | `Realtek ALC295 (ALC3254)`                |
 | **WiFi Card**  | `BCM943602BAED aka DW1830`                |
-| **OS**         | `macOS Big Sur 11.6 (20G165)`             |
+| **OS**         | `macOS Monterey 12.0.1 (21A559)`          |
 | **BIOS**       | `v1.18`                                   |
 
 
@@ -128,6 +128,7 @@ For the bootloader configuration, I have to thank a lot [@1alessandro1](https://
 | Driver | Function |
 | ---- | -------- |
 | `HfsPlus or OpenHfsPlus` | Allow detecting and booting from HFS+ formatted partitions |
+| `OpenCanopy` | Fancy GUI for OpenCore. Not necessary but I like it |
 | `OpenRuntime` | Memory correction driver. Essential |
 
 ### Kexts
@@ -206,7 +207,9 @@ Thanks to VoodooI2C team I've successfully activated native gestures on my hack.
 
 ![USB Mapping](.assets/images/README.md/usb/usb_mapping.png)
 
-## WiFi/BT antenna wiring
+## WiFi/BT
+
+![Broadcom compatible chipsets kexts](wifi_and_bt/README.md)
 
 ![WiFi/BT antenna wiring](.assets/images/README.md/wifi-bt-card/wiring.png)
 
@@ -221,6 +224,10 @@ I attached a zip file containing my anonymized IORegistryExplorer dump by using 
 You can download the dump [here](DarwinDumper_ioreg.zip)
 
 Please note that if you're experiencing weird issues with the viewer, try another browser like Safari or Google Chrome
+
+## FileVault2
+
+Follow [README.md](hidpi/README.md)
 
 ## Credits
 

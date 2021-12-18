@@ -1,5 +1,0 @@
-VendorName=Dell Inc.
-OemString=Model_File
-SystemName=Inspiron 5370
-Version=1.18.1
-Model=082B,082C,082D,082E,082F,0830

@@ -12,7 +12,7 @@
 | **Audio Code** | `Realtek ALC295 (ALC3254)`                |
 | **WiFi Card**  | `BCM943602BAED aka DW1830`                |
 | **OS**         | `macOS Monterey 12.1 (21C52)`             |
-| **BIOS**       | `v1.18`                                   |
+| **BIOS**       | `v1.20`                                   |
 
 
 ### Working/Not working:

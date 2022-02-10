@@ -11,7 +11,7 @@
 | **Storage**    | `Western Digital SN750 Black NVMe 512GB`  |
 | **Audio Code** | `Realtek ALC295 (ALC3254)`                |
 | **WiFi Card**  | `BCM943602BAED aka DW1830`                |
-| **OS**         | `macOS Monterey 12.2 (21D49)`             |
+| **OS**         | `macOS Monterey 12.2.1 (21D62)`           |
 | **BIOS**       | `v1.20`                                   |
 
 

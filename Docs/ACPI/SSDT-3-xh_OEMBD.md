@@ -13,17 +13,18 @@ A little bit of history worth to mention:
 
 Before any modification, write down the `Length` value which is located in the beginning of the file, as shown: 
  
-![](../../.assets/docs/acpi/usb-mapping/images/usb-map-ssdt-table-lenght.png)  
+![](/.assets/docs/acpi/usb-mapping/images/ssdt-3-xh_oembd/usb-map-ssdt-table-lenght.png)  
+
 
 The unmodified, original ACPI table has a lenght of `2835`, this is going to be useful later in the guide, when we're going to tell OpenCore to avoid loading that table in favour of the new one we're going to modify.
 
 ## Adding the method to the original SSDT
 
-Let's start by adding the `GENG` method that can be found in MaciASL's Patch menu or this [link](../../.assets/docs/acpi/usb-mapping/extra-files/UsbConnectorTypePatch.txt) copy all those lines present in the .txt to the clipboard.
+Let's start by adding the `GENG` method that can be found in MaciASL's Patch menu or this [link](/.assets/docs/acpi/usb-mapping/extra-files/UsbConnectorTypePatch.txt) copy all those lines present in the .txt to the clipboard.
 
 Now open MaciASL's `Patch` menu and paste the whole contents of the file to this textbox as shown:
 
-![](../../.assets/docs/acpi/usb-mapping/images/maciasl-patch-usb-method.png)
+![](/.assets/docs/acpi/usb-mapping/images/ssdt-3-xh_oembd/maciasl-patch-usb-method.png)
 
 **Note**: At this point, this section assumes that the user already discovered [how to track every single type of port in your system](https://dortania.github.io/OpenCore-Post-Install/usb/manual/manual.html#finding-your-usb-ports) using 2.0 and 3.0 USB devices.
 
@@ -31,7 +32,7 @@ After applying the patch look for the first USB 2.0 personality in your list (fr
 
 And we find that the OEM (ASUS) already defined its own `GUPC` method to mark that port as `One` (Enabled) unconditionally, even if that port may not respond to us when tested in IORegistryExplorer.
 
-![](../../.assets/docs/acpi/usb-mapping/images/Original-OEM-method.png)  
+![](/.assets/docs/acpi/usb-mapping/images/ssdt-3-xh_oembd/Original-OEM-method.png)  
   
   According to the Advanced Configuration and Power Interface (ACPI) Specification, version 6.4 at page [587](https://uefi.org/sites/default/files/resources/ACPI_Spec_6_4_Jan22.pdf#page=587),<!---For a good chart rows x columns see [673](https://uefi.org/sites/default/files/resources/ACPI_6_3_May16.pdf#page=673), the connectors are defined the same way--> the `_UPC`  method has these possible values for the `Return` function:
 
@@ -141,7 +142,7 @@ Where:
 
 Once you've defined every port using these criterias, go to *File > Save As...*
 
-![](../../.assets/docs/acpi/usb-mapping/images/ssdt-save-usbmap.png)
+![](/.assets/docs/acpi/usb-mapping/images/ssdt-3-xh_oembd/ssdt-save-usbmap.png)
 
 Remember to add this SSDT to both EFI/OC/ACPI and your config.plist under ACPI -> Add.
 
@@ -154,7 +155,7 @@ Remember to add this SSDT to both EFI/OC/ACPI and your config.plist under ACPI -
   * The `TableSignature` value has to be filled converting the word `SSDT` from ASCII to hex
   * (Optional) Set your `OemTableid` converting your SSDT table ASCII value (in our case, `xh_rvp08`) to hex
 
-![](../../.assets/docs/acpi/usb-mapping/images/block-original-ssdt-usb-table.png)
+![](/.assets/docs/acpi/usb-mapping/images/ssdt-3-xh_oembd/block-original-ssdt-usb-table.png)
 
 * Note: Some firmware may use the same name (`OemTableId`) for different SSDTs, (e.g. Gigabyte and some MSI boards). This is why we recommend to check the  table `Lenght` value to ensure proper blocking of the correct table and to avoid dropping unwanted ACPI tables, if you found that at least two SSDTs have the same `TableId` value then you cannot use the `OemTableId` field, therefore opting for `TableLength` option in your config.plist
 

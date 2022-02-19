@@ -36,15 +36,15 @@ macOS can be very picky about the devices present in the DSDT and so our job is 
         Note Skylake and newer systems rarely have IRQ conflicts, this is mainly prevalent on Broadwell and older
 
 
-Let's be more specific about each SSDT:
-
-- [SSDT-3-xh_OEMBD](ACPI/SSDT-3-xh_OEMBD.md)
-- [SSDT-EC-USBX](ACPI/SSDT-EC-USBX.md)
-- [SSDT-GPI0](ACPI/SSDT-GPI0.md)
-- [SSDT-GPRW](ACPI/SSDT-GPRW.md)
-- [SSDT-HPET-DISABLE](ACPI/SSDT-HPET-DISABLE.md)
-- [SSDT-MCHC-SBUS](ACPI/SSDT-MCHC-SBUS.md)
-- [SSDT-PLUG](ACPI/SSDT-PLUG.md)
-- [SSDT-PNLF](ACPI/SSDT-PNLF.md)
-- [SSDT-PS2K](ACPI/SSDT-PS2K.md)
-- [SSDT-TPD0](ACPI/SSDT-TPD0.md)
+| SSDT | Function |
+| ---- | -------- |
+| [`SSDT-3-xh_OEMBD`](ACPI/SSDT-3-xh_OEMBD.md) | OEM USB SSDT customized for enabling just the necessary USB ports |
+| [`SSDT-EC-USBX`](ACPI/SSDT-EC-USBX.md) | Used for disabling your real Embedded controller and creating a fake one for macOS to play with ; USBX portion is used for injection USB power properties missing on Skylake and newer |
+| [`SSDT-GPI0`](ACPI/SSDT-GPI0.md) | Used for enabling GPI0 controller for trackpad. Paired with `SSDT-TPD0` |
+| [`SSDT-GPRW`](ACPI/SSDT-GPRW.md) | Used for fixing sleep problems - Requires `GPRW to XPRW` patch in `ACPI > Patch` |
+| [`SSDT-HPET-DISABLE`](ACPI/SSDT-HPET-DISABLE.md) | Used for disabling HPET device on macOS |
+| [`SSDT-MCHC-SBUS`](ACPI/SSDT-MCHC-SBUS.md) | Used for fixing SMBus support on macOS |
+| [`SSDT-PLUG`](ACPI/SSDT-PLUG.md) | Used for enabling Apple's XCPM in macOS, allowing for far better CPU power management |
+| [`SSDT-PNLF`](ACPI/SSDT-PNLF.md) | Used for controlling the backlight on internal display |
+| [`SSDT-PS2K`](ACPI/SSDT-PS2K.md) | Used for binding some keys like `Stamp to F13` and disabling `Swap command and option` |
+| [`SSDT-TPD0`](ACPI/SSDT-TPD0.md) | Way better alternative to `SSDT-XOSI` to force the trackpad behave like on Windows 8 - [infos](https://docs.microsoft.com/en-us/windows-hardware/drivers/acpi/winacpi-osi) |

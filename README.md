@@ -1,6 +1,6 @@
 # OpenCore 0.7.8 - Dell Inspiron 5370 i5-8250U
 
-![About this Mac](.assets/images/README.md/about_this_mac.png)
+![About this Mac](.assets/docs/about_this_mac.png)
 
 ## Specs
 
@@ -88,16 +88,16 @@ The following benchmarks were made using Geekbench V5:
 
 ### SSD
 
-![SSD Western Digital SN750 Black NVMe 512GB BlackMagic Disk Speed Test](.assets/images/benchmarks/ssd/Blackmagic.png)
-![SSD Sabrent Rocket NVMe 3.0 512GB AmorphousDiskMark](.assets/images/benchmarks/ssd/AmorphousDiskMark.png)
+![SSD Western Digital SN750 Black NVMe 512GB BlackMagic Disk Speed Test](.assets/docs/benchmarks/images/ssd/Blackmagic.png)
+![SSD Sabrent Rocket NVMe 3.0 512GB AmorphousDiskMark](.assets/docs/benchmarks/images/ssd/AmorphousDiskMark.png)
 
 ### RAM
 
-![16GB DDR4 @ 2400MHz AmorphousMemoryMark](.assets/images/benchmarks/ram/AmorphousMemoryMark.png)
+![16GB DDR4 @ 2400MHz AmorphousMemoryMark](.assets/docs/benchmarks/ram/images/AmorphousMemoryMark.png)
 
 ## VideoProc Hardware Infos
 
-![Hardware Info detected by VideoProc](.assets/images/benchmarks/videoproc/VideoProc.png)
+![Hardware Info detected by VideoProc](.assets/docs/benchmarks/videoproc/images/VideoProc.png)
 
 ## USB Preparing
 
@@ -108,19 +108,6 @@ Luckily, there's a new way to download macOS Installer: for more infos check [@d
 For the bootloader configuration, I have to thank a lot [@1alessandro1](https://github.com/1alessandro1) and [@marianopela](https://github.com/marianopela), which helped me through the conversion from Clover to Opencore.
 
 ### SSDTs
-
-| SSDT | Function |
-| ---- | -------- |
-| `SSDT-3-xh_OEMBD` | OEM USB SSDT customized for enabling just the necessary USB ports |
-| `SSDT-EC-USBX` | Used for disabling your real Embedded controller and creating a fake one for macOS to play with ; USBX portion is used for injection USB power properties missing on Skylake and newer |
-| `SSDT-GPI0` | Used for enabling GPI0 controller for trackpad. Paired with `SSDT-TPD0` |
-| `SSDT-GPRW` | Used for fixing sleep problems - Requires `GPRW to XPRW` patch in `ACPI > Patch` |
-| `SSDT-HPET-DISABLE` | Used for disabling HPET device on macOS |
-| `SSDT-MCHC-SBUS` | Used for fixing SMBus support on macOS |
-| `SSDT-PLUG` | Used for enabling Apple's XCPM in macOS, allowing for far better CPU power management |
-| `SSDT-PNLF` | Used for controlling the backlight on internal display |
-| `SSDT-PS2K` | Used for binding some keys like `Stamp to F13` and disabling `Swap command and option` |
-| `SSDT-TPD0` | Way better alternative to `SSDT-XOSI` to force the trackpad behave like on Windows 8 - [infos](https://docs.microsoft.com/en-us/windows-hardware/drivers/acpi/winacpi-osi) |
 
 
 ### Drivers
@@ -133,59 +120,11 @@ For the bootloader configuration, I have to thank a lot [@1alessandro1](https://
 
 ### Kexts
 
-| Kext | Function |
-| ---- | -------- |
-| [AirportBrcmFixup](https://github.com/acidanthera/AirportBrcmFixup) | Various patches for Broadcom Airport Wi-Fi cards |
-| [AppleALC](https://github.com/acidanthera/AppleALC) | Native macOS HD audio for not officially supported codecs |
-| [BrcmPatchRam](https://github.com/acidanthera/BrcmPatchRAM) | Broadcom Bluetooth kexts |
-| [Lilu](https://github.com/acidanthera/Lilu) | Patching framework needed by most kexts |
-| [NVMeFix](https://github.com/acidanthera/NVMeFix) | Improved power management for generic NVMe SSDs |
-| [VirtualSMC](https://github.com/acidanthera/VirtualSMC) | Advanced SMC emulation |
-| [VoodooI2C + VoodooI2CHID](https://github.com/alexandred/VoodooI2C) | Adds support for I2C trackpad |
-| [VoodooPS2Controller](https://github.com/acidanthera/VoodooPS2) | Adds support for keyboard -  **VoodooPS2Mouse.kext** and **VoodooPS2Trackpad.kext** removed due to incompatibility with VoodooI2C kext itself |
-| [WhateverGreen](https://github.com/acidanthera/WhateverGreen) | Various patches necessary for GPUs |
+[for more infos read here](/Docs/Kexts.md)
 
 ## BIOS Settings
 
-After [extracting my BIOS](https://github.com/dreamwhite/bios-extraction-guide/tree/master/Dell) firmware and looking for `DVMT` and `CFG Lock`, I've applied those changes via `modGRUBShell.efi`:
-
-**PLEASE DOUBLE CHECK THE OFFSETS**
-
-- `Above 4G` to `Disabled` using `setup_var 0x7ED 0x00` (there's no sense of having it enabled, so double check if it's enabled or not)
-
-![Above 4G offset](.assets/images/README.md/bios/above_4g.png)
-
-- `CFG Lock` to `Disabled` using `setup_var 0x527 0x00`
-
-![CFG Lock offset](.assets/images/README.md/bios/cfg_lock.png)
-
-- `CSM Support` to `Disabled` using `setup_var 0x104A 0x00`
-
-![CSM Support offset](.assets/images/README.md/bios/csm_support.png)
-
-- `DVMT Pre-allocated` to `64M` using `setup_var 0x7E8 0x2`
-
-![DVMT Pre-allocated offset](.assets/images/README.md/bios/dvmt_pre_allocated.png)
-
-- `DVMT Total Gfx Mem` to `MAX` using `setup_var 0x7E9 0x3`
-
-![DVMT Total Gfx Mem offset](.assets/images/README.md/bios/dvmt_total_gfx.png)
-
-- `Serial Port` to `Disabled` using `setup_var 0x1272 0x00`
-
-![Serial Port offset](.assets/images/README.md/bios/serial_port.png)
-
-- `SW Guard Extension` to `Disabled` using `setup_var 0x5DC 0x00`
-
-![SW Guard Extension offset](.assets/images/README.md/bios/sgx.png)
-
-- `TPM State` to `Disabled` using `setup_var 0xF7A 0x00`
-
-![TPM State offset](.assets/images/README.md/bios/tpm_state.png)
-
-In this way, you won't need more `framebuffer-fbmem` and `framebuffer-stolenmem` properties under `DeviceProperties` for the graphics patch :) 
-
-You can check the content of my BIOS [here](/BIOS/README.md)
+[for more infos read here](/Docs/BIOS/README.md)
 
 ## Brightness keys
 
@@ -193,11 +132,11 @@ I've realized (cuz I've removed Windows such as 10 seconds after buying the PC) 
 
 ## Crackling sound coming from combojack
 
-Follow [README.md](headphones_fix/README.md)
+Follow [README.md](/Docs/headphones_fix/README.md)
 
 ## Fixing buggy MAT Support
 
-Follow [README.md](SysReport/README.md)
+Follow [README.md](/Docs/SysReport/README.md)
 
 ## Gestures
 
@@ -205,29 +144,26 @@ Thanks to VoodooI2C team I've successfully activated native gestures on my hack.
 
 ## USB Mapping
 
-![USB Mapping](.assets/images/README.md/usb/usb_mapping.png)
+![USB Mapping](.assets/docs/usb/images/usb_mapping.png)
 
 ## WiFi/BT
 
-![Broadcom compatible chipsets kexts](wifi_and_bt/README.md)
-
-![WiFi/BT antenna wiring](.assets/images/README.md/wifi-bt-card/wiring.png)
-
+Follow [README.md](/Docs/wifi_and_bt/README.md)
 ## FileVault2
 
-Follow [README.md](FileVault2/README.md)
+Follow [README.md](/Docs/FileVault2/README.md)
 
 # IORegistryExplorer dump
 
 I attached a zip file containing my anonymized IORegistryExplorer dump by using [DarwinDumper](https://bitbucket.org/blackosx/darwindumper/downloads/). Every credits for the application goes to the developer.
 
-You can download the dump [here](DarwinDumper_ioreg.zip)
+You can download the dump [here](/Docs/DarwinDumper_ioreg.zip)
 
 Please note that if you're experiencing weird issues with the viewer, try another browser like Safari or Google Chrome
 
 ## FileVault2
 
-Follow [README.md](hidpi/README.md)
+Follow [README.md](/Docs/hidpi/README.md)
 
 ## Credits
 

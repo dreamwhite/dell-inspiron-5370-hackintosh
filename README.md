@@ -80,24 +80,7 @@
 
 ## Benchmarks
 
-The following benchmarks were made using Geekbench V5:
-
-- [CPU Single-core and Multi-core](https://browser.geekbench.com/v5/cpu/2830516)
-- [GPU Metal](https://browser.geekbench.com/v5/compute/1173808)
-- [GPU OpenCL](https://browser.geekbench.com/v5/compute/1173815)
-
-### SSD
-
-![SSD Western Digital SN750 Black NVMe 512GB BlackMagic Disk Speed Test](.assets/docs/benchmarks/images/ssd/Blackmagic.png)
-![SSD Sabrent Rocket NVMe 3.0 512GB AmorphousDiskMark](.assets/docs/benchmarks/images/ssd/AmorphousDiskMark.png)
-
-### RAM
-
-![16GB DDR4 @ 2400MHz AmorphousMemoryMark](.assets/docs/benchmarks/ram/images/AmorphousMemoryMark.png)
-
-## VideoProc Hardware Infos
-
-![Hardware Info detected by VideoProc](.assets/docs/benchmarks/videoproc/images/VideoProc.png)
+[For more infos read here](/Docs/README.md#benchmarks)
 
 ## USB Preparing
 
@@ -124,7 +107,7 @@ For the bootloader configuration, I have to thank a lot [@1alessandro1](https://
 
 ## BIOS Settings
 
-[for more infos read here](/Docs/BIOS/README.md)
+[For more infos read here](/Docs/BIOS/README.md)
 
 ## Brightness keys
 
@@ -132,11 +115,11 @@ I've realized (cuz I've removed Windows such as 10 seconds after buying the PC) 
 
 ## Crackling sound coming from combojack
 
-Follow [README.md](/Docs/headphones_fix/README.md)
+[For more infos read here](/Docs/headphones_fix/README.md)
 
 ## Fixing buggy MAT Support
 
-Follow [README.md](/Docs/SysReport/README.md)
+[For more infos read here](/Docs/SysReport/README.md)
 
 ## Gestures
 
@@ -144,7 +127,7 @@ Thanks to VoodooI2C team I've successfully activated native gestures on my hack.
 
 ## USB Mapping
 
-![USB Mapping](.assets/docs/usb/images/usb_mapping.png)
+[For more infos read here](/Docs/ACPI/SSDT-3-xh_OEMBD.md)
 
 ## WiFi/BT
 

@@ -35,6 +35,7 @@ macOS can be very picky about the devices present in the DSDT and so our job is 
         Needed for fixing IRQ conflicts within the DSDT, for laptops mainly. SSDTTime exclusive
         Note Skylake and newer systems rarely have IRQ conflicts, this is mainly prevalent on Broadwell and older
 
+# SSDT
 
 | SSDT | Function |
 | ---- | -------- |
@@ -48,3 +49,24 @@ macOS can be very picky about the devices present in the DSDT and so our job is 
 | [`SSDT-PNLF`](ACPI/SSDT-PNLF.md) | Used for controlling the backlight on internal display |
 | [`SSDT-PS2K`](ACPI/SSDT-PS2K.md) | Used for binding some keys like `Stamp to F13` and disabling `Swap command and option` |
 | [`SSDT-TPD0`](ACPI/SSDT-TPD0.md) | Way better alternative to `SSDT-XOSI` to force the trackpad behave like on Windows 8 - [infos](https://docs.microsoft.com/en-us/windows-hardware/drivers/acpi/winacpi-osi) |
+
+# Benchmarks
+
+The following benchmarks were made using Geekbench V5:
+
+- [CPU Single-core and Multi-core](https://browser.geekbench.com/v5/cpu/2830516)
+- [GPU Metal](https://browser.geekbench.com/v5/compute/1173808)
+- [GPU OpenCL](https://browser.geekbench.com/v5/compute/1173815)
+
+### SSD
+
+![SSD Western Digital SN750 Black NVMe 512GB BlackMagic Disk Speed Test](/.assets/docs/benchmarks/ssd/images/Blackmagic.png)
+![SSD Sabrent Rocket NVMe 3.0 512GB AmorphousDiskMark](/.assets/docs/benchmarks/ssd/images/AmorphousDiskMark.png)
+
+### RAM
+
+![16GB DDR4 @ 2400MHz AmorphousMemoryMark](/.assets/docs/benchmarks/ram/images/AmorphousMemoryMark.png)
+
+## VideoProc Hardware Infos
+
+![Hardware Info detected by VideoProc](/.assets/docs/benchmarks/videoproc/images/VideoProc.png)

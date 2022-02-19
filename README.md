@@ -69,7 +69,7 @@
   
 - [x] SpeedStep
 - [x] Sleep/Wake using both `hibernatemode` `0` and `25`
-- [x] Wi-Fi/BT 4.1 `BCM943602BAED` (`DW1830`) module
+- [x] Wi-Fi/BT 4.1 `BCM943602BAED` (`DW1830`) module with Continuity and Airdrop support (only from iPhone to Mac, not viceversa)
 - [x] SATA/NVMe PCIe Gen3x4 on M.2 slot
 - [x] Sensors CPU, iGPU, Battery, NVMe, Fans
 - [x] Native ACPI Battery 8-bit support

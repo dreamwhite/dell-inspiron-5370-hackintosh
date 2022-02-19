@@ -50,6 +50,13 @@ macOS can be very picky about the devices present in the DSDT and so our job is 
 | [`SSDT-PS2K`](ACPI/SSDT-PS2K.md) | Used for binding some keys like `Stamp to F13` and disabling `Swap command and option` |
 | [`SSDT-TPD0`](ACPI/SSDT-TPD0.md) | Way better alternative to `SSDT-XOSI` to force the trackpad behave like on Windows 8 - [infos](https://docs.microsoft.com/en-us/windows-hardware/drivers/acpi/winacpi-osi) |
 
+# Drivers
+
+| Driver | Function |
+| ---- | -------- |
+| `HfsPlus or OpenHfsPlus` | Allow detecting and booting from HFS+ formatted partitions |
+| `OpenCanopy` | Fancy GUI for OpenCore. Not necessary but I like it |
+| `OpenRuntime` | Memory correction driver. Essential |
 # Benchmarks
 
 The following benchmarks were made using Geekbench V5:

@@ -92,14 +92,10 @@ For the bootloader configuration, I have to thank a lot [@1alessandro1](https://
 
 ### SSDTs
 
-
+[For more infos read here](/Docs/README#ssdt)
 ### Drivers
 
-| Driver | Function |
-| ---- | -------- |
-| `HfsPlus or OpenHfsPlus` | Allow detecting and booting from HFS+ formatted partitions |
-| `OpenCanopy` | Fancy GUI for OpenCore. Not necessary but I like it |
-| `OpenRuntime` | Memory correction driver. Essential |
+[For more infos read here](/Docs/README#drivers)
 
 ### Kexts
 

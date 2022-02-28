@@ -14,7 +14,7 @@ For the Bluetooth however, you'll need a different set of kexts to use.
 | `BrcmBluetoothInjector` | ❌                      | ❌                  | ✅                   | ✅                | ❌                |
 | `BluetoolFixup`         | ❌                      | ❌                  | ❌                   | ❌                | ✅                |
 
-
+Since I'm using `BCM94360NG` WiFi/BT combo module, there's no need at all to use those kexts. Native stuff >>>>>>>>>
 # Wiring
 
 ![WiFi/BT antenna wiring](/.assets/docs/wifi-bt-card/images/wiring.png)

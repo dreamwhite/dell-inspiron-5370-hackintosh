@@ -10,7 +10,7 @@
 | **iGPU**       | `Intel UHD Graphics 620`                  |
 | **Storage**    | `Western Digital SN750 Black NVMe 512GB`  |
 | **Audio Code** | `Realtek ALC295 (ALC3254)`                |
-| **WiFi Card**  | `BCM943602BAED aka DW1830`                |
+| **WiFi Card**  | `Fenvi BCM94360NG with native firmware`   |
 | **OS**         | `macOS Monterey 12.2.1 (21D62)`           |
 | **BIOS**       | `v1.20`                                   |
 
@@ -69,7 +69,7 @@
   
 - [x] SpeedStep
 - [x] Sleep/Wake using both `hibernatemode` `0` and `25`
-- [x] Wi-Fi/BT 4.1 `BCM943602BAED` (`DW1830`) module with Continuity and Airdrop support (only from iPhone to Mac, not viceversa)
+- [x] Wi-Fi/BT 4.1 `BCM94360NG` module with Continuity and Airdrop support (both from iPhone to Mac and viceversa)
 - [x] SATA/NVMe PCIe Gen3x4 on M.2 slot
 - [x] Sensors CPU, iGPU, Battery, NVMe, Fans
 - [x] Native ACPI Battery 8-bit support

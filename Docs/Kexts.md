@@ -2,9 +2,7 @@
 
 | Kext | Function |
 | ---- | -------- |
-| [AirportBrcmFixup](https://github.com/acidanthera/AirportBrcmFixup) | Various patches for Broadcom Airport Wi-Fi cards |
 | [AppleALC](https://github.com/acidanthera/AppleALC) | Native macOS HD audio for not officially supported codecs |
-| [BrcmPatchRam](https://github.com/acidanthera/BrcmPatchRAM) | Broadcom Bluetooth kexts |
 | [Lilu](https://github.com/acidanthera/Lilu) | Patching framework needed by most kexts |
 | [NVMeFix](https://github.com/acidanthera/NVMeFix) | Improved power management for generic NVMe SSDs |
 | [VirtualSMC](https://github.com/acidanthera/VirtualSMC) | Advanced SMC emulation |

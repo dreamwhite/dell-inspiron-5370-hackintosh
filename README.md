@@ -1,4 +1,4 @@
-# OpenCore 0.7.9 - Dell Inspiron 5370 i5-8250U
+# OpenCore 0.8.0 - Dell Inspiron 5370 i5-8250U
 
 ![About this Mac](.assets/docs/about_this_mac.png)
 

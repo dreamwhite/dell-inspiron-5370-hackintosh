@@ -1,6 +1,6 @@
 # OpenCore 0.8.0 - Dell Inspiron 5370 i5-8250U
 
-[![BIOS](https://img.shields.io/badge/BIOS-1.20-important.svg)](https://www.dell.com/support/home/en-us/product-support/product/inspiron-13-5370-laptop/drivers)
+[![BIOS](https://img.shields.io/badge/BIOS-1.22-important.svg)](https://www.dell.com/support/home/en-us/product-support/product/inspiron-13-5370-laptop/drivers)
 [![OpenCore Version](https://img.shields.io/badge/OpenCore-0.8.0-cyan.svg)](https://github.com/acidanthera/OpenCorePkg/releases/latest)
 [![macOS Monterey](https://img.shields.io/badge/macOS-12.3.1%20(21E258)-white.svg)](https://www.apple.com/macos/monterey/)
 [![Release](https://img.shields.io/badge/Download-latest-success.svg)](https://github.com/dreamwhite/dell-inspiron-5370-hackintosh/releases/latest)
@@ -17,7 +17,7 @@
 | **Audio Code** | `Realtek ALC295 (ALC3254)`                |
 | **WiFi Card**  | `Fenvi BCM94360NG with native firmware`   |
 | **OS**         | `macOS Monterey 12.3.1 (21E258)`          |
-| **BIOS**       | `v1.20`                                   |
+| **BIOS**       | `v1.22`                                   |
 
 
 ### Working/Not working:

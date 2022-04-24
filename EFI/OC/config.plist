@@ -780,8 +780,6 @@
 			</dict>
 			<key>7C436110-AB2A-4BBB-A880-FE41995C9F82</key>
 			<dict>
-				<key>ForceDisplayRotationInEFI</key>
-				<integer>0</integer>
 				<key>backlight-level</key>
 				<data>bAU=</data>
 				<key>boot-args</key>
@@ -790,8 +788,6 @@
 				<data>AAAAAA==</data>
 				<key>prev-lang:kbd</key>
 				<string>en:0</string>
-				<key>run-efi-updater</key>
-				<string>No</string>
 			</dict>
 		</dict>
 		<key>Delete</key>
@@ -802,12 +798,10 @@
 			</array>
 			<key>7C436110-AB2A-4BBB-A880-FE41995C9F82</key>
 			<array>
-				<string>ForceDisplayRotationInEFI</string>
 				<string>backlight-level</string>
 				<string>boot-args</string>
 				<string>csr-active-config</string>
 				<string>prev-lang:kbd</string>
-				<string>run-efi-updater</string>
 			</array>
 		</dict>
 		<key>LegacyEnable</key>

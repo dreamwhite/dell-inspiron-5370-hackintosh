@@ -39,6 +39,12 @@ I've changed the following offsets via `modGRUBShell.efi`:
 
 ![TPM State offset](/.assets/docs/bios/images/tpm_state.png)
 
-In this way, you won't need more `framebuffer-fbmem` and `framebuffer-stolenmem` properties under `DeviceProperties` for the graphics patch :) 
+- `XHCI Hand-off` to `Enabled` using `setup_var 0x1B 0x01`
+
+![XHCI Hand-off offset](/.assets/docs/bios/images/xhci_handoff.png)
+
+In this way, you won't need more:
+- `framebuffer-fbmem` and `framebuffer-stolenmem` properties under `DeviceProperties` for the graphics patch
+- `ReleaseUsbOwnership` under `UEFI/Quirks` :) 
 
 You can check the content of my BIOS 

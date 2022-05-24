@@ -604,7 +604,7 @@
 			<key>CustomKernel</key>
 			<false/>
 			<key>FuzzyMatch</key>
-			<true/>
+			<false/>
 			<key>KernelArch</key>
 			<string>x86_64</string>
 			<key>KernelCache</key>
@@ -624,7 +624,7 @@
 			<key>HideAuxiliary</key>
 			<true/>
 			<key>LauncherOption</key>
-			<string>Disabled</string>
+			<string>Full</string>
 			<key>LauncherPath</key>
 			<string>Default</string>
 			<key>PickerAttributes</key>

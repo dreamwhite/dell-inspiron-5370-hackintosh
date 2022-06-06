@@ -667,12 +667,8 @@
 		<array/>
 		<key>Security</key>
 		<dict>
-			<key>AllowNvramReset</key>
-			<true/>
 			<key>AllowSetDefault</key>
 			<true/>
-			<key>AllowToggleSip</key>
-			<false/>
 			<key>ApECID</key>
 			<integer>0</integer>
 			<key>AuthRestart</key>
@@ -926,7 +922,7 @@
 				<key>Arguments</key>
 				<string></string>
 				<key>Comment</key>
-				<string>HFS+ scanning driver</string>
+				<string>Apple HFS+ file system driver</string>
 				<key>Enabled</key>
 				<true/>
 				<key>Path</key>
@@ -936,7 +932,7 @@
 				<key>Arguments</key>
 				<string></string>
 				<key>Comment</key>
-				<string>qt3.14 GUI</string>
+				<string>OcBootManagementLib graphical implementation for OpenCore</string>
 				<key>Enabled</key>
 				<true/>
 				<key>Path</key>
@@ -946,11 +942,21 @@
 				<key>Arguments</key>
 				<string></string>
 				<key>Comment</key>
-				<string>Memory fixes</string>
+				<string>OC_FIRMWARE_RUNTIME plugin implementation for OpenCore</string>
 				<key>Enabled</key>
 				<true/>
 				<key>Path</key>
 				<string>OpenRuntime.efi</string>
+			</dict>
+			<dict>
+				<key>Arguments</key>
+				<string></string>
+				<key>Comment</key>
+				<string>OC_BOOT_ENTRY_PROTOCOL implementation for Reset Nvram entry</string>
+				<key>Enabled</key>
+				<true/>
+				<key>Path</key>
+				<string>ResetNvramEntry.efi</string>
 			</dict>
 		</array>
 		<key>Input</key>

@@ -286,7 +286,7 @@
 				<key>BundlePath</key>
 				<string>VirtualSMC.kext</string>
 				<key>Comment</key>
-				<string>SMC emulator</string>
+				<string>Advanced SMC emulation</string>
 				<key>Enabled</key>
 				<true/>
 				<key>ExecutablePath</key>
@@ -304,7 +304,7 @@
 				<key>BundlePath</key>
 				<string>WhateverGreen.kext</string>
 				<key>Comment</key>
-				<string>Video patches</string>
+				<string>Various patches necessary for GPUs</string>
 				<key>Enabled</key>
 				<true/>
 				<key>ExecutablePath</key>
@@ -322,7 +322,7 @@
 				<key>BundlePath</key>
 				<string>SMCBatteryManager.kext</string>
 				<key>Comment</key>
-				<string>Battery</string>
+				<string>VirtualSMC Plugin - Battery</string>
 				<key>Enabled</key>
 				<true/>
 				<key>ExecutablePath</key>
@@ -340,7 +340,7 @@
 				<key>BundlePath</key>
 				<string>SMCDellSensors.kext</string>
 				<key>Comment</key>
-				<string></string>
+				<string>VirtualSMC Plugin - Dell sensors</string>
 				<key>Enabled</key>
 				<true/>
 				<key>ExecutablePath</key>
@@ -358,7 +358,7 @@
 				<key>BundlePath</key>
 				<string>SMCProcessor.kext</string>
 				<key>Comment</key>
-				<string>Processor</string>
+				<string>VirtualSMC Plugin - Processor</string>
 				<key>Enabled</key>
 				<true/>
 				<key>ExecutablePath</key>
@@ -376,7 +376,7 @@
 				<key>BundlePath</key>
 				<string>AppleALC.kext</string>
 				<key>Comment</key>
-				<string>Audio patches</string>
+				<string>Native macOS HD audio for not officially supported codecs</string>
 				<key>Enabled</key>
 				<true/>
 				<key>ExecutablePath</key>
@@ -394,7 +394,7 @@
 				<key>BundlePath</key>
 				<string>NVMeFix.kext</string>
 				<key>Comment</key>
-				<string></string>
+				<string>Improved power management for generic NVMe SSDs</string>
 				<key>Enabled</key>
 				<true/>
 				<key>ExecutablePath</key>
@@ -412,7 +412,7 @@
 				<key>BundlePath</key>
 				<string>VoodooI2C.kext/Contents/PlugIns/VoodooInput.kext</string>
 				<key>Comment</key>
-				<string></string>
+				<string>Generic multitouch handler</string>
 				<key>Enabled</key>
 				<true/>
 				<key>ExecutablePath</key>
@@ -430,7 +430,7 @@
 				<key>BundlePath</key>
 				<string>VoodooI2C.kext/Contents/PlugIns/VoodooI2CServices.kext</string>
 				<key>Comment</key>
-				<string>I2CServices</string>
+				<string>VoodooI2C Plugin - I2CServices</string>
 				<key>Enabled</key>
 				<true/>
 				<key>ExecutablePath</key>
@@ -448,7 +448,7 @@
 				<key>BundlePath</key>
 				<string>VoodooI2C.kext/Contents/PlugIns/VoodooGPIO.kext</string>
 				<key>Comment</key>
-				<string>GPIO</string>
+				<string>Intel SunrisePoint (and newer) GPIO controller driver</string>
 				<key>Enabled</key>
 				<true/>
 				<key>ExecutablePath</key>
@@ -466,7 +466,7 @@
 				<key>BundlePath</key>
 				<string>VoodooI2C.kext</string>
 				<key>Comment</key>
-				<string>I2C</string>
+				<string>Support for I2C bus devices</string>
 				<key>Enabled</key>
 				<true/>
 				<key>ExecutablePath</key>
@@ -484,7 +484,7 @@
 				<key>BundlePath</key>
 				<string>VoodooI2CHID.kext</string>
 				<key>Comment</key>
-				<string>I2CHID</string>
+				<string>VoodooI2C - Plugin for I2C HID devices</string>
 				<key>Enabled</key>
 				<true/>
 				<key>ExecutablePath</key>
@@ -502,7 +502,7 @@
 				<key>BundlePath</key>
 				<string>VoodooPS2Controller.kext</string>
 				<key>Comment</key>
-				<string>PS2Controller</string>
+				<string>Generic PS2 handler</string>
 				<key>Enabled</key>
 				<true/>
 				<key>ExecutablePath</key>
@@ -520,7 +520,7 @@
 				<key>BundlePath</key>
 				<string>VoodooPS2Controller.kext/Contents/PlugIns/VoodooPS2Keyboard.kext</string>
 				<key>Comment</key>
-				<string>Keyboard</string>
+				<string>VoodooPS2Controller - Keyboard plugin</string>
 				<key>Enabled</key>
 				<true/>
 				<key>ExecutablePath</key>
@@ -634,7 +634,7 @@
 			<key>PickerMode</key>
 			<string>External</string>
 			<key>PickerVariant</key>
-			<string>Auto</string>
+			<string>Acidanthera\GoldenGate</string>
 			<key>PollAppleHotKeys</key>
 			<true/>
 			<key>ShowPicker</key>

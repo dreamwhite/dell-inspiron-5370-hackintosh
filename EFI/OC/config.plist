@@ -932,7 +932,7 @@
 				<key>Arguments</key>
 				<string></string>
 				<key>Comment</key>
-				<string>OcBootManagementLib graphical implementation for OpenCore</string>
+				<string>OcBootManagementLib graphical plugin implementation for OpenCore</string>
 				<key>Enabled</key>
 				<true/>
 				<key>Path</key>
@@ -952,7 +952,7 @@
 				<key>Arguments</key>
 				<string></string>
 				<key>Comment</key>
-				<string>OC_BOOT_ENTRY_PROTOCOL implementation for Reset Nvram entry</string>
+				<string>OC_BOOT_ENTRY_PROTOCOL plugin implementation for Reset NVRAM entry</string>
 				<key>Enabled</key>
 				<true/>
 				<key>Path</key>

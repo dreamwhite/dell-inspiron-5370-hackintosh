@@ -32,7 +32,7 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>Fix sleep problems - SSDT-UPRW companion</string>
+				<string>Fix sleep problems</string>
 				<key>Enabled</key>
 				<true/>
 				<key>Path</key>
@@ -64,7 +64,7 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>Enable backlight control</string>
+				<string>AppleDisplay compatibility table</string>
 				<key>Enabled</key>
 				<true/>
 				<key>Path</key>

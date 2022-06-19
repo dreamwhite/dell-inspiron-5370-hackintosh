@@ -1,5 +1,7 @@
 # OpenCore 0.8.2 - Dell Inspiron 5370 i5-8250U
 
+## Only for educational purposes
+
 [![BIOS](https://img.shields.io/badge/BIOS-1.22-important.svg)](https://www.dell.com/support/home/en-us/product-support/product/inspiron-13-5370-laptop/drivers)
 [![OpenCore Version](https://img.shields.io/badge/OpenCore-0.8.2-cyan.svg)](https://github.com/acidanthera/OpenCorePkg/releases/latest)
 [![macOS Monterey](https://img.shields.io/badge/macOS-13%20Beta%201%20(22A5266r)-white.svg)](https://www.apple.com/macos/macos-ventura-preview)
@@ -160,7 +162,8 @@ Follow [README.md](/Docs/hidpi/README.md)
 
 ## Donate
 
-> This smol project is **free**, **open source** and I aim to provide all the necessary support Why donate? I spend my spare time to work on this project to provide the best documentation ever. Internet is filled of bullshit and unneeded stuff. **THANK YOU!**
+> This smol project is **free**, **open source** and I aim to provide all the necessary support<br>
+> Why donate? I spend my spare time to work on this project to provide the best documentation ever. Internet is filled of bullshit and unneeded stuff. **THANK YOU!**
 
 [![](https://img.shields.io/badge/donate-paypal-005EA6.svg?logo=paypal)](https://www.paypal.me/dreamwhitedev) [![](https://img.shields.io/badge/donate-ko--fi-29abe0.svg?logo=ko-fi)](https://ko-fi.com/dreamwhite) ![](https://img.shields.io/badge/ethereum-0xb6AAD058f7FF9b6A27467150aD23Ad9e341cC61d-4E8EE9.svg?logo=ethereum)
 

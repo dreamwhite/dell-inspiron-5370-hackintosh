@@ -134,10 +134,14 @@ Thanks to VoodooI2C team I've successfully activated native gestures on my hack.
 
 ## WiFi/BT
 
-Follow [README.md](/Docs/wifi_and_bt/README.md)
+[For more infos read here](/Docs/wifi_and_bt/README.md)
 ## FileVault2
 
-Follow [README.md](/Docs/FileVault2/README.md)
+[For more infos read here](/Docs/FileVault2/README.md)
+
+# Graphics patch
+
+[For more infos read here](/Docs/graphics_patch/README.md)
 
 # IORegistryExplorer dump
 

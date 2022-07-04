@@ -709,26 +709,6 @@
 				<key>Auxiliary</key>
 				<true/>
 				<key>Comment</key>
-				<string>Interactive MsrE2 controller for unlocking CFG Lock</string>
-				<key>Enabled</key>
-				<true/>
-				<key>Flavour</key>
-				<string>Auto</string>
-				<key>Name</key>
-				<string>ControlMsrE2 - Interactive MsrE2 Controller</string>
-				<key>Path</key>
-				<string>ControlMsrE2.efi</string>
-				<key>RealPath</key>
-				<false/>
-				<key>TextMode</key>
-				<false/>
-			</dict>
-			<dict>
-				<key>Arguments</key>
-				<string></string>
-				<key>Auxiliary</key>
-				<true/>
-				<key>Comment</key>
 				<string>Launch a modified version of GRUB with additional features on hidden BIOS settings</string>
 				<key>Enabled</key>
 				<true/>
@@ -952,7 +932,7 @@
 				<key>Arguments</key>
 				<string></string>
 				<key>Comment</key>
-				<string>OC_BOOT_ENTRY_PROTOCOL plugin implementation for Reset NVRAM entry</string>
+				<string>OC_BOOT_ENTRY_PROTOCOL implementation for Reset NVRAM entry</string>
 				<key>Enabled</key>
 				<true/>
 				<key>Path</key>

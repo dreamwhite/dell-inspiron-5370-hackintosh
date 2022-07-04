@@ -2,8 +2,6 @@
 
 ## Only for educational purposes
 
-## Only for educational purposes
-
 [![BIOS](https://img.shields.io/badge/BIOS-1.22-important.svg)](https://www.dell.com/support/home/en-us/product-support/product/inspiron-13-5370-laptop/drivers)
 [![OpenCore Version](https://img.shields.io/badge/OpenCore-0.8.2-cyan.svg)](https://github.com/acidanthera/OpenCorePkg/releases/latest)
 [![macOS Monterey](https://img.shields.io/badge/macOS-12.4%20(21F79)-white.svg)](https://www.apple.com/macos/monterey/)

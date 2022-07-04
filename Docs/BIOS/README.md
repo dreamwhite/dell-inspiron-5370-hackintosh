@@ -39,7 +39,7 @@ I've changed the following offsets via `modGRUBShell.efi`:
 
 ![TPM State offset](/.assets/docs/bios/images/tpm_state.png)
 
-- `XHCI Hand-off` to `Enabled` using `setup_var 0x1B 0x01`
+- `XHCI Hand-off` to `Enabled` using `setup_var_cv UsbSupport 0x1B 0x1 0x01`
 
 ![XHCI Hand-off offset](/.assets/docs/bios/images/xhci_handoff.png)
 

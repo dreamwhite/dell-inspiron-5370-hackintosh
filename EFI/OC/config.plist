@@ -725,6 +725,46 @@
 			</dict>
 			<dict>
 				<key>Arguments</key>
+				<string>disable</string>
+				<key>Auxiliary</key>
+				<true/>
+				<key>Comment</key>
+				<string>Disable NVRAM protections</string>
+				<key>Enabled</key>
+				<true/>
+				<key>Flavour</key>
+				<string>Auto</string>
+				<key>Name</key>
+				<string>OpenControl.efi - Disable NVRAM protections</string>
+				<key>Path</key>
+				<string>OpenControl.efi</string>
+				<key>RealPath</key>
+				<false/>
+				<key>TextMode</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>Arguments</key>
+				<string>restore</string>
+				<key>Auxiliary</key>
+				<true/>
+				<key>Comment</key>
+				<string>Restore NVRAM protections</string>
+				<key>Enabled</key>
+				<true/>
+				<key>Flavour</key>
+				<string>Auto</string>
+				<key>Name</key>
+				<string>OpenControl.efi - Restore NVRAM protections</string>
+				<key>Path</key>
+				<string>OpenControl.efi</string>
+				<key>RealPath</key>
+				<false/>
+				<key>TextMode</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>Arguments</key>
 				<string></string>
 				<key>Auxiliary</key>
 				<true/>
@@ -742,6 +782,26 @@
 				<false/>
 				<key>TextMode</key>
 				<false/>
+			</dict>
+			<dict>
+				<key>Arguments</key>
+				<string></string>
+				<key>Auxiliary</key>
+				<true/>
+				<key>Comment</key>
+				<string>RU 5.28.0397 - R U engineer? Use at your own risk</string>
+				<key>Enabled</key>
+				<true/>
+				<key>Flavour</key>
+				<string>Auto</string>
+				<key>Name</key>
+				<string>RU.efi</string>
+				<key>Path</key>
+				<string>RU.efi</string>
+				<key>RealPath</key>
+				<true/>
+				<key>TextMode</key>
+				<true/>
 			</dict>
 		</array>
 	</dict>

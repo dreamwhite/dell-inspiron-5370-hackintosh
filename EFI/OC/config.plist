@@ -32,7 +32,7 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>Fix sleep problems</string>
+				<string>Fix sleep problems - SSDT-UPRW companion</string>
 				<key>Enabled</key>
 				<true/>
 				<key>Path</key>
@@ -384,7 +384,7 @@
 				<key>MaxKernel</key>
 				<string></string>
 				<key>MinKernel</key>
-				<string>8.0.0</string>
+				<string>10.0.0</string>
 				<key>PlistPath</key>
 				<string>Contents/Info.plist</string>
 			</dict>
@@ -420,7 +420,7 @@
 				<key>MaxKernel</key>
 				<string></string>
 				<key>MinKernel</key>
-				<string>15.0.0</string>
+				<string>16.0.0</string>
 				<key>PlistPath</key>
 				<string>Contents/Info.plist</string>
 			</dict>
@@ -725,11 +725,51 @@
 			</dict>
 			<dict>
 				<key>Arguments</key>
+				<string>disable</string>
+				<key>Auxiliary</key>
+				<true/>
+				<key>Comment</key>
+				<string>Disable NVRAM protections</string>
+				<key>Enabled</key>
+				<true/>
+				<key>Flavour</key>
+				<string>Auto</string>
+				<key>Name</key>
+				<string>OpenControl.efi - Disable NVRAM protections</string>
+				<key>Path</key>
+				<string>OpenControl.efi</string>
+				<key>RealPath</key>
+				<false/>
+				<key>TextMode</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>Arguments</key>
+				<string>restore</string>
+				<key>Auxiliary</key>
+				<true/>
+				<key>Comment</key>
+				<string>Restore NVRAM protections </string>
+				<key>Enabled</key>
+				<true/>
+				<key>Flavour</key>
+				<string>Auto</string>
+				<key>Name</key>
+				<string>OpenControl.efi - Restore NVRAM protections</string>
+				<key>Path</key>
+				<string>OpenControl.efi</string>
+				<key>RealPath</key>
+				<false/>
+				<key>TextMode</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>Arguments</key>
 				<string></string>
 				<key>Auxiliary</key>
 				<true/>
 				<key>Comment</key>
-				<string>OpenShell.efi</string>
+				<string>OpenCore-configured UEFI Shell for compatibility with a broad range of firmware</string>
 				<key>Enabled</key>
 				<true/>
 				<key>Flavour</key>
@@ -742,6 +782,26 @@
 				<false/>
 				<key>TextMode</key>
 				<false/>
+			</dict>
+			<dict>
+				<key>Arguments</key>
+				<string></string>
+				<key>Auxiliary</key>
+				<true/>
+				<key>Comment</key>
+				<string>RU 5.28.0397 - R U engineer? Use at your own risk</string>
+				<key>Enabled</key>
+				<true/>
+				<key>Flavour</key>
+				<string>Auto</string>
+				<key>Name</key>
+				<string>RU.efi</string>
+				<key>Path</key>
+				<string>RU.efi</string>
+				<key>RealPath</key>
+				<true/>
+				<key>TextMode</key>
+				<true/>
 			</dict>
 		</array>
 	</dict>

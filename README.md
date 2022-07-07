@@ -1,10 +1,10 @@
-# OpenCore 0.8.2 - Dell Inspiron 5370 i5-8250U
+# OpenCore 0.8.3 - Dell Inspiron 5370 i5-8250U
 
 ## Only for educational purposes
 
 [![BIOS](https://img.shields.io/badge/BIOS-1.22-important.svg)](https://www.dell.com/support/home/en-us/product-support/product/inspiron-13-5370-laptop/drivers)
-[![OpenCore Version](https://img.shields.io/badge/OpenCore-0.8.2-cyan.svg)](https://github.com/acidanthera/OpenCorePkg/releases/latest)
-[![macOS Monterey](https://img.shields.io/badge/macOS-13%20Beta%202%20(22A5286j)-white.svg)](https://www.apple.com/macos/macos-ventura-preview)
+[![OpenCore Version](https://img.shields.io/badge/OpenCore-0.8.3-cyan.svg)](https://github.com/acidanthera/OpenCorePkg/releases/latest)
+[![macOS Monterey](https://img.shields.io/badge/macOS-13%20Beta%203%20(22A5295h)-white.svg)](https://www.apple.com/macos/macos-ventura-preview)
 [![Release](https://img.shields.io/badge/Download-latest-success.svg)](https://github.com/dreamwhite/dell-inspiron-5370-hackintosh/releases/latest)
 
 ![About this Mac](.assets/docs/about_this_mac.png)
@@ -18,7 +18,7 @@
 | **Storage**    | `Western Digital SN750 Black NVMe 512GB`  |
 | **Audio Code** | `Realtek ALC295 (ALC3254)`                |
 | **WiFi Card**  | `Fenvi BCM94360NG with native firmware`   |
-| **OS**         | `macOS Ventura 13 Beta 2 (22A5286j)`      |
+| **OS**         | `macOS Ventura 13 Beta 3 (22A5295h)`      |
 | **BIOS**       | `v1.22`                                   |
 
 

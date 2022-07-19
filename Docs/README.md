@@ -54,9 +54,11 @@ macOS can be very picky about the devices present in the DSDT and so our job is 
 
 | Driver | Function |
 | ---- | -------- |
-| `HfsPlus or OpenHfsPlus` | Allow detecting and booting from HFS+ formatted partitions |
-| `OpenCanopy` | Fancy GUI for OpenCore. Not necessary but I like it |
-| `OpenRuntime` | Memory correction driver. Essential |
+| `HfsPlus or OpenHfsPlus` | Apple HFS+ file system driver |
+| `OpenCanopy` | OcBootManagementLib graphical plugin implementation for OpenCore |
+| `OpenRuntime` | OC_FIRMWARE_RUNTIME plugin implementation for OpenCore |
+| `ResetNvramEntry` | OC_BOOT_ENTRY_PROTOCOL implementation for Reset NVRAM entry |
+
 # Benchmarks
 
 The following benchmarks were made using Geekbench V5:

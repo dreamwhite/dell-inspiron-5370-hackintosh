@@ -32,7 +32,7 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>Fix sleep problems</string>
+				<string>Fix sleep problems - SSDT-GPRW companion</string>
 				<key>Enabled</key>
 				<true/>
 				<key>Path</key>
@@ -769,7 +769,7 @@
 				<key>Auxiliary</key>
 				<true/>
 				<key>Comment</key>
-				<string>OpenShell.efi</string>
+				<string>OpenCore-configured UEFI Shell for compatibility with a broad range of firmware</string>
 				<key>Enabled</key>
 				<true/>
 				<key>Flavour</key>
@@ -840,8 +840,6 @@
 				<string>prev-lang:kbd</string>
 			</array>
 		</dict>
-		<key>LegacyEnable</key>
-		<false/>
 		<key>LegacyOverwrite</key>
 		<false/>
 		<key>LegacySchema</key>
@@ -965,6 +963,8 @@
 				<string>Apple HFS+ file system driver</string>
 				<key>Enabled</key>
 				<true/>
+				<key>LoadEarly</key>
+				<false/>
 				<key>Path</key>
 				<string>HfsPlus.efi</string>
 			</dict>
@@ -975,6 +975,8 @@
 				<string>OcBootManagementLib graphical plugin implementation for OpenCore</string>
 				<key>Enabled</key>
 				<true/>
+				<key>LoadEarly</key>
+				<false/>
 				<key>Path</key>
 				<string>OpenCanopy.efi</string>
 			</dict>
@@ -985,6 +987,8 @@
 				<string>OC_FIRMWARE_RUNTIME plugin implementation for OpenCore</string>
 				<key>Enabled</key>
 				<true/>
+				<key>LoadEarly</key>
+				<false/>
 				<key>Path</key>
 				<string>OpenRuntime.efi</string>
 			</dict>
@@ -995,6 +999,8 @@
 				<string>OC_BOOT_ENTRY_PROTOCOL implementation for Reset NVRAM entry</string>
 				<key>Enabled</key>
 				<true/>
+				<key>LoadEarly</key>
+				<false/>
 				<key>Path</key>
 				<string>ResetNvramEntry.efi</string>
 			</dict>

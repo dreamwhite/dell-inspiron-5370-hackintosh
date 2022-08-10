@@ -155,6 +155,10 @@ Please note that if you're experiencing weird issues with the viewer, try anothe
 
 Follow [README.md](/Docs/hidpi/README.md)
 
+## Issues
+
+If you encounter any issue, please file a bugreport [here](https://github.com/dreamwhite/bugtracker/issues/new?assignees=dreamwhite&labels=bug&template=generic.md&title=)
+
 ## Credits
 
 * **Apple** for macOS

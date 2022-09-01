@@ -18,7 +18,7 @@
 | **Storage**    | `Western Digital SN750 Black NVMe 512GB`  |
 | **Audio Code** | `Realtek ALC295 (ALC3254)`                |
 | **WiFi Card**  | `Fenvi BCM94360NG with native firmware`   |
-| **OS**         | `macOS Monterey 12.5 (21G72)`             |
+| **OS**         | `macOS Monterey 12.5.1 (21G83)`           |
 | **BIOS**       | `v1.22`                                   |
 
 

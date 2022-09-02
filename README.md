@@ -85,63 +85,29 @@
 - [x] Windows 10/Linux boot from OpenCore
 </details>
 
-## Benchmarks
+### Documentation
 
-[For more infos read here](/Docs/README.md#benchmarks)
-
-## USB Preparing
-
-Because I don't own a Mac I've created a VM of macOS Mojave 10.14.3 and downloaded the original installer from [gibMacOS](https://github.com/corpnewt/gibMacOS) and made the USB drive using [TINU](https://github.com/ITzTravelInTime/TINU/), a GUI for createinstallmedia. 
-
-Luckily, there's a new way to download macOS Installer: for more infos check [@dortania](https://github.com/dortania) [guide](https://dortania.github.io/OpenCore-Install-Guide/installer-guide/mac-install.html)
-
-For the bootloader configuration, I have to thank a lot [@1alessandro1](https://github.com/1alessandro1) and [@marianopela](https://github.com/marianopela), which helped me through the conversion from Clover to Opencore.
-
-### SSDTs
-
-[For more infos read here](/Docs/README#ssdt)
-### Drivers
-
-[For more infos read here](/Docs/README#drivers)
-
-### Kexts
-
-[for more infos read here](/Docs/Kexts.md)
-
-## BIOS Settings
-
-[For more infos read here](/Docs/BIOS/README.md)
+- [USB Preparing](/Docs/usb_preparation/README.md)
+- [Benchmarks](/Docs/README.md#benchmarks)
+- [SSDTs](/Docs/README#ssdt)
+- [Drivers](/Docs/README#drivers)
+- [Kexts](/Docs/Kexts.md)
+- [BIOS Settings](/Docs/BIOS/README.md)
+- [Crackling sound coming from combojack](/Docs/headphones_fix/README.md)
+- [Fixing buggy MAT Support](/Docs/SysReport/README.md)
+- [USB Mapping](/Docs/ACPI/SSDT-3-xh_OEMBD.md)
+- [WiFi/BT](/Docs/wifi_and_bt/README.md)
+- [FileVault2](/Docs/FileVault2/README.md)
+- [Graphics patch](/Docs/graphics_patch/README.md)
+- [HiDPI](/Docs/hidpi/README.md)
 
 ## Brightness keys
 
 I've realized (cuz I've removed Windows such as 10 seconds after buying the PC) that the brightness key are not smooth (fluid animation) even in Windows. So I've simply mapped them inside SysPrefs/Keyboard/Shortcuts 
 
-## Crackling sound coming from combojack
-
-[For more infos read here](/Docs/headphones_fix/README.md)
-
-## Fixing buggy MAT Support
-
-[For more infos read here](/Docs/SysReport/README.md)
-
 ## Gestures
 
 Thanks to VoodooI2C team I've successfully activated native gestures on my hack. Everything is working except 4-fingers gestures, but who cares -_- 
-
-## USB Mapping
-
-[For more infos read here](/Docs/ACPI/SSDT-3-xh_OEMBD.md)
-
-## WiFi/BT
-
-[For more infos read here](/Docs/wifi_and_bt/README.md)
-## FileVault2
-
-[For more infos read here](/Docs/FileVault2/README.md)
-
-# Graphics patch
-
-[For more infos read here](/Docs/graphics_patch/README.md)
 
 # IORegistryExplorer dump
 
@@ -150,10 +116,6 @@ I attached a zip file containing my anonymized IORegistryExplorer dump by using 
 You can download the dump [here](/Docs/DarwinDumper_ioreg.zip)
 
 Please note that if you're experiencing weird issues with the viewer, try another browser like Safari or Google Chrome
-
-## FileVault2
-
-Follow [README.md](/Docs/hidpi/README.md)
 
 ## Issues
 

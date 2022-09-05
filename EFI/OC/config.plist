@@ -64,7 +64,7 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>AppleDisplay compatibility table</string>
+				<string>AppleBacklight compatibility table</string>
 				<key>Enabled</key>
 				<true/>
 				<key>Path</key>
@@ -714,50 +714,12 @@
 				<true/>
 				<key>Flavour</key>
 				<string>Auto</string>
+				<key>FullNvramAccess</key>
+				<false/>
 				<key>Name</key>
 				<string>modGRUBShell - Custom GrubShell for setup_var</string>
 				<key>Path</key>
 				<string>modGRUBShell.efi</string>
-				<key>RealPath</key>
-				<false/>
-				<key>TextMode</key>
-				<false/>
-			</dict>
-			<dict>
-				<key>Arguments</key>
-				<string>disable</string>
-				<key>Auxiliary</key>
-				<true/>
-				<key>Comment</key>
-				<string>Disable NVRAM protections</string>
-				<key>Enabled</key>
-				<true/>
-				<key>Flavour</key>
-				<string>Auto</string>
-				<key>Name</key>
-				<string>OpenControl.efi - Disable NVRAM protections</string>
-				<key>Path</key>
-				<string>OpenControl.efi</string>
-				<key>RealPath</key>
-				<false/>
-				<key>TextMode</key>
-				<false/>
-			</dict>
-			<dict>
-				<key>Arguments</key>
-				<string>restore</string>
-				<key>Auxiliary</key>
-				<true/>
-				<key>Comment</key>
-				<string>Restore NVRAM protections</string>
-				<key>Enabled</key>
-				<true/>
-				<key>Flavour</key>
-				<string>Auto</string>
-				<key>Name</key>
-				<string>OpenControl.efi - Restore NVRAM protections</string>
-				<key>Path</key>
-				<string>OpenControl.efi</string>
 				<key>RealPath</key>
 				<false/>
 				<key>TextMode</key>
@@ -774,6 +736,8 @@
 				<true/>
 				<key>Flavour</key>
 				<string>Auto</string>
+				<key>FullNvramAccess</key>
+				<false/>
 				<key>Name</key>
 				<string>OpenShell.efi</string>
 				<key>Path</key>
@@ -794,6 +758,8 @@
 				<true/>
 				<key>Flavour</key>
 				<string>Auto</string>
+				<key>FullNvramAccess</key>
+				<true/>
 				<key>Name</key>
 				<string>RU.efi</string>
 				<key>Path</key>

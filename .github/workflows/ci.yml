@@ -1,0 +1,42 @@
+name: "Validate config"
+on:
+  push:
+    branches:
+      - master
+      - beta-testing
+jobs:
+  validate:
+    name: "ocvalidate config.plist"
+    runs-on:
+      - macos-latest
+    steps:
+      - name: "Checkout to current repo"
+        uses: actions/checkout@v3
+
+      - name: "Download latest OpenCorePkg release"
+        uses: robinraju/release-downloader@v1.4
+        with:
+          repository: "acidanthera/OpenCorePkg"
+          latest: true
+          filename: "*-RELEASE.zip"
+          out-file-path: "oc"
+      
+      - name: "Unzip OpenCorePkg RELEASE version"
+        run: "unzip *.zip"
+        working-directory: "./oc"
+      
+      - name: "Run ocvalidate on EFI/OC/config.plist"
+        run: "./oc/Utilities/ocvalidate/ocvalidate EFI/OC/config.plist > ocvalidate.txt"
+      
+      - name: "Upload to artifacts"
+        if: always()
+        uses: actions/upload-artifact@v3
+        with:
+          name: "ocvalidate.txt"
+          path: "./ocvalidate.txt"
+        
+
+
+
+
+  

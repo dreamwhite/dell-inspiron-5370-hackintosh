@@ -137,5 +137,3 @@ If you encounter any issue, please file a bugreport [here](https://github.com/dr
 > Why donate? I spend my spare time to work on this project to provide the best documentation ever. Internet is filled of bullshit and unneeded stuff. **THANK YOU!**
 
 [![](https://img.shields.io/badge/donate-paypal-005EA6.svg?logo=paypal)](https://www.paypal.me/dreamwhitedev) [![](https://img.shields.io/badge/donate-ko--fi-29abe0.svg?logo=ko-fi)](https://ko-fi.com/dreamwhite) ![](https://img.shields.io/badge/ethereum-0xb6AAD058f7FF9b6A27467150aD23Ad9e341cC61d-4E8EE9.svg?logo=ethereum)
-
-

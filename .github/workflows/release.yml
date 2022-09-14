@@ -1,0 +1,26 @@
+name: Release
+on:
+  workflow_run:
+    workflows: ["Validate config", "Update OpenCore binaries"]
+    branches: [master] # not adding beta-testing as binaries are not released yet
+    types: 
+      - completed
+
+jobs:
+  build:
+    name: Upload new project release
+    runs-on:
+      - macos-latest
+    steps:
+      - name: Checkout to current repo
+        uses: actions/checkout@v3
+      - name: Compress EFI to EFI.zip
+        run: zip -r -X EFI.zip EFI
+      - name: Upload to Release
+        if: github.event_name == 'release'
+        uses: svenstaro/upload-release-action@e74ff71f7d8a4c4745b560a485cc5fdb9b5b999d
+        with:
+          repo_token: ${{ secrets.GITHUB_TOKEN }}
+          file: EFI.zip
+          tag: ${{ github.ref }}
+          file_glob: true

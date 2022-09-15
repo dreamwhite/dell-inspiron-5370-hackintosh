@@ -13,7 +13,7 @@ jobs:
       - name: Compress EFI to EFI.zip
         run: zip -r -X EFI.zip EFI
       - name: Upload to Release
-        if: github.event_name == 'release' || github.event_name == 'push'
+        if: github.event_name == 'release'
         uses: svenstaro/upload-release-action@e74ff71f7d8a4c4745b560a485cc5fdb9b5b999d
         with:
           repo_token: ${{ secrets.GITHUB_TOKEN }}

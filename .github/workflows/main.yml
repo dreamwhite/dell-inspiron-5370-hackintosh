@@ -1,0 +1,20 @@
+name: Main
+
+on:
+  push:
+    branches: [ master ]
+  release:
+    types: [published]
+
+jobs:
+  ocvalidate:
+    name: "Validate config"
+    uses: ./.github/workflows/ocvalidate.yml
+  update-oc-binaries:
+    name: "Update OpenCore binaries"
+    needs: ocvalidate
+    uses: ./.github/workflows/update_oc.yml
+  upload-release:
+    name: "Upload to release"
+    needs: update-oc-binaries
+    uses: ./.github/workflows/release.yml

@@ -20,7 +20,7 @@ jobs:
       
       - name: "Unzip OpenCorePkg RELEASE version"
         run: "unzip *.zip"
-        working-directory: "./oc"
+        working-directory: "oc"
       
       - name: "Run ocvalidate on EFI/OC/config.plist"
         run: "./oc/Utilities/ocvalidate/ocvalidate EFI/OC/config.plist > ocvalidate.txt"
@@ -29,5 +29,5 @@ jobs:
         if: always()
         uses: actions/upload-artifact@v3
         with:
-          name: "ocvalidate.txt"
-          path: "./ocvalidate.txt"
+          name: "Artifacts"
+          path: "ocvalidate.txt"

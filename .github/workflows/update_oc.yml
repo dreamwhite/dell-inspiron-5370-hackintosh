@@ -3,7 +3,7 @@ on:
   workflow_call:
 
 jobs:
-  validate:
+  update-oc-bins:
     name: "Update OpenCore binaries"
     runs-on:
       - macos-latest
@@ -21,36 +21,39 @@ jobs:
       
       - name: "Unzip OpenCorePkg RELEASE version"
         run: "unzip *.zip"
-        working-directory: "./oc"
+        working-directory: "oc"
       
       - name: "Update BOOT directory"
-        run: "cp -r ./oc/X64/EFI/BOOT EFI/"
+        run: "cp -r oc/X64/EFI/BOOT EFI/"
 
       - name: "Update OpenCore.efi binary"
-        run: "cp -r ./oc/X64/EFI/OC/OpenCore.efi EFI/OC/OpenCore.efi"
+        run: "cp -r oc/X64/EFI/OC/OpenCore.efi EFI/OC/OpenCore.efi"
 
       - name: "Update Drivers binaries"
         run: |
           for file in *; do
             if [ -e $GITHUB_WORKSPACE/oc/X64/EFI/OC/Drivers/$file ]
             then
-              rsync $GITHUB_WORKSPACE/oc/X64/EFI/OC/Drivers/$file $file
+              cp $GITHUB_WORKSPACE/oc/X64/EFI/OC/Drivers/$file $file
             fi
           done
         working-directory: "EFI/OC/Drivers"
 
       - name: "Update Tools binaries"
         run: |
-          for file in *; do
-            if [ -e $GITHUB_WORKSPACE/oc/X64/EFI/OC/Tools/$file ]
-            then
-              rsync $GITHUB_WORKSPACE/oc/X64/EFI/OC/Tools/$file $file
-            fi
-          done
-        working-directory: "EFI/OC/Tools"
+          if [ -d Tools ]
+          then
+            for file in Tools; do
+              if [ -e $GITHUB_WORKSPACE/oc/X64/EFI/OC/Tools/$file ]
+              then
+                cp $GITHUB_WORKSPACE/oc/X64/EFI/OC/Tools/$file $file
+              fi
+            done
+          fi
+        working-directory: "EFI/OC"
 
       - name: "Remove oc directory"
-        run: "rm -rf ./oc"
+        run: "rm -rf oc"
 
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v4

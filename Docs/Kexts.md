@@ -3,6 +3,7 @@
 | Kext | Function |
 | ---- | -------- |
 | [AppleALC](https://github.com/acidanthera/AppleALC) | Native macOS HD audio for not officially supported codecs |
+| [GenericCardReaderFriend](https://github.com/0xFireWolf/GenericCardReaderFriend) | A Lilu plugin that makes System Information recognize your builtin USB card reader as a native one |
 | [Lilu](https://github.com/acidanthera/Lilu) | Patching framework needed by most kexts |
 | [NVMeFix](https://github.com/acidanthera/NVMeFix) | Improved power management for generic NVMe SSDs |
 | [VirtualSMC](https://github.com/acidanthera/VirtualSMC) | Advanced SMC emulation |

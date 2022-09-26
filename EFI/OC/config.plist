@@ -32,7 +32,7 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>Fix sleep problems - SSDT-GPRW companion</string>
+				<string>Fix sleep problems - GPRW to XPRW rename required</string>
 				<key>Enabled</key>
 				<true/>
 				<key>Path</key>
@@ -403,6 +403,24 @@
 				<string></string>
 				<key>MinKernel</key>
 				<string>18.0.0</string>
+				<key>PlistPath</key>
+				<string>Contents/Info.plist</string>
+			</dict>
+			<dict>
+				<key>Arch</key>
+				<string>x86_64</string>
+				<key>BundlePath</key>
+				<string>GenericCardReaderFriend.kext</string>
+				<key>Comment</key>
+				<string></string>
+				<key>Enabled</key>
+				<true/>
+				<key>ExecutablePath</key>
+				<string>Contents/MacOS/GenericCardReaderFriend</string>
+				<key>MaxKernel</key>
+				<string></string>
+				<key>MinKernel</key>
+				<string></string>
 				<key>PlistPath</key>
 				<string>Contents/Info.plist</string>
 			</dict>
@@ -823,10 +841,10 @@
 		<dict>
 			<key>AdviseFeatures</key>
 			<false/>
-			<key>MLB</key>
-			<string>M0000000000000001</string>
 			<key>MaxBIOSVersion</key>
 			<false/>
+			<key>MLB</key>
+			<string>M0000000000000001</string>
 			<key>ProcessorType</key>
 			<integer>0</integer>
 			<key>ROM</key>
@@ -1018,10 +1036,10 @@
 			<false/>
 			<key>TextRenderer</key>
 			<string>BuiltinGraphics</string>
-			<key>UIScale</key>
-			<integer>0</integer>
 			<key>UgaPassThrough</key>
 			<false/>
+			<key>UIScale</key>
+			<integer>0</integer>
 		</dict>
 		<key>ProtocolOverrides</key>
 		<dict>

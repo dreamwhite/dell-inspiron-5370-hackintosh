@@ -1,10 +1,10 @@
 name: VirusTotal scan
 on:
   workflow_call:
-  push:
 
 jobs:
   virustotal:
+    name: VirusTotal
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
@@ -13,9 +13,10 @@ jobs:
         with:
           vt_api_key: ${{ secrets.VT_API_KEY }}
           files: |
-            EFI/BOOT/*.efi
-            EFI/OC/Drivers/*.efi
-            EFI/OC/Kexts/*.kext/*/*/*
-            EFI/OC/Kexts/*.kext/*/PlugIns/*/*/*
-            EFI/OC/Tools/*.efi
+            EFI/BOOT/*.efi # Scan BOOTx64.efi
+            EFI/OC/ACPI/*.aml # Scan ACPI
+            EFI/OC/Drivers/*.efi # Scan EFI drivers
+            EFI/OC/Kexts/*.kext/*/*/* # Scan Kexts
+            EFI/OC/Kexts/*.kext/*/PlugIns/*/*/* # Scan Kexts that are plugins of other kexts
+            EFI/OC/Tools/*.efi # Scan Tools
           update_release_body: true

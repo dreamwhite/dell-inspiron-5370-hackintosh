@@ -13,5 +13,8 @@ jobs:
         with:
           vt_api_key: ${{ secrets.VT_API_KEY }}
           files: |
-            EFI/OC/OpenCore.efi
+            EFI/BOOT/*.efi
+            EFI/OC/Drivers/*.efi
+            EFI/OC/Kexts/*.kext/Contents/MacOS/*
+            EFI/OC/Tools/*.efi
           update_release_body: true

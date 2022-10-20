@@ -13,5 +13,5 @@ jobs:
         with:
           vt_api_key: ${{ secrets.VT_API_KEY }}
           files: |
-            *.efi
+            EFI/*
           update_release_body: true

@@ -4,7 +4,8 @@ on:
   workflow_call:
 
 jobs:
-  build:
+  vt-scan:
+    name: Scan EFI with VirusTotal
     runs-on: macos-latest
     steps:
       - name: Checkout

@@ -2,8 +2,6 @@ name: virustotal
 
 on:
   workflow_call:
-  push:
-
 
 jobs:
   build:

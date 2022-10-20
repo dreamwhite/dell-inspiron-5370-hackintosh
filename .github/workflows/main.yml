@@ -21,5 +21,5 @@ jobs:
     secrets: inherit
   upload-release:
     name: "Upload to release"
-    needs: update-oc-binaries
+    needs: virustotal
     uses: ./.github/workflows/release.yml

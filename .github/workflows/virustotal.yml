@@ -15,6 +15,7 @@ jobs:
           files: |
             EFI/BOOT/*.efi
             EFI/OC/Drivers/*.efi
-            EFI/OC/Kexts/*.kext/Contents/MacOS/*
+            EFI/OC/Kexts/*.kext/*/*/*
+            EFI/OC/Kexts/*.kext/*/PlugIns/*/*/*
             EFI/OC/Tools/*.efi
           update_release_body: true

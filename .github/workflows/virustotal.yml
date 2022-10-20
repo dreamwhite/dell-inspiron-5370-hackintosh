@@ -1,6 +1,7 @@
 name: VirusTotal scan
 on:
   workflow_call:
+  push:
 
 jobs:
   virustotal:
@@ -13,3 +14,4 @@ jobs:
           vt_api_key: ${{ secrets.VT_API_KEY }}
           files: |
             *
+          update_release_body: true

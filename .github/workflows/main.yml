@@ -14,12 +14,13 @@ jobs:
     name: "Update OpenCore binaries"
     needs: ocvalidate
     uses: ./.github/workflows/update_oc.yml
-  virustotal:
-    name: "Scan with VirusTotal"
-    needs: update-oc-binaries
-    uses: ./.github/workflows/virustotal.yml
-    secrets: inherit
   upload-release:
     name: "Upload to release"
-    needs: virustotal
+    needs: update-oc-binaries
     uses: ./.github/workflows/release.yml
+  virustotal:
+    name: "Scan with VirusTotal"
+    needs: upload-release
+    uses: ./.github/workflows/virustotal.yml
+    secrets: inherit
+

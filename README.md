@@ -86,6 +86,7 @@ Version](https://img.shields.io/badge/OpenCore-0.8.5-cyan.svg)](https://github.c
 - [x] Native NVRAM support
 - [x] Recovery (macOS) boot from OpenCore
 - [x] Windows 10/Linux boot from OpenCore
+- [x] macOS Ventura Continuity Camera
 </details>
 
 ### Documentation

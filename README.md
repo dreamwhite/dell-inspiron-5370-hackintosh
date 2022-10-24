@@ -7,8 +7,7 @@
 Version](https://img.shields.io/badge/OpenCore-0.8.5-cyan.svg)](https://github.com/acidanthera/OpenCorePkg/releases/latest)
 [![macOS Monterey](https://img.shields.io/badge/macOS-13%20(22A380)-white.svg)](https://www.apple.com/macos/ventura/)
 [![Release](https://img.shields.io/badge/Download-latest-success.svg)](https://github.com/dreamwhite/dell-inspiron-5370-hackintosh/releases/latest)
-[![Validate config](https://github.com/dreamwhite/dell-inspiron-5370-hackintosh/actions/workflows/ocvalidate.yml/badge.svg)](https://github.com/dreamwhite/dell-inspiron-5370-hackintosh/actions/workflows/ocvalidate.yml)
-[![Update OpenCore binaries](https://github.com/dreamwhite/dell-inspiron-5370-hackintosh/actions/workflows/update_oc.yml/badge.svg)](https://github.com/dreamwhite/dell-inspiron-5370-hackintosh/actions/workflows/update_oc.yml)
+[![Main](https://github.com/dreamwhite/dell-inspiron-5370-hackintosh/actions/workflows/main.yml/badge.svg)](https://github.com/dreamwhite/dell-inspiron-5370-hackintosh/actions/workflows/main.yml)
 
 ![About this Mac](.assets/docs/about_this_mac.png)
 

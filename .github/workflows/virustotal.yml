@@ -22,4 +22,6 @@ jobs:
             .zip$
             *.zip$
           request_rate: 4
-          update_release_body: true
+          update_release_body: false
+          - ${{ if(eq(github.event, 'release') }}:
+            - update_release_body: true

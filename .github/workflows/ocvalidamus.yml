@@ -1,0 +1,24 @@
+name: "Validate config"
+on:
+  workflow_call:
+jobs:
+  validate:
+    name: "OCValidamus config.plist"
+    runs-on:
+      - macos-latest
+    steps:
+      - name: "Checkout to current repo"
+        uses: actions/checkout@v3
+
+      - name: "Download dreamwhite/ocvalidamus/ocvalidamus.py script"
+        run: curl -O https://raw.githubusercontent.com/dreamwhite/OCValidamus/master/ocvalidamus.py
+      
+      - name: "Run OCValidamus"
+        run: python3 ocvalidamus.py > ocvalidamus.txt
+      
+      - name: "Upload to artifacts"
+        if: always()
+        uses: actions/upload-artifact@v3
+        with:
+          name: "OCValidamus"
+          path: "ocvalidamus.txt"

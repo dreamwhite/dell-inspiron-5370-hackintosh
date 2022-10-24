@@ -14,6 +14,10 @@ jobs:
     name: "Update OpenCore binaries"
     needs: ocvalidate
     uses: ./.github/workflows/update_oc.yml
+  ocvalidamus:
+    name: "Run OCValidamus"
+    needs: update-oc-binaries
+    uses: ./.github/workflows/ocvalidamus.yml
   virustotal:
     name: "Scan with VirusTotal"
     needs: update-oc-binaries

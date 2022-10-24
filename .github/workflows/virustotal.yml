@@ -28,3 +28,4 @@ jobs:
           files: |
             .zip$
           request_rate: 4
+          update_release_body: ${{env.update_release_body}}

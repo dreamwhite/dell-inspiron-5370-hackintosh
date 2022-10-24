@@ -21,3 +21,4 @@ jobs:
           files: |
             ./EFI.zip
           request_rate: 4
+          update_release_body: true

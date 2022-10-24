@@ -14,6 +14,13 @@ jobs:
       - name: Compress EFI to EFI.zip
         run: zip -r -X EFI.zip EFI
 
+      - name: Set update_body_release if event type is release
+        run: |
+          if [[ $GITHUB_EVENT_NAME == 'release' ]]; then
+              echo "update_release_body=true" >> "$GITHUB_ENV"
+          else
+              echo "update_release_body=false" >> "$GITHUB_ENV"
+          fi
       - name: VirusTotal Scan
         uses: crazy-max/ghaction-virustotal@v3
         with:
@@ -22,6 +29,3 @@ jobs:
             .zip$
             *.zip$
           request_rate: 4
-          update_release_body: false
-          - ${{ if(eq(github.event, 'release') }}:
-            - update_release_body: true

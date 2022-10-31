@@ -23,6 +23,26 @@ Version](https://img.shields.io/badge/OpenCore-0.8.5-cyan.svg)](https://github.c
 | **OS**         | `macOS Ventura 13 (22A380)`               |
 | **BIOS**       | `v1.22`                                   |
 
+## Supported versions
+
+| Version 	| Supported 	|
+|---	|---	|
+| 10.4.x 	| :x: 	|
+| 10.5.x 	| :x: 	|
+| 10.6.x 	| :x: 	|
+| 10.7.x 	| :x: 	|
+| 10.8.x 	| :x: 	|
+| 10.9.x 	| :x: 	|
+| 10.10.x 	| :x: 	|
+| 10.11.x 	| :x: 	|
+| 10.12.x 	| :x: 	|
+| 10.13.x 	| :heavy_exclamation_mark: Untested but should work	|
+| 10.14.x 	| :white_check_mark: 	|
+| 10.15.x 	| :white_check_mark: 	|
+| 11.x 	| :white_check_mark: 	|
+| 12.x 	| :white_check_mark: 	|
+| 13.x 	| :white_check_mark: 	|
+
 
 ### Working/Not working:
 

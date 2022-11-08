@@ -5,7 +5,7 @@
 [![BIOS](https://img.shields.io/badge/BIOS-1.22-important.svg)](https://www.dell.com/support/home/en-us/product-support/product/inspiron-13-5370-laptop/drivers)
 [![OpenCore 
 Version](https://img.shields.io/badge/OpenCore-0.8.6-cyan.svg)](https://github.com/acidanthera/OpenCorePkg/releases/latest)
-[![macOS Monterey](https://img.shields.io/badge/macOS-13%20(22A380)-white.svg)](https://www.apple.com/macos/ventura/)
+[![macOS Ventura](https://img.shields.io/badge/macOS-13%20(22A380)-white.svg)](https://www.apple.com/macos/ventura/)
 [![Release](https://img.shields.io/badge/Download-latest-success.svg)](https://github.com/dreamwhite/dell-inspiron-5370-hackintosh/releases/latest)
 [![Main](https://github.com/dreamwhite/dell-inspiron-5370-hackintosh/actions/workflows/main.yml/badge.svg)](https://github.com/dreamwhite/dell-inspiron-5370-hackintosh/actions/workflows/main.yml)
 

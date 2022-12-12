@@ -48,14 +48,6 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>SMBus compatibility table</string>
-				<key>Enabled</key>
-				<true/>
-				<key>Path</key>
-				<string>SSDT-MCHC-SBUS.aml</string>
-			</dict>
-			<dict>
-				<key>Comment</key>
 				<string>XCPM power management compatibility table</string>
 				<key>Enabled</key>
 				<true/>
@@ -77,6 +69,14 @@
 				<true/>
 				<key>Path</key>
 				<string>SSDT-PS2K.aml</string>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>SMBus compatibility table</string>
+				<key>Enabled</key>
+				<true/>
+				<key>Path</key>
+				<string>SSDT-SBUS-MCHC.aml</string>
 			</dict>
 			<dict>
 				<key>Comment</key>

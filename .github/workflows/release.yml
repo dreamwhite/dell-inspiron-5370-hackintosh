@@ -16,7 +16,7 @@ jobs:
         
       - name: Upload to Release
         if: github.event_name == 'release'
-        uses: svenstaro/upload-release-action@cc92c9093e5f785e23a3d654fe2671640b851b5f
+        uses: svenstaro/upload-release-action@7319e4733ec7a184d739a6f412c40ffc339b69c7
         with:
           repo_token: ${{ secrets.GITHUB_TOKEN }}
           file: EFI.zip

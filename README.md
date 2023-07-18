@@ -7,7 +7,7 @@
 Version](https://img.shields.io/badge/OpenCore-0.9.3-cyan?style=default&logo=osano&logoColor=0298e1&color=3f4451
 )](https://github.com/acidanthera/OpenCorePkg/releases/latest)
 [![macOS 
-Ventura](https://img.shields.io/badge/macOS-13.4.1%20(22F82)-white.svg?logo=apple](https://www.apple.com/macos/ventura/)
+Ventura](https://img.shields.io/badge/macOS-13.4.1%20(22F82)-white.svg?logo=apple)](https://www.apple.com/macos/ventura/)
 [![Release](https://img.shields.io/badge/Download-latest-success.svg)](https://github.com/dreamwhite/dell-inspiron-5370-hackintosh/releases/latest)
 [![CI](https://github.com/dreamwhite/dell-inspiron-5370-hackintosh/actions/workflows/main.yml/badge.svg)](https://github.com/dreamwhite/dell-inspiron-5370-hackintosh/actions/workflows/main.yml)
 

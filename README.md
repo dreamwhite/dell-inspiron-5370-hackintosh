@@ -1,10 +1,11 @@
-# OpenCore 0.9.3 - Dell Inspiron 5370 i5-8250U
+# OpenCore 0.9.4 - Dell Inspiron 5370 i5-8250U
 
 ## Only for educational purposes
 
 [![BIOS](https://img.shields.io/badge/BIOS-1.22-important.svg)](https://www.dell.com/support/home/en-us/product-support/product/inspiron-13-5370-laptop/drivers)
 [![OpenCore 
-Version](https://img.shields.io/badge/OpenCore-0.9.3-cyan.svg)](https://github.com/acidanthera/OpenCorePkg/releases/latest)
+Version](https://img.shields.io/badge/OpenCore-0.9.4-cyan?style=default&logo=osano&logoColor=0298e1&color=3f4451
+)](https://github.com/acidanthera/OpenCorePkg/releases/latest)
 [![macOS 
 Ventura](https://img.shields.io/badge/macOS-13.4%20(22F66)-white.svg)](https://www.apple.com/macos/ventura/)
 [![Release](https://img.shields.io/badge/Download-latest-success.svg)](https://github.com/dreamwhite/dell-inspiron-5370-hackintosh/releases/latest)

@@ -30,7 +30,7 @@ Ventura](https://img.shields.io/badge/macOS-13.4%20(22F66)-white.svg)](https://w
 | Version 	| Supported 	|
 |---	|---	|
 | ![](/.assets/docs/logos/high_sierra.png) 10.13.x 	| :heavy_exclamation_mark: Untested but should work	|
-| <img src="/.assets/docs/logos/mojave.png" width="240"/> 10.14.x 	| :white_check_mark: 	|
+| <img src="/.assets/docs/logos/mojave.png" width="30"/> 10.14.x 	| :white_check_mark: 	|
 | ![](/.assets/docs/logos/catalina.png) 10.15.x 	| :white_check_mark: 	|
 | ![](/.assets/docs/logos/big_sur.png) 11.x 	| :white_check_mark: 	|
 | ![](/.assets/docs/logos/monterey.png) 12.x 	| :white_check_mark: 	|

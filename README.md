@@ -7,7 +7,7 @@
 Version](https://img.shields.io/badge/OpenCore-0.9.3-cyan?style=default&logo=osano&logoColor=0298e1&color=3f4451
 )](https://github.com/acidanthera/OpenCorePkg/releases/latest)
 [![macOS 
-Ventura](https://img.shields.io/badge/macOS-13.4.1%20(22F82)-white.svg?logo=apple)](https://www.apple.com/macos/ventura/)
+Ventura](https://img.shields.io/badge/macOS-13.5%20(22G74)-white.svg?logo=apple)](https://www.apple.com/macos/ventura/)
 [![Release](https://img.shields.io/badge/Download-latest-success.svg)](https://github.com/dreamwhite/dell-inspiron-5370-hackintosh/releases/latest)
 [![CI](https://github.com/dreamwhite/dell-inspiron-5370-hackintosh/actions/workflows/main.yml/badge.svg)](https://github.com/dreamwhite/dell-inspiron-5370-hackintosh/actions/workflows/main.yml)
 
@@ -22,7 +22,7 @@ Ventura](https://img.shields.io/badge/macOS-13.4.1%20(22F82)-white.svg?logo=appl
 | **Storage**    | `Western Digital SN750 Black NVMe 512GB`  |
 | **Audio Code** | `Realtek ALC295 (ALC3254)`                |
 | **WiFi Card**  | `Fenvi BCM94360NG with native firmware`   |
-| **OS**         | `macOS Ventura 13.4 (22F66)`              |
+| **OS**         | `macOS Ventura 13.5 (22G74)`              |
 | **BIOS**       | `v1.22`                                   |
 
 ## Supported versions

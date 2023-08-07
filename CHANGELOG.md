@@ -1,5 +1,12 @@
 Project Changelog
 ==============
+#### [0.9.4](https://github.com/dreamwhite/dell-inspiron-5370-hackintosh/releases/tag/0.9.4)
+- Binaries update
+    - [OpenCore 0.9.4](https://github.com/acidanthera/OpenCorePkg/releases/tag/0.9.4)
+    - [Lilu 1.6.7](https://github.com/acidanthera/Lilu/releases/1.6.7)
+    - [AppleALC 1.8.4](https://github.com/acidanthera/AppleALC/releases/1.8.4)
+    - [WhateverGreen 1.6.5](https://github.com/acidanthera/WhateverGreen/releases/1.6.6)
+
 #### [0.9.3](https://github.com/dreamwhite/dell-inspiron-5370-hackintosh/releases/tag/0.9.3)
 - Binaries update
     - [OpenCore 0.9.3](https://github.com/acidanthera/OpenCorePkg/releases/tag/0.9.3)

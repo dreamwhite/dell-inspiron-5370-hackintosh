@@ -9,7 +9,7 @@ jobs:
       - macos-latest
     steps:
       - name: Checkout to current repo
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Compress EFI to EFI.zip
         run: zip -r -X EFI.zip EFI

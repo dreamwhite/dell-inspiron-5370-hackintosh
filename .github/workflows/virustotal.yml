@@ -22,7 +22,7 @@ jobs:
               echo "update_release_body=false" >> "$GITHUB_ENV"
           fi
       - name: VirusTotal Scan
-        uses: crazy-max/ghaction-virustotal@v3
+        uses: crazy-max/ghaction-virustotal@v4
         with:
           vt_api_key: ${{ secrets.VT_API_KEY }}
           files: |

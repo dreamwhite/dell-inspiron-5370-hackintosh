@@ -8,7 +8,7 @@ jobs:
       - macos-latest
     steps:
       - name: "Checkout to current repo"
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: "Download dreamwhite/ocvalidamus/ocvalidamus.py script"
         run: curl -O https://raw.githubusercontent.com/dreamwhite/OCValidamus/master/ocvalidamus.py

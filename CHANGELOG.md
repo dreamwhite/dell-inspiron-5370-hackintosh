@@ -1,5 +1,10 @@
 Project Changelog
 ==============
+#### [0.9.5](https://github.com/dreamwhite/dell-inspiron-5370-hackintosh/releases/tag/0.9.5)
+- Binaries update
+    - [OpenCore 0.9.5](https://github.com/acidanthera/OpenCorePkg/releases/tag/0.9.5)
+    - [AppleALC 1.8.6](https://github.com/acidanthera/AppleALC/releases/1.8.6)
+
 #### [0.9.4](https://github.com/dreamwhite/dell-inspiron-5370-hackintosh/releases/tag/0.9.4)
 - Binaries update
     - [OpenCore 0.9.4](https://github.com/acidanthera/OpenCorePkg/releases/tag/0.9.4)

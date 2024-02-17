@@ -18,7 +18,7 @@ jobs:
       
       - name: "Upload to artifacts"
         if: always()
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: "OCValidamus"
           path: "ocvalidamus.txt"

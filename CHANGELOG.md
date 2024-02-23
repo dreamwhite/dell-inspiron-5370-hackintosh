@@ -1,5 +1,12 @@
 Project Changelog
 ==============
+#### [0.9.8](https://github.com/dreamwhite/dell-inspiron-5370-hackintosh/releases/tag/0.9.8)
+Sorry for the delay but had some stuff to sort out in this period
+- Binaries update
+    - [OpenCore 0.9.5](https://github.com/acidanthera/OpenCorePkg/releases/tag/0.9.8)
+    - [AppleALC 1.8.6](https://github.com/acidanthera/AppleALC/releases/1.8.7)
+- Added `FirmwareSettingsEntry.efi`
+
 #### [0.9.5](https://github.com/dreamwhite/dell-inspiron-5370-hackintosh/releases/tag/0.9.5)
 - Binaries update
     - [OpenCore 0.9.5](https://github.com/acidanthera/OpenCorePkg/releases/tag/0.9.5)

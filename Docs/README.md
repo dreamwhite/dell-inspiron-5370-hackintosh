@@ -72,7 +72,7 @@ The following benchmarks were made using Geekbench V5:
 ![SSD Western Digital SN750 Black NVMe 512GB BlackMagic Disk Speed Test](/.assets/docs/benchmarks/ssd/images/Blackmagic.png)
 ![SSD Sabrent Rocket NVMe 3.0 512GB AmorphousDiskMark](/.assets/docs/benchmarks/ssd/images/AmorphousDiskMark.png)
 
-** In case you're using a Samsung SSD drive (bad idea, seriously), make sure that `SetApfsTrimTimeout` under `Kernel/Quirks` context is set to `0` rather than `-1`. This will make sure that TRIM is disabled, and therefore boot times won't be as long as before**
+**In case you're using a Samsung SSD drive (bad idea, seriously), make sure that `SetApfsTrimTimeout` under `Kernel/Quirks` context is set to `0` rather than `-1`. This will make sure that TRIM is disabled, and therefore boot times won't be as long as before**
 
 ### RAM
 

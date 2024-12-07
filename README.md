@@ -22,7 +22,7 @@ Ventura](https://img.shields.io/badge/macOS-13.7%20(22H123)-white.svg?logo=apple
 | **Storage**    | `Western Digital SN750 Black NVMe 512GB`  |
 | **Audio Code** | `Realtek ALC295 (ALC3254)`                |
 | **WiFi Card**  | `Fenvi BCM94360NG with native firmware`   |
-| **OS**         | `macOS Ventura 13.6 (22G120)`             |
+| **OS**         | `macOS Ventura 13.7 (22H123)`             |
 | **BIOS**       | `v1.22`                                   |
 
 ## Supported versions

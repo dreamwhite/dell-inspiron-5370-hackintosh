@@ -1,13 +1,13 @@
-# OpenCore 0.9.5 - Dell Inspiron 5370 i5-8250U
+# OpenCore 1.0.2 - Dell Inspiron 5370 i5-8250U
 
 ## Only for educational purposes
 
 [![BIOS](https://img.shields.io/badge/BIOS-1.22-important.svg)](https://www.dell.com/support/home/en-us/product-support/product/inspiron-13-5370-laptop/drivers)
 [![OpenCore 
-Version](https://img.shields.io/badge/OpenCore-0.9.5-cyan?style=default&logo=osano&logoColor=0298e1&color=3f4451
+Version](https://img.shields.io/badge/OpenCore-1.0.2-cyan?style=default&logo=osano&logoColor=0298e1&color=3f4451
 )](https://github.com/acidanthera/OpenCorePkg/releases/latest)
 [![macOS 
-Ventura](https://img.shields.io/badge/macOS-13.6%20(22G120)-white.svg?logo=apple)](https://www.apple.com/macos/ventura/)
+Ventura](https://img.shields.io/badge/macOS-13.7%20(22H123)-white.svg?logo=apple)](https://www.apple.com/macos/ventura/)
 [![Release](https://img.shields.io/badge/Download-latest-success.svg)](https://github.com/dreamwhite/dell-inspiron-5370-hackintosh/releases/latest)
 [![CI](https://github.com/dreamwhite/dell-inspiron-5370-hackintosh/actions/workflows/main.yml/badge.svg)](https://github.com/dreamwhite/dell-inspiron-5370-hackintosh/actions/workflows/main.yml)
 

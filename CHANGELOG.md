@@ -1,5 +1,9 @@
 Project Changelog
 ==============
+#### Archived (2026-04-07)
+- Repository archived and moved to maintenance-free state.
+- Hardware migration: MacBook Pro 14" (M5, 16GB RAM, 512GB SSD).
+
 #### [1.0.2](https://github.com/dreamwhite/dell-inspiron-5370-hackintosh/releases/tag/1.0.2)
 Sorry for the delay again but university is my main goal at the moment :)
 - Binaries update

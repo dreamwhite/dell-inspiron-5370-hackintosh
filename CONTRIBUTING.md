@@ -1,5 +1,8 @@
 # How do I contribute?
 
+This repository is archived and no longer maintained.
+Pull requests may remain open or be closed without review.
+
 In order to contribute on this repository, open a PR (pull request) and make sure to follow those guidelines:
 
 ## Before commiting
@@ -28,5 +31,4 @@ Some examples below:
 
 1. `As documented in OpenCore's Configuration.pdf, to allow OpenCore scan Linux Data file systems, 0x00002000 bit flag must be added to ScanPolicy value. Hencefore the meaning of this PR`
 2. `As explained in AppleALC wiki, to set layout-id add alcid=X boot-arg`
-
 

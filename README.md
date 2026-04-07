@@ -1,5 +1,11 @@
 # OpenCore 1.0.2 - Dell Inspiron 5370 i5-8250U
 
+## Repository status
+
+> Archived in April 2026.
+> I replaced this Dell Inspiron 5370 with a MacBook Pro 14" (M5, 16GB RAM, 512GB SSD), so this repository is no longer maintained.
+> It will stay online as a reference for existing users and as a personal memory of this project.
+
 ## Only for educational purposes
 
 [![BIOS](https://img.shields.io/badge/BIOS-1.22-important.svg)](https://www.dell.com/support/home/en-us/product-support/product/inspiron-13-5370-laptop/drivers)
@@ -135,7 +141,8 @@ Please note that if you're experiencing weird issues with the viewer, try anothe
 
 ## Issues
 
-If you encounter any issue, please file a bugreport [here](https://github.com/dreamwhite/bugtracker/issues/new?assignees=dreamwhite&labels=bug&template=generic.md&title=)
+This repository is archived and no longer maintained, so new issues are no longer handled.
+If you still need support for a running setup, please use community resources and OpenCore/Dortania documentation.
 
 ## Credits
 

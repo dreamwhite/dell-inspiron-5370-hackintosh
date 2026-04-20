@@ -9,7 +9,7 @@ jobs:
       - macos-latest
     steps:
       - name: "Checkout to current repo"
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
 
       - name: "Download latest OpenCorePkg release"
         uses: robinraju/release-downloader@v1.11
